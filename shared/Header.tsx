@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export const Header = () => {
   return (
-    <header className="max-w-[1100px] w-full flex items-center justify-between h-16 px-5">
+    <header className="max-w-[1100px] w-full flex items-center justify-between h-16 px-5 fixed z-10">
       <Link href="/">
         <Image src="/lighthouse-logo.png" width='41' height='56' alt="lighthouse logo" />
       </Link>

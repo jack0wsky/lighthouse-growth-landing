@@ -12,7 +12,7 @@ export const Button = ({ children, variant, href, onClick }: ButtonProps) => {
   if (onClick) {
     return (
       <button
-        className="px-5 py-2.5 bg-palette-black text-white rounded-lg"
+        className="px-5 py-2.5 bg-palette-black text-white rounded-lg w-max w-max"
         onClick={onClick}
       >
         {children}
@@ -21,7 +21,7 @@ export const Button = ({ children, variant, href, onClick }: ButtonProps) => {
   }
 
   return (
-    <Link className="px-5 py-2.5 bg-palette-black text-white rounded-lg font-bold" href={href || ""}>
+    <Link className="px-5 py-2.5 bg-palette-black text-white rounded-lg font-bold w-max" href={href || ""}>
       {children}
     </Link>
   );

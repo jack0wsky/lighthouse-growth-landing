@@ -1,9 +1,10 @@
-import { Hero } from "@/sections";
+import { AboutUs, Hero } from "@/sections";
 
 export const HomePage = () => {
   return (
     <>
       <Hero />
+      <AboutUs />
     </>
   );
 };
