@@ -13,7 +13,7 @@ export const Hero = () => {
             <span>in software</span>
           </AnimatedTitle>
         </h1>
-        <p className="max-w-[450px] w-full mt-4 mb-9">
+        <p className="max-w-[450px] w-full mt-4 mb-9 text-xl">
           Lighthouse Growth is a Poland-based product development agency, with
           own engineering team and strong network in the industry.
         </p>
