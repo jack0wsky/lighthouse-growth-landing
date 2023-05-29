@@ -1,5 +1,5 @@
 "use client";
 
-import { HomePage } from "@/views/HomePage";
+import { HomePage } from "@/views/Home/HomePage";
 
 export default HomePage;

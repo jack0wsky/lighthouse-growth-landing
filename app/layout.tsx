@@ -1,6 +1,9 @@
+import { PropsWithChildren } from "react";
 import "./globals.css";
 import localFont from "next/font/local";
 import { Header } from "@/shared";
+import classNames from "classnames";
+import { BurgerMenu } from "@/shared/BurgerMenu";
 
 const Satoshi = localFont({
   src: "./fonts/Satoshi.ttf",
@@ -12,15 +15,11 @@ export const metadata = {
   description: "We are a software house",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en">
-      <body className={Satoshi.className}>
-        <main className="min-h-screen flex flex-col items-center">
+      <body className={classNames(Satoshi.className, "bg-white")}>
+        <main className="min-h-screen flex flex-col items-center relative">
           <Header />
           {children}
         </main>

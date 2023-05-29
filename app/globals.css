@@ -16,6 +16,35 @@
   }
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: #fff;
+}
+
+button {
+  border: none;
+}
+
+@layer components {
+  .text-h1 {
+    @apply text-4xl font-bold;
+    @apply sm:text-6xl sm:leading-tight;
+  }
+
+  .text-h2 {
+    @apply text-1.75 font-bold;
+    @apply sm:text-5xl;
+  }
+
+  .layout {
+    @apply max-w-[1140px] w-full;
+    @apply px-5;
+  }
 }

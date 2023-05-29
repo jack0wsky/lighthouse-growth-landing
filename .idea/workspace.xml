@@ -5,14 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="823b8eb7-99d3-4e76-a404-54dae17d0665" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/animations/AnimatedTitle.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/Checkbox.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/Input.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Contact/Contact.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Contact/Sections/ContactForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Contact/Sections/ContactHero.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Contact/Sections/Offices.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Contact/offices.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Contact/useContactForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Home/Sections/AboutUs.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Home/Sections/Hero.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/sections/Hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sections/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/contact/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/contact/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sections/AboutUs.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sections/Hero.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sections/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/views/Home/Sections/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shared/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/shared/Button.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shared/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/shared/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/HomePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/views/HomePage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/HomePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/views/Home/HomePage.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +53,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/jacekludzik/Documents/Code/Freelance/lighthouse-landing&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jacekludzik/Documents/Code/Freelance/lighthouse-landing/views/Contact/Sections&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -50,6 +65,17 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/views/Contact/Sections" />
+      <recent name="$PROJECT_DIR$/sections/HomePage" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/views/Contact" />
+      <recent name="$PROJECT_DIR$/views/Home/Sections" />
+      <recent name="$PROJECT_DIR$/views/Home" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -59,7 +85,9 @@
       <option name="presentableId" value="Default" />
       <updated>1685129850107</updated>
       <workItem from="1685129851468" duration="3710000" />
-      <workItem from="1685177599972" duration="2461000" />
+      <workItem from="1685177599972" duration="9727000" />
+      <workItem from="1685277126551" duration="9775000" />
+      <workItem from="1685386807013" duration="1324000" />
     </task>
     <servers />
   </component>

@@ -1,18 +1,38 @@
 import React from "react";
 import Link from "next/link";
+import classNames from "classnames";
 
 interface ButtonProps {
   href?: string;
   onClick?: () => void;
   children: string;
-  variant: "primary" | "secondary" | "text";
+  variant?: "primary" | "secondary" | "text";
+  className?: string;
+  width: "max" | "full";
+  type?: "button" | "submit";
 }
 
-export const Button = ({ children, variant, href, onClick }: ButtonProps) => {
-  if (onClick) {
+export const Button = ({
+  children,
+  variant = "primary",
+  href,
+  onClick,
+  className,
+  width,
+  type,
+}: ButtonProps) => {
+  if (onClick || type) {
     return (
       <button
-        className="px-5 py-2.5 bg-palette-black text-white rounded-lg w-max w-max"
+        className={classNames(
+          "px-5 py-2.5 rounded-lg font-bold focus:outline-palette-yellow focus:outline-1 focus:outline-offset-4",
+          { "bg-palette-black text-white": variant === "primary" },
+          { "bg-palette-yellow text-palette-black hover:bg-palette-yellow-light": variant === "secondary" },
+          { "w-max": width === "max" },
+          { "w-full": width === "full" },
+          className
+        )}
+        type={type}
         onClick={onClick}
       >
         {children}
@@ -21,7 +41,17 @@ export const Button = ({ children, variant, href, onClick }: ButtonProps) => {
   }
 
   return (
-    <Link className="px-5 py-2.5 bg-palette-black text-white rounded-lg font-bold w-max" href={href || ""}>
+    <Link
+      className={classNames(
+        "px-5 py-2.5 rounded-lg font-bold focus:outline-palette-yellow focus:outline-1 focus:outline-offset-4",
+        { "bg-palette-black text-white": variant === "primary" },
+        { "bg-palette-yellow text-palette-black hover:bg-palette-yellow-light": variant === "secondary" },
+        { "w-max": width === "max" },
+        { "w-full": width === "full" },
+        className
+      )}
+      href={href || ""}
+    >
       {children}
     </Link>
   );
