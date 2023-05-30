@@ -9,18 +9,20 @@ export const Industries = () => {
 
       <ul className="w-full flex items-center gap-x-8 mt-12">
         <li className="h-[370px] flex flex-col justify-between w-full bg-palette-grey-200 rounded-xl pt-4">
-          <div className="h-max flex justify-center items-center">
-            <Image
-              src="/streaming.png"
-              height={200}
-              width={189}
-              alt="streaming & telecoms illustration"
-            />
-          </div>
-          <div className="flex flex-col justify-between p-5">
-            <h3 className="text-1.75 font-medium">Streaming & Telecoms</h3>
-            <Link href={Routes.Streaming}>See projects</Link>
-          </div>
+          <Link href={Routes.Streaming}>
+            <div className="h-max flex justify-center items-center">
+              <Image
+                src="/streaming.png"
+                height={200}
+                width={189}
+                alt="streaming & telecoms illustration"
+              />
+            </div>
+            <div className="flex flex-col justify-between p-5">
+              <h3 className="text-1.75 font-medium">Streaming & Telecoms</h3>
+              <p>See projects</p>
+            </div>
+          </Link>
         </li>
 
         <li className="h-[370px] w-full bg-palette-grey-200 rounded-xl pt-4">

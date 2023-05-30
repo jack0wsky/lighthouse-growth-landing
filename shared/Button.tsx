@@ -25,7 +25,7 @@ export const Button = ({
     return (
       <button
         className={classNames(
-          "px-5 py-2.5 rounded-lg font-bold focus:outline-palette-yellow focus:outline-1 focus:outline-offset-4",
+          "flex justify-center items-center px-5 py-2.5 rounded-lg font-bold focus:outline-palette-yellow focus:outline-1 focus:outline-offset-4",
           { "bg-palette-black text-white": variant === "primary" },
           { "bg-palette-yellow text-palette-black hover:bg-palette-yellow-light": variant === "secondary" },
           { "w-max": width === "max" },
@@ -43,7 +43,7 @@ export const Button = ({
   return (
     <Link
       className={classNames(
-        "px-5 py-2.5 rounded-lg font-bold focus:outline-palette-yellow focus:outline-1 focus:outline-offset-4",
+        "flex justify-center items-center px-5 py-2.5 rounded-lg font-bold focus:outline-palette-yellow focus:outline-1 focus:outline-offset-4",
         { "bg-palette-black text-white": variant === "primary" },
         { "bg-palette-yellow text-palette-black hover:bg-palette-yellow-light": variant === "secondary" },
         { "w-max": width === "max" },

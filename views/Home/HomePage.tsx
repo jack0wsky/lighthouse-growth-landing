@@ -1,4 +1,4 @@
-import { AboutUs, Hero, Industries } from "@/views/Home/Sections";
+import { AboutUs, Hero, Industries, Testimonials, ContactUs } from "@/views/Home/Sections";
 import { BurgerMenu } from "@/shared/BurgerMenu";
 
 export const HomePage = () => {
@@ -7,6 +7,8 @@ export const HomePage = () => {
       <Hero />
       <AboutUs />
       <Industries />
+      <Testimonials />
+      <ContactUs />
 
       <BurgerMenu />
     </>
