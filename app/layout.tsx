@@ -3,7 +3,6 @@ import "./globals.css";
 import localFont from "next/font/local";
 import { Header } from "@/shared";
 import classNames from "classnames";
-import { BurgerMenu } from "@/shared/BurgerMenu";
 
 const Satoshi = localFont({
   src: "./fonts/Satoshi.ttf",
