@@ -1,4 +1,5 @@
 import { offices, Office } from "@/views/Contact/offices";
+import Image from "next/image";
 
 interface OfficeProps {
   office: Office;
@@ -6,12 +7,16 @@ interface OfficeProps {
 const Office = ({ office }: OfficeProps) => {
   return (
     <li className="w-full flex flex-col">
-      <div className="w-full h-[300px] bg-palette-grey-600"></div>
+      <div className="w-full h-[300px] rounded-2xl overflow-hidden">
+        {!!office.mapUrl && (
+          <Image src={office.mapUrl} width={536} height={300} alt="map with marked location of office" />
+        )}
+      </div>
 
       <div className="mt-6">
         <h2 className="text-2xl font-bold">{office.label}</h2>
-        <p className='mt-3 font-normal'>{office.street}</p>
-        <p className='font-normal'>
+        <p className="mt-3 font-normal">{office.street}</p>
+        <p className="font-normal">
           {office.postalCode} {office.city}, {office.country}
         </p>
       </div>

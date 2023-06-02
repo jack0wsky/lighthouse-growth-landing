@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Routes } from "@/views/routes";
+import { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.css";
 
@@ -31,8 +32,13 @@ export const Industries = () => {
     <section className="layout pt-24 pb-14">
       <h2 className="text-h2">Industries</h2>
 
-      <div className='md:hidden mt-12'>
-        <Swiper spaceBetween={30} slidesPerView={1.5}>
+      <div className="md:hidden mt-12">
+        <Swiper
+          spaceBetween={30}
+          slidesPerView={1.5}
+          modules={[Autoplay]}
+          autoplay={{ delay: 1500 }}
+        >
           <SwiperSlide>
             <Industry
               name="Streaming & Telecoms"
