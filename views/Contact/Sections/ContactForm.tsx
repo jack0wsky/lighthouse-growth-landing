@@ -27,6 +27,7 @@ export const ContactForm = () => {
           dispatch({ type: "update-email", payload: target.value })
         }
         type="email"
+        inputMode='email'
         placeholder="We'd like to contact you"
       />
 
