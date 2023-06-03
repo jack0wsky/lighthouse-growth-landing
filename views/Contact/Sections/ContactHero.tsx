@@ -2,63 +2,7 @@
 
 import { AnimatedTitle } from "@/animations/AnimatedTitle";
 import { ContactForm } from "@/views/Contact/Sections/ContactForm";
-import { useSpring, animated, easings } from "@react-spring/web";
-
-const YellowPath = () => {
-  const props = useSpring({
-    delay: 800,
-    config: {
-      duration: 500,
-      easing: easings.easeInOutCirc,
-    },
-    from: { width: 0 },
-    to: { width: 119 },
-  });
-
-  return (
-    <svg
-      width="90"
-      height="90"
-      viewBox="0 0 90 90"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <animated.rect
-        style={props}
-        x="-3"
-        y="80.9241"
-        width="119"
-        height="17"
-        rx="8.5"
-        transform="rotate(-44.8493 -3 80.9241)"
-        fill="#F2C524"
-      />
-    </svg>
-  );
-};
-
-const HorizontalYellowPath = () => {
-  const props = useSpring({
-    delay: 500,
-    config: {
-      duration: 600,
-    },
-    from: { width: 0 },
-    to: { width: 119 },
-  });
-
-  return (
-    <svg
-      width="119"
-      height="17"
-      viewBox="0 0 119 17"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <animated.rect style={props} height="17" rx="8.5" fill="#F2C524" />
-    </svg>
-  );
-};
+import { HorizontalYellowPath, YellowPath } from "@/shared/strokes";
 
 export const ContactHero = () => {
   return (
