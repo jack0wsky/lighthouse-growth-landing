@@ -26,12 +26,14 @@ export const ProjectTemplate = ({
 
         <div className="w-full md:w-1/2 mt-16 md:mt-0">
           <p className="font-bold text-xl">Scope</p>
-          <ul className="flex items-center gap-x-6 mt-4">
-            {technologies.map((Technology, index) => {
-              return <li key={index}>{<Technology />}</li>;
-            })}
-          </ul>
-          <p className="mt-8">{scope}</p>
+          {technologies.length > 0 && (
+            <ul className="flex items-center gap-x-6 mt-4 mb-8">
+              {technologies.map((Technology, index) => {
+                return <li key={index}>{<Technology />}</li>;
+              })}
+            </ul>
+          )}
+          <p>{scope}</p>
         </div>
       </div>
 

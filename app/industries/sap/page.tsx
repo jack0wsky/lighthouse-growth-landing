@@ -1,3 +1,8 @@
+'use client'
+
+import { IndustryTemplate } from "@/views/Industry/IndustryTemplate";
+import { sapProjects } from "@/views/Industry/sap-projects";
+
 export default function Sap() {
-  return <main>sap</main>;
+  return <IndustryTemplate title="ERP / SAP" projects={sapProjects} />;
 }

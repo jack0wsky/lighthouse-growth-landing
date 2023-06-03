@@ -19,6 +19,6 @@ This new partnership is a crucial step towards enhancing the organization's paym
       "Client required new features and as result required new payment system. Were looking for a partner with both consulting and development experience. ",
     technologies: [],
     result: `We are rewriting the old solution into a new one from scratch. The project is stable and the workflow is planned for the next 2 years, therefore it is important to ensure sustainability of the team composition. The technology Java 17, Angular 13, Typescript, Hibernate, Spring Boot, Spring Cloud, Docker, Rabbit, AWS cloud technologies`,
-    aboutClient: "",
+    aboutClient: "European event management and sales SAAS platform",
   },
 ];

@@ -1,11 +1,8 @@
-import { IconProps } from "@/shared/icons/IconProps";
-
-export const ReactIcon = ({ className }: IconProps) => {
+export const ReactIcon = () => {
   return (
     <svg
       width="48"
       height="42"
-      className={className}
       viewBox="0 0 48 42"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

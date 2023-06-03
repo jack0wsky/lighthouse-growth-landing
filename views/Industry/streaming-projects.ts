@@ -1,4 +1,4 @@
-import { Sap } from "@/shared/icons/technologies";
+import { Sap, Roku, ReactIcon, IOSIcon} from "@/shared/icons/technologies";
 import { Project } from "@/views/Industry/types";
 
 export const streamingProjects: Project[] = [
@@ -28,5 +28,15 @@ export const streamingProjects: Project[] = [
     technologies: [],
     result:
       "Supported Swedish streaming platform in implementation and customization of their product to match required UX and CI. Ensured quality by rigorous app testing on different devices, CTVs. ",
+  },
+  {
+    title: "Support Swedish streaming platform in their product development",
+    aboutClient:
+      "Swedish streaming platform powers leading  broadcasters and enables them to provide world-class video services to their customers. Client works with global industry leaders - such as Deutsche Telekom, NBC Universal, ITV, Globo, Hallmark, Bloomberg.",
+    scope:
+      "Leading front end architecture development R&D project, done  predominantly in React and Javascript. Support testing initiatives, including display on multiple devices. Technologies used: React, Javascript, Roku, iOS.",
+    result:
+      "Playing a key role in development of client product's front-end architecture and further drive user experience. ",
+    technologies: [ReactIcon, Roku, IOSIcon],
   },
 ];

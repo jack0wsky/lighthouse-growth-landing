@@ -5,3 +5,5 @@ export * from "./Roku";
 export * from "./Java";
 export * from "./DotNet";
 export * from "./Sap";
+export * from "./iOSIcon";
+export * from "./Androidicon";

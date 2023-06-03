@@ -6,6 +6,8 @@ import {
   Java,
   DotNet,
   Sap,
+  IOSIcon,
+  AndroidIcon,
 } from "@/shared/icons/technologies";
 
 export const Technologies = () => {
@@ -21,6 +23,12 @@ export const Technologies = () => {
         </li>
         <li>
           <VueIcon />
+        </li>
+        <li>
+          <IOSIcon />
+        </li>
+        <li>
+          <AndroidIcon />
         </li>
         <li>
           <Roku />

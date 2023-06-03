@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/shared";
+import { Routes } from "@/views/routes";
 
 const ContactContainer = () => {
   return (
@@ -19,7 +20,7 @@ const ContactContainer = () => {
         </div>
       </div>
 
-      <Button width="full" variant="secondary">
+      <Button width="full" variant="secondary" href={Routes.Contact}>
         Let's talk
       </Button>
     </div>
