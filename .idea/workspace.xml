@@ -6,13 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="823b8eb7-99d3-4e76-a404-54dae17d0665" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/industries/ecommerce/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/industries/ecommerce/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/industries/logistics/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/industries/logistics/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/industries/sap/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/industries/sap/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/industries/streaming/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/industries/streaming/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/BurgerMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/shared/BurgerMenu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Home/Sections/Technologies.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/views/Home/Sections/Technologies.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Industry/IndustryTemplate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/views/Industry/IndustryTemplate.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Home/Sections/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/views/Home/Sections/Hero.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +70,7 @@
       <workItem from="1685467093112" duration="5638000" />
       <workItem from="1685637498585" duration="4965000" />
       <workItem from="1685724123264" duration="7450000" />
-      <workItem from="1685780542094" duration="13267000" />
+      <workItem from="1685780542094" duration="13790000" />
     </task>
     <servers />
   </component>

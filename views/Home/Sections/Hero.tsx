@@ -5,7 +5,7 @@ import {Routes} from "@/views/routes";
 
 export const Hero = () => {
   return (
-    <section className="layout flex justify-between items-center h-[75vh] relative">
+    <section className="layout flex justify-between items-center h-[85vh] relative">
       <div className="flex flex-col w-full md:w-3/5">
         <h1 className="text-h1">
           <AnimatedTitle>
