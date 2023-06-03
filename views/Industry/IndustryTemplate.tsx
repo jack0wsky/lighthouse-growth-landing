@@ -5,7 +5,7 @@ import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
 import { Controller, Navigation } from "swiper";
 import { ProjectTemplate } from "@/views/Industry/ProjectTemplate";
 import { BurgerMenu } from "@/shared/BurgerMenu";
-import { useEffect, useRef, useState } from "react";
+import React, { useState, ReactNode } from "react";
 import { Project } from "@/views/Industry/types";
 import "swiper/swiper.css";
 import classNames from "classnames";
@@ -13,11 +13,13 @@ import classNames from "classnames";
 interface IndustriesTemplateProps {
   title: string;
   projects: Project[];
+  illustration: ReactNode;
 }
 
 export const IndustryTemplate = ({
   title,
   projects,
+  illustration,
 }: IndustriesTemplateProps) => {
   const [swiperRef, setSwiperRef] = useState<SwiperClass | null>(null);
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -26,7 +28,14 @@ export const IndustryTemplate = ({
     <>
       <main className="layout">
         <div className="mt-32 mb-32">
-          <h1 className="text-h1">{title}</h1>
+          <div className="md:h-[50vh] md:bg-palette-grey-200 flex items-center justify-between overflow-hidden rounded-xl md:pl-20">
+            <h1
+              className="text-h1"
+              dangerouslySetInnerHTML={{ __html: title }}
+            />
+
+            {illustration}
+          </div>
 
           <div className="flex items-center justify-between mt-20">
             <h2 className="text-h2 font-medium">Projects</h2>

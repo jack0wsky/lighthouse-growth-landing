@@ -14,7 +14,7 @@ export const Technologies = () => {
   return (
     <div className="mt-[100px]">
       <h3 className="text-2xl font-bold">Technologies we use</h3>
-      <ul className="w-full flex flex-wrap justify-between items-center gap-y-6 gap-x-10 mt-10">
+      <ul className="w-full flex flex-wrap justify-start md:justify-between items-center gap-y-6 gap-x-10 mt-10">
         <li>
           <ReactIcon />
         </li>

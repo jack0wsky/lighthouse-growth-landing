@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Menu, ArrowDown, XIcon } from "@/shared/icons";
 import { Routes } from "@/views/routes";
 import classNames from "classnames";
@@ -15,17 +16,17 @@ const IndustriesSubmenu = () => {
         </Link>
       </li>
       <li>
-        <Link className="text-2xl text-white" href={Routes.Streaming}>
+        <Link className="text-2xl text-white" href={Routes.Ecommerce}>
           eCommerce
         </Link>
       </li>
       <li>
-        <Link className="text-2xl text-white" href={Routes.Streaming}>
+        <Link className="text-2xl text-white" href={Routes.Logistics}>
           Logistics
         </Link>
       </li>
       <li>
-        <Link className="text-2xl text-white" href={Routes.Streaming}>
+        <Link className="text-2xl text-white" href={Routes.Sap}>
           ERP / SAP
         </Link>
       </li>
@@ -34,8 +35,13 @@ const IndustriesSubmenu = () => {
 };
 
 export const BurgerMenu = () => {
+  const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [expandIndustries, setExpandIndustries] = useState(false);
+
+  useEffect(() => {
+    if (pathname.includes("/industries")) setExpandIndustries(true);
+  }, [pathname]);
 
   return (
     <div className="block md:hidden w-full fixed bottom-0 h-12 z-50">
