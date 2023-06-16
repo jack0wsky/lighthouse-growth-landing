@@ -6,27 +6,49 @@ import { usePathname } from "next/navigation";
 import { Menu, ArrowDown, XIcon } from "@/shared/icons";
 import { Routes } from "@/views/routes";
 import classNames from "classnames";
+import { useCurrentRoute } from "@/shared/utils";
 
 const IndustriesSubmenu = () => {
+  const pathname = usePathname();
   return (
     <ul className="ml-4 mb-3">
       <li>
-        <Link className="text-2xl text-white" href={Routes.Streaming}>
+        <Link
+          className={classNames("text-2xl text-white", {
+            underline: pathname === Routes.Streaming,
+          })}
+          href={Routes.Streaming}
+        >
           Streaming & Telecoms
         </Link>
       </li>
       <li>
-        <Link className="text-2xl text-white" href={Routes.Ecommerce}>
+        <Link
+          className={classNames("text-2xl text-white", {
+            underline: pathname === Routes.Ecommerce,
+          })}
+          href={Routes.Ecommerce}
+        >
           eCommerce
         </Link>
       </li>
       <li>
-        <Link className="text-2xl text-white" href={Routes.Logistics}>
+        <Link
+          className={classNames("text-2xl text-white", {
+            underline: pathname === Routes.Logistics,
+          })}
+          href={Routes.Logistics}
+        >
           Logistics
         </Link>
       </li>
       <li>
-        <Link className="text-2xl text-white" href={Routes.Sap}>
+        <Link
+          className={classNames("text-2xl text-white", {
+            underline: pathname === Routes.Sap,
+          })}
+          href={Routes.Sap}
+        >
           ERP / SAP
         </Link>
       </li>

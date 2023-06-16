@@ -16,9 +16,10 @@ This new partnership is a crucial step towards enhancing the organization's paym
   {
     title: "European event management and sales SAAS platform",
     scope:
-      "Client required new features and as result required new payment system. Were looking for a partner with both consulting and development experience. ",
+      "Client required new features and as a result, required the new payment system",
     technologies: [],
-    result: `We are rewriting the old solution into a new one from scratch. The project is stable and the workflow is planned for the next 2 years, therefore it is important to ensure sustainability of the team composition. The technology Java 17, Angular 13, Typescript, Hibernate, Spring Boot, Spring Cloud, Docker, Rabbit, AWS cloud technologies`,
-    aboutClient: "European event management and sales SAAS platform",
+    result: `We are rewriting the old solution into a new one from scratch, adding new features to reach business goals. The technology Java 17, Angular 13, Typescript, Hibernate, Spring Boot, Spring Cloud, Docker, Rabbit, AWS cloud technologies.`,
+    aboutClient:
+      "Event management and sales SAAS platform that enables event organizers to sell event tickets online and on-site on an international scale and level. It’s a complex, challenging and micro-services architecture-based project. The system enables organizers to manage events, sales, venues, tickets and reporting.",
   },
 ];

@@ -7,3 +7,4 @@ export * from "./DotNet";
 export * from "./Sap";
 export * from "./iOSIcon";
 export * from "./Androidicon";
+export * from "./SpartacusIcon";

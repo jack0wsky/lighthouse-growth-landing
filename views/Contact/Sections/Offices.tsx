@@ -7,9 +7,9 @@ interface OfficeProps {
 const Office = ({ office }: OfficeProps) => {
   return (
     <li className="w-full flex flex-col">
-      <div className="w-full h-[300px] rounded-2xl overflow-hidden">
-        {!!office.mapUrl && (
-          <Image src={office.mapUrl} width={536} height={300} alt="map with marked location of office" />
+      <div className="w-full h-[280px] rounded-2xl overflow-hidden">
+        {!!office.image && (
+          <Image src={office.image} width={600} height={600} alt="map with marked location of office" />
         )}
       </div>
 

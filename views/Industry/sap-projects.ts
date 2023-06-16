@@ -1,4 +1,4 @@
-import { Sap } from "@/shared/icons/technologies";
+import { Sap, SpartacusIcon } from "@/shared/icons/technologies";
 import { Project } from "@/views/Industry/types";
 
 export const sapProjects: Project[] = [
@@ -10,6 +10,6 @@ export const sapProjects: Project[] = [
       "Lighthouse works together with local Finnish partner on this complex project, leading on the front end architecture redesign. Existing solution was inefficient and not internally consistent with company identification.  Challenge was the broad scope of the project, including different brands and countries. Security and compliance working with listed company is ensured.",
     result:
       "Redesign and development of new intergrated platform is done in using latest technology - including new SAP Commerce Framework - Spartacus 6.0.",
-    technologies: [Sap],
+    technologies: [Sap, SpartacusIcon],
   },
 ];

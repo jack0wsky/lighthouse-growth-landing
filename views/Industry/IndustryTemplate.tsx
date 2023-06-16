@@ -10,6 +10,48 @@ import { Project } from "@/views/Industry/types";
 import "swiper/swiper.css";
 import classNames from "classnames";
 
+interface SliderNavigationProps {
+  swiperRef: SwiperClass;
+  currentSlide: number;
+  items: any[];
+}
+
+const SliderNavigation = ({
+  swiperRef,
+  currentSlide,
+  items,
+}: SliderNavigationProps) => {
+  return (
+    <div className="flex items-center gap-x-4">
+      <button
+        className="w-12 h-12 rounded-full bg-palette-black flex justify-center items-center disabled:bg-gray-300"
+        disabled={currentSlide === 0}
+        onClick={() => swiperRef.slidePrev()}
+      >
+        <ArrowLeft className="text-white text-xl" />
+      </button>
+      <div className="flex items-center gap-x-1.5">
+        {items.map((_, index) => (
+          <div
+            key={index}
+            className={classNames("h-2.5 w-2.5 bg-black rounded-full", {
+              "opacity-100": index === currentSlide,
+              "opacity-20": index !== currentSlide,
+            })}
+          />
+        ))}
+      </div>
+      <button
+        className="w-12 h-12 rounded-full bg-palette-black flex justify-center items-center disabled:bg-gray-300"
+        disabled={currentSlide === items.length - 1}
+        onClick={() => swiperRef?.slideNext()}
+      >
+        <ArrowRight className="text-white text-xl" />
+      </button>
+    </div>
+  );
+};
+
 interface IndustriesTemplateProps {
   title: string;
   projects: Project[];
@@ -39,35 +81,12 @@ export const IndustryTemplate = ({
 
           <div className="flex items-center justify-between mt-20">
             <h2 className="text-h2 font-medium">Projects</h2>
-            {projects.length > 1 && (
-              <div className="flex items-center gap-x-4">
-                <button
-                  className="w-10 h-10 rounded-full bg-palette-black flex justify-center items-center"
-                  onClick={() => swiperRef?.slidePrev()}
-                >
-                  <ArrowLeft className="text-white text-xl" />
-                </button>
-                <div className="flex items-center gap-x-1.5">
-                  {projects.map((_, index) => (
-                    <div
-                      key={index}
-                      className={classNames(
-                        "h-2.5 w-2.5 bg-black rounded-full",
-                        {
-                          "opacity-100": index === currentSlide,
-                          "opacity-20": index !== currentSlide,
-                        }
-                      )}
-                    />
-                  ))}
-                </div>
-                <button
-                  className="w-10 h-10 rounded-full bg-palette-black flex justify-center items-center"
-                  onClick={() => swiperRef?.slideNext()}
-                >
-                  <ArrowRight className="text-white text-xl" />
-                </button>
-              </div>
+            {projects.length > 1 && !!swiperRef && (
+              <SliderNavigation
+                swiperRef={swiperRef}
+                currentSlide={currentSlide}
+                items={projects}
+              />
             )}
           </div>
 
@@ -81,13 +100,11 @@ export const IndustryTemplate = ({
               setCurrentSlide(swiper.realIndex);
             }}
           >
-            {projects.map((project, index) => {
-              return (
-                <SwiperSlide key={index}>
-                  <ProjectTemplate {...project} />
-                </SwiperSlide>
-              );
-            })}
+            {projects.map((project, index) => (
+              <SwiperSlide key={index}>
+                <ProjectTemplate {...project} />
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </main>
