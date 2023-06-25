@@ -5,10 +5,14 @@ import Link from "next/link";
 import { openPositions } from "@/views/Careers/open-positions";
 import { BurgerMenu } from "@/shared/BurgerMenu";
 import { ArrowLeft } from "@/shared/icons";
-import { Routes } from "@/views/routes";
+import { Routes, useNavigation } from "@/views/routes";
+import { useCareersDictionary } from "@/views/Careers/dictionaries/useCareersDictionary";
 
 export default function OpenPosition() {
   const params = useParams();
+
+  const { back } = useCareersDictionary();
+  const { navigateTo } = useNavigation();
 
   const job = openPositions.find((position) => position.slug === params.id);
 
@@ -18,8 +22,8 @@ export default function OpenPosition() {
     <>
       <main className="w-full mt-40 flex flex-col items-center">
         <section className="layout w-full mb-20">
-          <Link href={Routes.Careers} className="flex items-center gap-x-2">
-            <ArrowLeft className="w-4 h-4" /> Back to careers
+          <Link href={navigateTo(Routes.Careers)} className="flex items-center gap-x-2">
+            <ArrowLeft className="w-4 h-4" /> {back}
           </Link>
 
           <h1 className="text-h2 mt-12">{job.name}</h1>

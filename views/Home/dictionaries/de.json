@@ -1,0 +1,35 @@
+{
+  "hero": {
+    "title": [
+      "Wo das Verständnis",
+      "des Kunden auf technische",
+      "Exzellenz trifft"
+    ],
+    "subtitle": "Lighthouse Growth ist eine in Polen ansässige Produktentwicklungsagentur mit einem eigenen Engineering-Team und einem starken Netzwerk in der Branche.",
+    "cta": "Lass uns sprechen"
+  },
+  "aboutUs": {
+    "title": "Wer wir sind",
+    "descriptions": [
+      "Wir bieten sowohl Produktentwicklung als auch Mitarbeitererweiterung als flexible Option an, um unsere Berater einzusetzen und Ihr Kernteam zu erweitern sowie Ihre Projekte zu beschleunigen.",
+      "Wir bieten Zugang zu einem großen Pool von IT-Ingenieuren in Polen, wo Branchengrößen wie Intel, Box, Microsoft, Google und NVIDIA ihre Forschungs- und Entwicklungszentren haben.",
+      "Option, ein vollständiges Team oder eine Ingenieursabteilung Ihres Unternehmens einzurichten, einschließlich dauerhafter Rekrutierungsunterstützung mit einer Garantie von 3 Monaten."
+    ],
+    "cta": "Sagen Sie uns Ihre Bedürfnisse"
+  },
+  "technologies": {
+    "title": "Die von uns verwendeten Technologien"
+  },
+  "industries": {
+    "title": "Branchen",
+    "cta": "Projekte anzeigen"
+  },
+  "testimonials": {
+    "title": "Die Gedanken<br />unserer Kunden."
+  },
+  "contact": {
+    "title": "Lassen Sie uns<br />etwas Cooles aufbauen.",
+    "cta": "Lassen Sie uns sprechen",
+    "position": "COO in der Lighthouse Growth"
+  }
+}

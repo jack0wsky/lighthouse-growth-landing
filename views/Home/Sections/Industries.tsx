@@ -5,6 +5,10 @@ import { Routes } from "@/views/routes";
 import { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.css";
+import { useParams } from "next/navigation";
+import { useHomeDictionary } from "@/views/Home/dictionaries/useHomeDictionary";
+import { Languages } from "@/shared/dictionaries/languages";
+import { useHeaderDictionary } from "@/shared/dictionaries/useHeaderDictionary";
 
 interface IndustryProps {
   name: string;
@@ -12,6 +16,8 @@ interface IndustryProps {
   illustration: ReactNode;
 }
 const Industry = ({ name, href, illustration }: IndustryProps) => {
+  const { industries } = useHomeDictionary();
+
   return (
     <li className="h-[370px] list-none w-full bg-palette-grey-200 rounded-xl pt-4">
       <Link href={href} className="w-full h-full flex flex-col justify-between">
@@ -20,7 +26,7 @@ const Industry = ({ name, href, illustration }: IndustryProps) => {
         </div>
         <div className="flex flex-col justify-between p-5">
           <h3 className="text-1.75 font-medium">{name}</h3>
-          <p>See projects</p>
+          <p>{industries.cta}</p>
         </div>
       </Link>
     </li>
@@ -28,9 +34,12 @@ const Industry = ({ name, href, illustration }: IndustryProps) => {
 };
 
 export const Industries = () => {
+  const { industries } = useHomeDictionary();
+  const { industries: industriesList } = useHeaderDictionary();
+
   return (
     <section className="layout pt-24 pb-14">
-      <h2 className="text-h2">Industries</h2>
+      <h2 className="text-h2">{industries.title}</h2>
 
       <div className="md:hidden mt-12">
         <Swiper
@@ -41,7 +50,7 @@ export const Industries = () => {
         >
           <SwiperSlide>
             <Industry
-              name="Streaming & Telecoms"
+              name={industriesList.streaming}
               href={Routes.Streaming}
               illustration={
                 <Image
@@ -56,7 +65,7 @@ export const Industries = () => {
 
           <SwiperSlide>
             <Industry
-              name="eCommerce"
+              name={industriesList.ecommerce}
               href={Routes.Ecommerce}
               illustration={
                 <Image
@@ -71,7 +80,7 @@ export const Industries = () => {
 
           <SwiperSlide>
             <Industry
-              name="Logistics"
+              name={industriesList.logistics}
               href={Routes.Logistics}
               illustration={
                 <Image
@@ -86,7 +95,7 @@ export const Industries = () => {
 
           <SwiperSlide>
             <Industry
-              name="ERP / SAP"
+              name={industriesList.erpSap}
               href={Routes.Sap}
               illustration={
                 <Image
@@ -103,7 +112,7 @@ export const Industries = () => {
 
       <ul className="w-full hidden md:flex items-center gap-x-8 mt-12">
         <Industry
-          name="Streaming & Telecoms"
+          name={industriesList.streaming}
           href={Routes.Streaming}
           illustration={
             <Image
@@ -116,7 +125,7 @@ export const Industries = () => {
         />
 
         <Industry
-          name="eCommerce"
+          name={industriesList.ecommerce}
           href={Routes.Ecommerce}
           illustration={
             <Image
@@ -129,7 +138,7 @@ export const Industries = () => {
         />
 
         <Industry
-          name="Logistics"
+          name={industriesList.logistics}
           href={Routes.Logistics}
           illustration={
             <Image
@@ -142,7 +151,7 @@ export const Industries = () => {
         />
 
         <Industry
-          name="ERP / SAP"
+          name={industriesList.erpSap}
           href={Routes.Sap}
           illustration={
             <Image

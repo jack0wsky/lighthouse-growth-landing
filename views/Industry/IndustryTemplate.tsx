@@ -9,6 +9,7 @@ import React, { useState, ReactNode } from "react";
 import { Project } from "@/views/Industry/types";
 import "swiper/swiper.css";
 import classNames from "classnames";
+import { useIndustryDictionary } from "@/views/Industry/dictionaries/useIndustryDictionary";
 
 interface SliderNavigationProps {
   swiperRef: SwiperClass;
@@ -66,6 +67,8 @@ export const IndustryTemplate = ({
   const [swiperRef, setSwiperRef] = useState<SwiperClass | null>(null);
   const [currentSlide, setCurrentSlide] = useState(0);
 
+  const { projectsTitle } = useIndustryDictionary();
+
   return (
     <>
       <main className="layout">
@@ -80,7 +83,7 @@ export const IndustryTemplate = ({
           </div>
 
           <div className="flex items-center justify-between mt-20">
-            <h2 className="text-h2 font-medium">Projects</h2>
+            <h2 className="text-h2 font-medium">{projectsTitle}</h2>
             {projects.length > 1 && !!swiperRef && (
               <SliderNavigation
                 swiperRef={swiperRef}

@@ -9,7 +9,7 @@ export interface Office {
 
 export const offices: Office[] = [
   {
-    label: "Main office in Gdańsk",
+    label: "gdansk",
     city: "Gdańsk",
     street: "al. Grunwaldzka 472B, Office O4.",
     image: "/main-office.webp",
@@ -17,7 +17,7 @@ export const offices: Office[] = [
     country: "Poland",
   },
   {
-    label: "Office in Warsaw",
+    label: "warsaw",
     city: "Warsaw",
     country: "Poland",
     image: '/warsaw-office.png',

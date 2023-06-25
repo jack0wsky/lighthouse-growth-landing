@@ -2,38 +2,41 @@ import { Input } from "@/shared/Input";
 import { useContactForm } from "@/views/Contact/useContactForm";
 import { Button } from "@/shared";
 import { Checkbox } from "@/shared/Checkbox";
+import { useContactDictionary } from "@/views/Contact/dictionaries/useContactDictionary";
 
 export const ContactForm = () => {
   const { values, dispatch } = useContactForm();
 
+  const { form } = useContactDictionary();
+
   return (
     <form className="bg-palette-black max-w-[400px] w-full p-6 rounded-2xl">
       <Input
-        label="Your name"
+        label={form.name.label}
         value={values.name}
         onChange={({ target }) =>
           dispatch({ type: "update-name", payload: target.value })
         }
         required
         type="text"
-        placeholder="How should we call you?"
+        placeholder={form.name.placeholder}
         className="mb-4"
       />
       <Input
-        label="Your email"
+        label={form.email.label}
         value={values.email}
         required
         onChange={({ target }) =>
           dispatch({ type: "update-email", payload: target.value })
         }
         type="email"
-        inputMode='email'
-        placeholder="We'd like to contact you"
+        inputMode="email"
+        placeholder={form.email.placeholder}
       />
 
       <div className="mt-7">
         <p className="text-white text-sm opacity-80 ml-4 mb-1">
-          Do you need NDA?
+          {form.nda.label}
         </p>
         <div className="flex items-center bg-palette-grey-600 p-1 rounded-lg">
           <button
@@ -41,7 +44,7 @@ export const ContactForm = () => {
             onClick={() => dispatch({ type: "set-nda", payload: true })}
             className="w-full h-8 flex items-center justify-center text-white disabled:bg-palette-black rounded"
           >
-            Yes
+            {form.nda.yes}
           </button>
           <button
             disabled={!values.needNDA}
@@ -50,20 +53,20 @@ export const ContactForm = () => {
               "w-full h-8 flex items-center justify-center text-white disabled:bg-palette-black rounded"
             }
           >
-            No
+            {form.nda.no}
           </button>
         </div>
 
         <label>
           <p className="text-white text-sm opacity-80 ml-4 mb-1 mt-5">
-            Your question
+            {form.message.label}
           </p>
           <textarea
             value={values.message}
             onChange={({ target }) =>
               dispatch({ type: "update-message", payload: target.value })
             }
-            placeholder="What do you need?"
+            placeholder={form.message.placeholder}
             className="bg-palette-grey-600 w-full h-40 rounded-lg px-4 py-2.5 focus:outline-palette-grey-400 focus:outline-1 focus:outline-offset-2"
           />
         </label>
@@ -74,12 +77,12 @@ export const ContactForm = () => {
         onChange={({ target }) => {
           dispatch({ type: "set-privacy-consent", payload: target.checked });
         }}
-        label="I agree to receive marketing communication from Lighthouse."
-        className='my-6'
+        label={form.consent}
+        className="my-6"
       />
 
       <Button type="submit" variant="secondary" width="full">
-        Send message
+        {form.cta}
       </Button>
     </form>
   );

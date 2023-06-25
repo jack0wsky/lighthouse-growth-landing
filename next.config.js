@@ -6,6 +6,11 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: "/",
+        destination: "/en",
+        permanent: false,
+      },
+      {
         source: "/industries",
         destination: "/industries/streaming",
         permanent: false,

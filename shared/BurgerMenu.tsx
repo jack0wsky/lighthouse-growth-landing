@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { Menu, ArrowDown, XIcon } from "@/shared/icons";
 import { Routes } from "@/views/routes";
 import classNames from "classnames";
-import { useCurrentRoute } from "@/shared/utils";
+import { useHeaderDictionary } from "@/shared/dictionaries/useHeaderDictionary";
 
 const IndustriesSubmenu = () => {
   const pathname = usePathname();
@@ -58,6 +58,7 @@ const IndustriesSubmenu = () => {
 
 export const BurgerMenu = () => {
   const pathname = usePathname();
+  const { mainNavigation } = useHeaderDictionary();
   const [open, setOpen] = useState(false);
   const [expandIndustries, setExpandIndustries] = useState(false);
 
@@ -74,7 +75,7 @@ export const BurgerMenu = () => {
               className="text-3xl text-white leading-10"
               href={Routes.Industries}
             >
-              Industries
+              {mainNavigation.industries}
             </Link>
             <button
               className="w-full"
@@ -89,19 +90,19 @@ export const BurgerMenu = () => {
           </li>
           {expandIndustries && <IndustriesSubmenu />}
           <Link className="text-3xl text-white leading-10" href={Routes.Values}>
-            Values
+            {mainNavigation.values}
           </Link>
           <Link
             className="text-3xl text-white leading-10"
             href={Routes.Careers}
           >
-            Careers
+            {mainNavigation.careers}
           </Link>
           <Link
             className="text-3xl text-white leading-10"
             href={Routes.Contact}
           >
-            Contact
+            {mainNavigation.contact}
           </Link>
         </ul>
       )}

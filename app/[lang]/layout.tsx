@@ -1,8 +1,10 @@
 import { PropsWithChildren } from "react";
-import "./globals.css";
+import "../globals.css";
 import localFont from "next/font/local";
 import { Header } from "@/shared";
 import classNames from "classnames";
+import { Languages } from "@/shared/dictionaries/languages";
+import { PreferredLanguageWrapper } from "@/shared/utils/PreferedLanguage.context";
 
 const Satoshi = localFont({
   src: "./fonts/Satoshi.ttf",
@@ -14,13 +16,18 @@ export const metadata = {
   description: "We are a software house",
 };
 
-export default function RootLayout({ children }: PropsWithChildren) {
+export default function RootLayout({
+  children,
+  params,
+}: PropsWithChildren<{ params: { lang: Languages } }>) {
   return (
-    <html lang="en">
+    <html lang={params.lang}>
       <body className={classNames(Satoshi.className, "bg-white")}>
         <main className="min-h-screen flex flex-col items-center relative">
-          <Header />
-          {children}
+          <PreferredLanguageWrapper>
+            <Header />
+            {children}
+          </PreferredLanguageWrapper>
         </main>
       </body>
     </html>

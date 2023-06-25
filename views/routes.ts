@@ -1,3 +1,5 @@
+import { usePreferredLanguageContext } from "@/shared/utils/PreferedLanguage.context";
+
 export enum Routes {
   Home = "/",
   Industries = "/industries",
@@ -9,3 +11,13 @@ export enum Routes {
   Careers = "/careers",
   Contact = "/contact",
 }
+
+export const useNavigation = () => {
+  const { language } = usePreferredLanguageContext();
+
+  const navigateTo = (route: Routes | string) => {
+    return `/${language}/${route}`;
+  };
+
+  return { navigateTo };
+};

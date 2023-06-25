@@ -1,0 +1,31 @@
+{
+  "title": "Kontaktieren Sie uns",
+  "officesSection": {
+    "title": "Unsere Büros",
+    "cities": {
+      "gdansk": "Hauptbüro in Gdańsk",
+      "warsaw": "Büro in Warschau"
+    }
+  },
+  "form": {
+    "name": {
+      "label": "Dein name",
+      "placeholder": "Wie sollen wir Sie nennen?"
+    },
+    "email": {
+      "label": "Dein email",
+      "placeholder": "Wir möchten Sie kontaktieren"
+    },
+    "nda": {
+      "label": "Benötigen Sie eine Geheimhaltungsvereinbarung?",
+      "yes": "Ja",
+      "no": "Nein"
+    },
+    "message": {
+      "label": "Ihre Frage",
+      "placeholder": "Was benötigen Sie?"
+    },
+    "cta": "Nachricht senden",
+    "consent": "Ich stimme zu, Marketingkommunikation von Lighthouse zu erhalten"
+  }
+}

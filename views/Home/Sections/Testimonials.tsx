@@ -1,3 +1,5 @@
+import { useHomeDictionary } from "@/views/Home/dictionaries/useHomeDictionary";
+
 interface TestimonialProps {
   content: any;
   position: string;
@@ -8,7 +10,7 @@ const Testimonial = ({ content, author, position }: TestimonialProps) => {
     <li className="w-full md:min-h-[300px] p-5 rounded-xl bg-palette-grey-200 flex flex-col justify-between">
       {content}
 
-      <div className='mt-6 md:mt-0'>
+      <div className="mt-6 md:mt-0">
         <p className="font-medium text-palette-black">{author}</p>
         <p className="text-palette-grey-300">{position}</p>
       </div>
@@ -16,13 +18,14 @@ const Testimonial = ({ content, author, position }: TestimonialProps) => {
   );
 };
 export const Testimonials = () => {
+  const { testimonials } = useHomeDictionary();
+
   return (
     <section className="layout pb-24 mt-14">
-      <h2 className="text-h2">
-        Our clients'
-        <br />
-        thoughts
-      </h2>
+      <h2
+        className="text-h2"
+        dangerouslySetInnerHTML={{ __html: testimonials.title }}
+      />
 
       <ul className="mt-12 flex flex-col md:flex-row items-center gap-5">
         <Testimonial
