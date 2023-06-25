@@ -16,6 +16,8 @@ interface DictionaryModel {
     logistics: string;
     erpSap: string;
   };
+  openMenu: string
+  closeMenu: string
 }
 
 const dictionaries: Record<Languages, DictionaryModel> = {

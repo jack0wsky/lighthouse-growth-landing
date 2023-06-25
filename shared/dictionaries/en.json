@@ -10,5 +10,7 @@
     "ecommerce": "eCommerce",
     "logistics": "Logistics",
     "erpSap": "ERP / SAP"
-  }
+  },
+  "openMenu": "Menu",
+  "closeMenu": "Close"
 }

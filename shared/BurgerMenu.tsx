@@ -3,53 +3,56 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, ArrowDown, XIcon } from "@/shared/icons";
-import { Routes } from "@/views/routes";
 import classNames from "classnames";
+import { Menu, ArrowDown, XIcon } from "@/shared/icons";
+import { Routes, useNavigation } from "@/views/routes";
 import { useHeaderDictionary } from "@/shared/dictionaries/useHeaderDictionary";
 
 const IndustriesSubmenu = () => {
   const pathname = usePathname();
+  const { industries } = useHeaderDictionary();
+  const { navigateTo } = useNavigation();
+
   return (
     <ul className="ml-4 mb-3">
       <li>
         <Link
           className={classNames("text-2xl text-white", {
-            underline: pathname === Routes.Streaming,
+            underline: pathname === navigateTo(Routes.Streaming),
           })}
-          href={Routes.Streaming}
+          href={navigateTo(Routes.Streaming)}
         >
-          Streaming & Telecoms
+          {industries.streaming}
         </Link>
       </li>
       <li>
         <Link
           className={classNames("text-2xl text-white", {
-            underline: pathname === Routes.Ecommerce,
+            underline: pathname === navigateTo(Routes.Ecommerce),
           })}
-          href={Routes.Ecommerce}
+          href={navigateTo(Routes.Ecommerce)}
         >
-          eCommerce
+          {industries.ecommerce}
         </Link>
       </li>
       <li>
         <Link
           className={classNames("text-2xl text-white", {
-            underline: pathname === Routes.Logistics,
+            underline: pathname === navigateTo(Routes.Logistics),
           })}
-          href={Routes.Logistics}
+          href={navigateTo(Routes.Logistics)}
         >
-          Logistics
+          {industries.logistics}
         </Link>
       </li>
       <li>
         <Link
           className={classNames("text-2xl text-white", {
-            underline: pathname === Routes.Sap,
+            underline: pathname === navigateTo(Routes.Sap),
           })}
-          href={Routes.Sap}
+          href={navigateTo(Routes.Sap)}
         >
-          ERP / SAP
+          {industries.erpSap}
         </Link>
       </li>
     </ul>
@@ -58,7 +61,7 @@ const IndustriesSubmenu = () => {
 
 export const BurgerMenu = () => {
   const pathname = usePathname();
-  const { mainNavigation } = useHeaderDictionary();
+  const { mainNavigation, openMenu, closeMenu } = useHeaderDictionary();
   const [open, setOpen] = useState(false);
   const [expandIndustries, setExpandIndustries] = useState(false);
 
@@ -115,7 +118,7 @@ export const BurgerMenu = () => {
         ) : (
           <Menu className="text-white h-6 w-6" />
         )}
-        <p className="text-white">{open ? "Close" : "Menu"}</p>
+        <p className="text-white">{open ? closeMenu : openMenu}</p>
       </button>
     </div>
   );

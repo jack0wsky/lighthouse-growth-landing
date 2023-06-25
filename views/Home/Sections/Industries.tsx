@@ -25,7 +25,7 @@ const Industry = ({ name, href, illustration }: IndustryProps) => {
           {illustration}
         </div>
         <div className="flex flex-col justify-between p-5">
-          <h3 className="text-1.75 font-medium">{name}</h3>
+          <h3 className="text-xl sm:text-2xl font-medium">{name}</h3>
           <p>{industries.cta}</p>
         </div>
       </Link>
