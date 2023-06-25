@@ -88,7 +88,7 @@ export const Header = () => {
 
   const { navigateTo } = useNavigation();
 
-  const { updateLanguage } = usePreferredLanguageContext();
+  const { language, updateLanguage } = usePreferredLanguageContext();
 
   useEffect(() => {
     updateLanguage(lang);
@@ -158,6 +158,7 @@ export const Header = () => {
 
             <div className="flex items-center gap-x-3">
               <button
+                className={classNames({ "font-bold": language === "en" })}
                 onClick={() => {
                   updateLanguage("en");
                   router.push(pathname.replace("de", "en"));
@@ -166,6 +167,7 @@ export const Header = () => {
                 EN
               </button>
               <button
+                className={classNames({ "font-bold": language === "de" })}
                 onClick={() => {
                   updateLanguage("de");
                   router.push(pathname.replace("en", "de"));

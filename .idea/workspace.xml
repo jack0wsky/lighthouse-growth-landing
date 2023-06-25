@@ -5,61 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="823b8eb7-99d3-4e76-a404-54dae17d0665" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/next.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shared/dictionaries/de.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shared/dictionaries/en.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shared/dictionaries/languages.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shared/dictionaries/useHeaderDictionary.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shared/icons/CheckIcon.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shared/utils/PreferedLanguage.context.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/Careers/dictionaries/de.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/Careers/dictionaries/en.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/Careers/dictionaries/useCareersDictionary.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/Contact/dictionaries/de.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/Contact/dictionaries/en.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/Contact/dictionaries/useContactDictionary.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/Home/dictionaries/de.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/Home/dictionaries/en.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/Home/dictionaries/useHomeDictionary.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/Industry/dictionaries/de.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/Industry/dictionaries/en.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/Industry/dictionaries/useIndustryDictionary.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/Values/dictionaries/de.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/Values/dictionaries/en.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/Values/dictionaries/useValuesDictionary.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/careers/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[lang]/careers/[id]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/careers/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[lang]/careers/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/contact/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[lang]/contact/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/fonts/Satoshi.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/app/[lang]/fonts/Satoshi.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/industries/ecommerce/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[lang]/industries/ecommerce/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/industries/logistics/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[lang]/industries/logistics/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/industries/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[lang]/industries/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/industries/sap/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[lang]/industries/sap/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/industries/streaming/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[lang]/industries/streaming/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[lang]/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[lang]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/values/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[lang]/values/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/BurgerMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/shared/BurgerMenu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/Checkbox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/shared/Checkbox.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shared/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/shared/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/icons/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shared/icons/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Careers/CareersPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/views/Careers/CareersPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Contact/Sections/ContactForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/views/Contact/Sections/ContactForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Contact/Sections/ContactHero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/views/Contact/Sections/ContactHero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Contact/Sections/Offices.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/views/Contact/Sections/Offices.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Contact/offices.ts" beforeDir="false" afterPath="$PROJECT_DIR$/views/Contact/offices.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Home/HomePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/views/Home/HomePage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Home/Sections/AboutUs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/views/Home/Sections/AboutUs.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Home/Sections/ContactUs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/views/Home/Sections/ContactUs.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Home/Sections/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/views/Home/Sections/Hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Home/Sections/Industries.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/views/Home/Sections/Industries.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Home/Sections/Technologies.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/views/Home/Sections/Technologies.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Home/Sections/Testimonials.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/views/Home/Sections/Testimonials.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Industry/IndustryTemplate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/views/Industry/IndustryTemplate.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Values/ValuesPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/views/Values/ValuesPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/views/routes.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +77,7 @@
       <workItem from="1687005248241" duration="4390000" />
       <workItem from="1687085229595" duration="2330000" />
       <workItem from="1687587030483" duration="6350000" />
-      <workItem from="1687692938641" duration="1801000" />
+      <workItem from="1687692938641" duration="2294000" />
     </task>
     <servers />
   </component>
