@@ -34,7 +34,7 @@ export const streamingProjects: Project[] = [
       "Supported implementation of partner's streaming platform for leading German broadcaster.",
     aboutClient:
       "German broadcaster to start European video on demand streaming service. Service available in multiple countries with some major modifications across regions.",
-    scope: "",
+    scope: "Our team ensured the quality of the platform implementation and working according to the specification by rigorous testing processes on different connected devices, CTVs.",
     technologies: [],
     result:
       "Supported Swedish streaming platform in implementation and customization of their product to match required UX and CI. Ensured quality by rigorous app testing on different devices, CTVs. ",

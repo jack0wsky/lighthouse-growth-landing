@@ -1,4 +1,5 @@
 import { PropsWithChildren } from "react";
+import Script from "next/script";
 import "../globals.css";
 import localFont from "next/font/local";
 import { Header } from "@/shared";
@@ -27,6 +28,10 @@ export default function RootLayout({
           <PreferredLanguageWrapper>
             <Header />
             {children}
+            <Script
+              src="https://widget.clutch.co/static/js/widget.js"
+              type="text/javascript"
+            />
           </PreferredLanguageWrapper>
         </main>
       </body>

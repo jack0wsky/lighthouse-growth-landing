@@ -33,7 +33,7 @@ export const ProjectTemplate = ({
               })}
             </ul>
           )}
-          <p>{scope}</p>
+          <p className='mt-2'>{scope}</p>
         </div>
       </div>
 
