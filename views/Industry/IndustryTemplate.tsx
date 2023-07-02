@@ -25,17 +25,17 @@ const SliderNavigation = ({
   return (
     <div className="flex items-center gap-x-4">
       <button
-        className="w-12 h-12 rounded-full bg-palette-black flex justify-center items-center disabled:bg-gray-300"
+        className="w-12 h-12 rounded-full bg-palette-yellow flex justify-center items-center disabled:bg-gray-300 group"
         disabled={currentSlide === 0}
         onClick={() => swiperRef.slidePrev()}
       >
-        <ArrowLeft className="text-white text-xl" />
+        <ArrowLeft className="text-palette-black text-2xl group-disabled:text-white" />
       </button>
       <div className="flex items-center gap-x-1.5">
         {items.map((_, index) => (
           <div
             key={index}
-            className={classNames("h-2.5 w-2.5 bg-black rounded-full", {
+            className={classNames("h-2.5 w-2.5 bg-palette-yellow rounded-full", {
               "opacity-100": index === currentSlide,
               "opacity-20": index !== currentSlide,
             })}
@@ -43,11 +43,11 @@ const SliderNavigation = ({
         ))}
       </div>
       <button
-        className="w-12 h-12 rounded-full bg-palette-black flex justify-center items-center disabled:bg-gray-300"
+        className="w-12 h-12 rounded-full bg-palette-yellow flex justify-center items-center disabled:bg-gray-300 group"
         disabled={currentSlide === items.length - 1}
         onClick={() => swiperRef?.slideNext()}
       >
-        <ArrowRight className="text-white text-xl" />
+        <ArrowRight className="text-palette-black text-2xl group-disabled:text-white" />
       </button>
     </div>
   );
@@ -82,7 +82,7 @@ export const IndustryTemplate = ({
             {illustration}
           </div>
 
-          <div className="flex items-center justify-between mt-20">
+          <div className="flex items-center gap-x-8 mt-20">
             <h2 className="text-h2 font-medium">{projectsTitle}</h2>
             {projects.length > 1 && !!swiperRef && (
               <SliderNavigation

@@ -15,7 +15,7 @@ const Position = ({ position }: PositionProps) => {
   const { navigateTo } = useNavigation();
 
   return (
-    <li className="w-full p-5 rounded-lg bg-palette-black text-white h-[200px]">
+    <li className="w-full p-5 rounded-lg bg-palette-black text-white h-[200px] hover:-translate-y-1.5 hover:transition-transform hover:ease-in duration-300 active:translate-y-1">
       <Link
         className="w-full h-full flex flex-col justify-between"
         href={navigateTo(`careers/${position.slug}`)}

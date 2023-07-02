@@ -15,7 +15,7 @@ export enum Routes {
 export const useNavigation = () => {
   const { language } = usePreferredLanguageContext();
 
-  const navigateTo = (route: Routes | string) => {
+  const navigateTo = (route: Routes | string): string => {
     return `/${language}/${route}`;
   };
 

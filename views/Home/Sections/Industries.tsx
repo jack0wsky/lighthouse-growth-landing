@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Routes } from "@/views/routes";
+import { Routes, useNavigation } from "@/views/routes";
 import { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.css";
@@ -12,7 +12,7 @@ import { useHeaderDictionary } from "@/shared/dictionaries/useHeaderDictionary";
 
 interface IndustryProps {
   name: string;
-  href: Routes;
+  href: string;
   illustration: ReactNode;
 }
 const Industry = ({ name, href, illustration }: IndustryProps) => {
@@ -36,6 +36,7 @@ const Industry = ({ name, href, illustration }: IndustryProps) => {
 export const Industries = () => {
   const { industries } = useHomeDictionary();
   const { industries: industriesList } = useHeaderDictionary();
+  const { navigateTo } = useNavigation();
 
   return (
     <section className="layout pt-24 pb-14">
@@ -51,7 +52,7 @@ export const Industries = () => {
           <SwiperSlide>
             <Industry
               name={industriesList.streaming}
-              href={Routes.Streaming}
+              href={navigateTo(Routes.Streaming)}
               illustration={
                 <Image
                   src="/streaming.png"
@@ -66,7 +67,7 @@ export const Industries = () => {
           <SwiperSlide>
             <Industry
               name={industriesList.ecommerce}
-              href={Routes.Ecommerce}
+              href={navigateTo(Routes.Ecommerce)}
               illustration={
                 <Image
                   src="/ecommerce.png"
@@ -81,7 +82,7 @@ export const Industries = () => {
           <SwiperSlide>
             <Industry
               name={industriesList.logistics}
-              href={Routes.Logistics}
+              href={navigateTo(Routes.Logistics)}
               illustration={
                 <Image
                   src="/logistics.png"
@@ -96,7 +97,7 @@ export const Industries = () => {
           <SwiperSlide>
             <Industry
               name={industriesList.erpSap}
-              href={Routes.Sap}
+              href={navigateTo(Routes.Sap)}
               illustration={
                 <Image
                   src="/sap.png"
@@ -113,7 +114,7 @@ export const Industries = () => {
       <ul className="w-full hidden md:flex items-center gap-x-8 mt-12">
         <Industry
           name={industriesList.streaming}
-          href={Routes.Streaming}
+          href={navigateTo(Routes.Streaming)}
           illustration={
             <Image
               src="/streaming.png"
@@ -126,7 +127,7 @@ export const Industries = () => {
 
         <Industry
           name={industriesList.ecommerce}
-          href={Routes.Ecommerce}
+          href={navigateTo(Routes.Ecommerce)}
           illustration={
             <Image
               src="/ecommerce.png"
@@ -139,7 +140,7 @@ export const Industries = () => {
 
         <Industry
           name={industriesList.logistics}
-          href={Routes.Logistics}
+          href={navigateTo(Routes.Logistics)}
           illustration={
             <Image
               src="/logistics.png"
@@ -152,7 +153,7 @@ export const Industries = () => {
 
         <Industry
           name={industriesList.erpSap}
-          href={Routes.Sap}
+          href={navigateTo(Routes.Sap)}
           illustration={
             <Image
               src="/sap.png"

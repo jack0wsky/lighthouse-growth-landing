@@ -16,7 +16,7 @@ export const ProjectTemplate = ({
 }: ProjectTemplateProps) => {
   return (
     <main className="mt-14 bg-palette-grey-200 p-6 rounded-xl">
-      <h2 className="text-4xl font-medium w-full md:w-1/3">{title}</h2>
+      <h2 className="text-4xl font-medium w-full">{title}</h2>
 
       <div className="mt-[90px] w-full flex flex-col md:flex-row items-start gap-x-32">
         <div className="w-full md:w-1/2">
