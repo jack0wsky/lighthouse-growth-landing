@@ -22,20 +22,10 @@ export const Testimonials = () => {
 
   return (
     <section className="layout pb-24 mt-14">
-      <div className='flex gap-x-6 items-end'>
+      <div className="flex gap-x-6 items-end">
         <h2
           className="text-h2"
           dangerouslySetInnerHTML={{ __html: testimonials.title }}
-        />
-        <div
-          className="clutch-widget"
-          data-url="https://widget.clutch.co"
-          data-widget-type="1"
-          data-height="40"
-          data-nofollow="true"
-          data-expandifr="true"
-          data-scale="100"
-          data-clutchcompany-id="654826"
         />
       </div>
 
