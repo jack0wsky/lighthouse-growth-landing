@@ -11,6 +11,9 @@ interface DictionaryModel {
     erpSap: string;
   };
   projectsTitle: string;
+  scope: string;
+  aboutClient: string;
+  result: string;
 }
 
 const dictionaries: Record<Languages, DictionaryModel> = {

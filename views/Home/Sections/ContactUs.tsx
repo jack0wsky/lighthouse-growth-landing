@@ -27,7 +27,7 @@ const ContactContainer = () => {
       <Button
         width="full"
         variant="secondary"
-        href={navigateTo(Routes.Contact)}
+        href={Routes.Contact}
       >
         {contact.cta}
       </Button>

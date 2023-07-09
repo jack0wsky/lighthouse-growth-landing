@@ -9,6 +9,7 @@ interface DictionaryModel {
   title: string;
   cta: string;
   back: string;
+  recruiterPosition: string;
 }
 
 const dictionaries: Record<Languages, DictionaryModel> = {

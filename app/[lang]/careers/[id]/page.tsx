@@ -13,7 +13,7 @@ import { Button } from "@/shared";
 export default function OpenPosition() {
   const params = useParams();
 
-  const { back } = useCareersDictionary();
+  const { back, cta, recruiterPosition } = useCareersDictionary();
   const { navigateTo } = useNavigation();
 
   const job = openPositions.find((position) => position.slug === params.id);
@@ -22,8 +22,8 @@ export default function OpenPosition() {
 
   return (
     <>
-      <main className="w-full mt-40 flex gap-x-6 justify-center items-start px-4">
-        <section className="layout mb-20 w-full  md:w-1/2">
+      <main className="w-full mt-40 flex flex-col sm:flex-row gap-x-6 justify-center items-start px-4">
+        <section className="layout sm:mb-20 w-full md:w-1/2">
           <Link
             href={navigateTo(Routes.Careers)}
             className="flex items-center gap-x-2"
@@ -63,31 +63,34 @@ export default function OpenPosition() {
             )}
           </div>
         </section>
+
+        <div className="sticky top-40 md:max-w-[350px] flex flex-col w-full p-5 rounded-2xl bg-palette-black mb-5 sm:mb-0 mt-5 md:mt-0 z-10">
+          <div className="flex items-center gap-x-4 mb-9">
+            <Image
+              src="/gabi-filipczyk.png"
+              alt="Image of Gabi Filipczyk - IT Recruiter"
+              width={68}
+              height={68}
+            />
+            <div className="flex flex-col gap-x-1">
+              <p className="font-bold text-white">Gabi Filipczyk</p>
+              <p className="text-xs opacity-60 text-white">
+                {recruiterPosition}
+              </p>
+            </div>
+          </div>
+
+          <Button
+            width="full"
+            variant="secondary"
+            externalLink="https://www.linkedin.com/in/gabriela-filipczyk-026890235/"
+          >
+            {cta}
+          </Button>
+        </div>
       </main>
 
       <BurgerMenu />
     </>
   );
 }
-
-
-/*
-<div className="sticky top-24 md:max-w-[350px] flex flex-col w-full p-5 rounded-2xl bg-palette-black mt-5 md:mt-0 z-10">
-          <div className="flex items-center gap-x-4 mb-9">
-            <Image
-              src="/"
-              alt="Image of Gabriela Filipczyk - Recruiter"
-              width={68}
-              height={68}
-            />
-            <div className="flex flex-col gap-x-1">
-              <p className="font-bold text-white">Gabriela Filipczyk</p>
-              <p className="text-xs opacity-60 text-white">Recruiter</p>
-            </div>
-          </div>
-
-          <Button width="full" variant="secondary" href="">
-            Apply
-          </Button>
-        </div>
- */

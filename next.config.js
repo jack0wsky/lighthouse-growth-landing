@@ -11,8 +11,13 @@ const nextConfig = {
         permanent: false,
       },
       {
-        source: "/industries",
-        destination: "/industries/streaming",
+        source: "/en/industries",
+        destination: "/en/industries/streaming",
+        permanent: false,
+      },
+      {
+        source: "/de/industries",
+        destination: "/de/industries/streaming",
         permanent: false,
       },
     ];

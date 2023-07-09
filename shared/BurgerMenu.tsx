@@ -61,6 +61,7 @@ const IndustriesSubmenu = () => {
 
 export const BurgerMenu = () => {
   const pathname = usePathname();
+  const { navigateTo } = useNavigation();
   const { mainNavigation, openMenu, closeMenu } = useHeaderDictionary();
   const [open, setOpen] = useState(false);
   const [expandIndustries, setExpandIndustries] = useState(false);
@@ -76,7 +77,7 @@ export const BurgerMenu = () => {
           <li className="w-full flex justify-between gap-x-4">
             <Link
               className="text-3xl text-white leading-10"
-              href={Routes.Industries}
+              href={navigateTo(Routes.Industries)}
             >
               {mainNavigation.industries}
             </Link>
@@ -92,18 +93,21 @@ export const BurgerMenu = () => {
             </button>
           </li>
           {expandIndustries && <IndustriesSubmenu />}
-          <Link className="text-3xl text-white leading-10" href={Routes.Values}>
+          <Link
+            className="text-3xl text-white leading-10"
+            href={navigateTo(Routes.Values)}
+          >
             {mainNavigation.values}
           </Link>
           <Link
             className="text-3xl text-white leading-10"
-            href={Routes.Careers}
+            href={navigateTo(Routes.Careers)}
           >
             {mainNavigation.careers}
           </Link>
           <Link
             className="text-3xl text-white leading-10"
-            href={Routes.Contact}
+            href={navigateTo(Routes.Contact)}
           >
             {mainNavigation.contact}
           </Link>

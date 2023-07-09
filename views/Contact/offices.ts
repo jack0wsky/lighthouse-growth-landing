@@ -12,7 +12,7 @@ export const offices: Office[] = [
     label: "gdansk",
     city: "Gdańsk",
     street: "al. Grunwaldzka 472B, Office O4.",
-    image: "/main-office.webp",
+    image: "/main-office.png",
     postalCode: "80-309",
     country: "Poland",
   },

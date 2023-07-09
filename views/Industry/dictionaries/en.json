@@ -2,8 +2,11 @@
   "titles": {
     "streaming": "Streaming<br />& Telecoms",
     "ecommerce": "eCommerce",
-    "logistics": "Logistics",
+    "logistics": "Aviation & Logistics",
     "erpSap": "ERP / SAP"
   },
-  "projectsTitle": "Projects"
+  "projectsTitle": "Projects",
+  "scope": "Scope",
+  "result": "Result",
+  "aboutClient": "About client"
 }

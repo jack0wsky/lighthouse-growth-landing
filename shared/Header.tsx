@@ -151,7 +151,7 @@ export const Header = () => {
             <Button
               variant="primary"
               width="max"
-              href={navigateTo(Routes.Contact)}
+              href={Routes.Contact}
             >
               {mainNavigation.contact}
             </Button>

@@ -1,11 +1,12 @@
 import Image from "next/image";
 import { Button } from "@/shared";
 import { AnimatedTitle } from "@/animations/AnimatedTitle";
-import { Routes } from "@/views/routes";
+import { Routes, useNavigation } from "@/views/routes";
 import { useHomeDictionary } from "@/views/Home/dictionaries/useHomeDictionary";
 
 export const Hero = () => {
   const { hero } = useHomeDictionary();
+  const { navigateTo } = useNavigation();
 
   return (
     <section className="layout flex justify-between items-center h-[85vh] relative">

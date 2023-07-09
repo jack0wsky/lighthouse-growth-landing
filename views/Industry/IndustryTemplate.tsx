@@ -10,6 +10,7 @@ import { Project } from "@/views/Industry/types";
 import "swiper/swiper.css";
 import classNames from "classnames";
 import { useIndustryDictionary } from "@/views/Industry/dictionaries/useIndustryDictionary";
+import { useParams } from "next/navigation";
 
 interface SliderNavigationProps {
   swiperRef: SwiperClass;
@@ -35,10 +36,13 @@ const SliderNavigation = ({
         {items.map((_, index) => (
           <div
             key={index}
-            className={classNames("h-2.5 w-2.5 bg-palette-yellow rounded-full", {
-              "opacity-100": index === currentSlide,
-              "opacity-20": index !== currentSlide,
-            })}
+            className={classNames(
+              "h-2.5 w-2.5 bg-palette-yellow rounded-full",
+              {
+                "opacity-100": index === currentSlide,
+                "opacity-20": index !== currentSlide,
+              }
+            )}
           />
         ))}
       </div>
@@ -55,7 +59,7 @@ const SliderNavigation = ({
 
 interface IndustriesTemplateProps {
   title: string;
-  projects: Project[];
+  projects: { en: Project; de: Project }[];
   illustration: ReactNode;
 }
 
@@ -66,6 +70,9 @@ export const IndustryTemplate = ({
 }: IndustriesTemplateProps) => {
   const [swiperRef, setSwiperRef] = useState<SwiperClass | null>(null);
   const [currentSlide, setCurrentSlide] = useState(0);
+
+  const { lang } = useParams();
+  const locale = lang as "en" | "de";
 
   const { projectsTitle } = useIndustryDictionary();
 
@@ -95,7 +102,7 @@ export const IndustryTemplate = ({
 
           <Swiper
             spaceBetween={20}
-            slidesPerView={1}
+            slidesPerView={projects.length > 1 ? 1.1 : 1}
             modules={[Controller, Navigation]}
             controller={{ control: "test" }}
             onInit={setSwiperRef}
@@ -103,11 +110,14 @@ export const IndustryTemplate = ({
               setCurrentSlide(swiper.realIndex);
             }}
           >
-            {projects.map((project, index) => (
-              <SwiperSlide key={index}>
-                <ProjectTemplate {...project} />
-              </SwiperSlide>
-            ))}
+            {projects.map((project, index) => {
+              const localizedProject = project[locale];
+              return (
+                <SwiperSlide key={index}>
+                  <ProjectTemplate {...localizedProject} />
+                </SwiperSlide>
+              );
+            })}
           </Swiper>
         </div>
       </main>
