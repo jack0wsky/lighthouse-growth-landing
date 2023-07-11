@@ -67,7 +67,7 @@ export const ContactForm = () => {
               dispatch({ type: "update-message", payload: target.value })
             }
             placeholder={form.message.placeholder}
-            className="bg-palette-grey-600 w-full h-40 rounded-lg px-4 py-2.5 focus:outline-palette-grey-400 focus:outline-1 focus:outline-offset-2"
+            className="bg-palette-grey-600 w-full h-32 sm:h-40 rounded-lg px-4 py-2.5 focus:outline-palette-grey-400 focus:outline-1 focus:outline-offset-2"
           />
         </label>
       </div>

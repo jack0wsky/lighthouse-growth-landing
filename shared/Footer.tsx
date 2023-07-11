@@ -12,7 +12,7 @@ export const Footer = () => {
 
   return (
     <footer className="w-full bg-palette-black flex justify-center items-start text-white pt-12 pb-20">
-      <div className="layout flex gap-x-20">
+      <div className="layout flex flex-wrap gap-x-20">
         <div>
           <p>Industries</p>
 
@@ -66,7 +66,7 @@ export const Footer = () => {
         </div>
 
         <div>
-          <ul className="text-sm flex flex-col gap-y-2.5">
+          <ul className="text-sm flex flex-col gap-y-2.5 mt-8 sm:mt-0">
             <li className="opacity-80 hover:opacity-100">
               <a
                 href="https://www.linkedin.com/company/lighthouse-growth/"
