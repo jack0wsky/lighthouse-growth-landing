@@ -6,7 +6,7 @@ import { Header } from "@/shared";
 import classNames from "classnames";
 import { Languages } from "@/shared/dictionaries/languages";
 import { PreferredLanguageWrapper } from "@/shared/utils/PreferedLanguage.context";
-import {Footer} from "@/shared/Footer";
+import { Footer } from "@/shared/Footer";
 
 const Satoshi = localFont({
   src: "./fonts/Satoshi.ttf",
@@ -31,6 +31,7 @@ export default function RootLayout({
             {children}
             <Script
               src="https://widget.clutch.co/static/js/widget.js"
+              strategy='afterInteractive'
               type="text/javascript"
             />
             <Footer />
