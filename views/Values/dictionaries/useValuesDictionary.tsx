@@ -7,12 +7,18 @@ interface DictionaryModel {
   title: string;
   description: string;
   paragraphs: {
-    paragraph1: string;
-    paragraph2: string;
-    paragraph3: string;
-    paragraph4: string;
-    paragraph5: string;
-    paragraph6: string;
+    family: {
+      title: string;
+      content: string;
+    };
+    adventure: {
+      title: string;
+      content: string;
+    };
+    longGame: {
+      title: string
+      content: string
+    }
   };
 }
 

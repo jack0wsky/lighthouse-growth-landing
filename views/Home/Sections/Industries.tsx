@@ -5,9 +5,7 @@ import { Routes, useNavigation } from "@/views/routes";
 import { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.css";
-import { useParams } from "next/navigation";
 import { useHomeDictionary } from "@/views/Home/dictionaries/useHomeDictionary";
-import { Languages } from "@/shared/dictionaries/languages";
 import { useHeaderDictionary } from "@/shared/dictionaries/useHeaderDictionary";
 
 interface IndustryProps {

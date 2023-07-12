@@ -2,11 +2,17 @@
   "title": "Was treibt uns an?",
   "description": "Mit über 20 Jahren Branchenerfahrung haben wir ein tiefgreifendes Verständnis für die Herausforderungen, denen Technologieprofis gegenüberstehen. Unsere Reise führte uns durch verschiedene Positionen und Organisationen, wodurch wir wertvolle Einblicke in die Arbeitsweise der Unternehmenswelt gewonnen haben. Diese umfangreiche Erfahrung hat uns dazu motiviert, einen anderen Weg einzuschlagen, der Unabhängigkeit, Kreativität und Kundenzufriedenheit priorisiert.",
   "paragraphs": {
-    "paragraph1": "Als Familienunternehmen mit einem eng verbundenen Team von 20 talentierten Fachleuten sind wir stolz darauf, außergewöhnliche Softwarelösungen zu liefern. Wir sind leidenschaftlich darum bemüht, innovative und zuverlässige IT-Lösungen zu entwickeln, die den individuellen Bedürfnissen unserer Kunden entsprechen.",
-    "paragraph2": "Im Kern unseres Unternehmens leben wir den Geist des Abenteuers und der Erkundung. Wir lassen uns von unserer Liebe zum Segeln und Wandern inspirieren. Diese Leidenschaft beflügelt uns und treibt uns dazu an, kontinuierlich Grenzen zu überschreiten und kreative Lösungen für komplexe Herausforderungen zu finden.",
-    "paragraph3": "Unsere Unternehmenswerte gründen auf Integrität, Zusammenarbeit und Kundenzufriedenheit. Wir glauben daran, langfristige Beziehungen zu unseren Kunden aufzubauen, indem wir ihre Ziele verstehen und maßgeschneiderte Lösungen bereitstellen, die ihre Erwartungen übertreffen.",
-    "paragraph4": "Mit einem kundenorientierten Ansatz streben wir in allem, was wir tun, nach Exzellenz. Unser Expertenteam vereint technisches Fachwissen mit einem geschulten Blick für Details und gewährleistet so, dass jedes Projekt präzise und in hoher Qualität umgesetzt wird.",
-    "paragraph5": "Wir fördern eine unterstützende und inklusive Arbeitsumgebung, die persönliches Wachstum und kontinuierliches Lernen fördert. Indem wir eine Kultur des Teamworks und offener Kommunikation pflegen, nutzen wir die vielfältigen Stärken unserer Teammitglieder, um herausragende Ergebnisse zu erzielen.",
-    "paragraph6": "Ob Sie maßgeschneiderte Softwareentwicklung, mobile App-Lösungen oder Webentwicklungsdienste suchen, wir sind hier, um Sie auf Ihrer digitalen Reise zu begleiten. Schließen Sie sich uns an, während wir die vielfältigen Möglichkeiten der Technologie erkunden und Softwarelösungen entwickeln, die Unternehmen dabei unterstützen, im digitalen Zeitalter erfolgreich zu sein."
+    "family": {
+      "title": "Familie Berührung",
+      "content": "Als Familienunternehmen mit einem eng verbundenen Team von 20 talentierten Fachleuten sind wir stolz darauf, außergewöhnliche Softwarelösungen zu liefern. Wir sind leidenschaftlich darum bemüht, innovative und zuverlässige IT-Lösungen zu entwickeln, die den individuellen Bedürfnissen unserer Kunden entsprechen."
+    },
+    "adventure": {
+      "title": "Abenteuerlustige",
+      "content": "Im Kern unseres Unternehmens leben wir den Geist des Abenteuers und der Erkundung. Wir lassen uns von unserer Liebe zum Segeln und Wandern inspirieren. Diese Leidenschaft beflügelt uns und treibt uns dazu an, kontinuierlich Grenzen zu überschreiten und kreative Lösungen für komplexe Herausforderungen zu finden."
+    },
+    "longGame": {
+      "title": "Wir spielen ein langfristiges Spiel",
+      "content": "Unsere Unternehmenswerte gründen auf Integrität, Zusammenarbeit und Kundenzufriedenheit. Wir glauben daran, langfristige Beziehungen zu unseren Kunden aufzubauen, indem wir ihre Ziele verstehen und maßgeschneiderte Lösungen bereitstellen, die ihre Erwartungen übertreffen."
+    }
   }
 }
