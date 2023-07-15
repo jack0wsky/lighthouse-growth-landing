@@ -21,6 +21,8 @@ export const ValuesPage = () => {
           </div>
 
           <ValuesList />
+
+          <Gallery />
         </section>
 
         <ContactUs />
