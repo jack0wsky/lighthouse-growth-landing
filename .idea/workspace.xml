@@ -5,7 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="823b8eb7-99d3-4e76-a404-54dae17d0665" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/views/Values/Sections/images.ts" beforeDir="false" afterPath="$PROJECT_DIR$/views/Values/Sections/images.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/app/[lang]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[lang]/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/app/[lang]/industries/ecommerce/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[lang]/industries/ecommerce/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/[lang]/industries/logistics/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[lang]/industries/logistics/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/[lang]/industries/sap/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[lang]/industries/sap/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/[lang]/industries/streaming/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[lang]/industries/streaming/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/[lang]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[lang]/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Careers/CareersPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/views/Careers/CareersPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Careers/api/careers.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/views/Careers/api/careers.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Careers/api/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Home/Sections/Testimonials.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/views/Home/Sections/Testimonials.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Industry/IndustryTemplate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/views/Industry/IndustryTemplate.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Industry/ProjectTemplate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/views/Industry/ProjectTemplate.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Values/Sections/ValuesList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/views/Values/Sections/ValuesList.tsx" afterDir="false" />
+>>>>>>> e771bc6 (connecting with cms)
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +61,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -58,8 +78,25 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/Users/jacekludzik/Documents/Code/Freelance/lighthouse-landing/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "connect-strapi",
+    "last_opened_file_path": "/Users/jacekludzik/Documents/Code/Freelance/lighthouse-landing/views/Contact/Sections",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/jacekludzik/Documents/Code/Freelance/lighthouse-landing/node_modules/prettier",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "/Users/jacekludzik/Documents/Code/Freelance/lighthouse-landing/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+>>>>>>> e771bc6 (connecting with cms)
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/team-photos" />

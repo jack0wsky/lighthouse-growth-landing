@@ -1,12 +1,14 @@
 "use client";
 
-import { IndustryTemplate } from "@/views/Industry/IndustryTemplate";
-import { logisticsProjects } from "@/views/Industry/logistics-projects";
 import Image from "next/image";
 import { useIndustryDictionary } from "@/views/Industry/dictionaries/useIndustryDictionary";
+import { useListProjects } from "@/views/Industry/api/projects.controller";
+import { IndustryTemplate } from "@/views/Industry/IndustryTemplate";
 
 export default function Logistics() {
   const { titles } = useIndustryDictionary();
+
+  const { projects } = useListProjects("logistics");
 
   return (
     <IndustryTemplate
@@ -20,7 +22,7 @@ export default function Logistics() {
           alt="logistics illustration"
         />
       }
-      projects={logisticsProjects}
+      projects={projects}
     />
   );
 }

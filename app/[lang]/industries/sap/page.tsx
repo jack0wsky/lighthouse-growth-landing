@@ -1,12 +1,14 @@
 "use client";
 
-import { IndustryTemplate } from "@/views/Industry/IndustryTemplate";
-import { sapProjects } from "@/views/Industry/sap-projects";
 import Image from "next/image";
 import { useIndustryDictionary } from "@/views/Industry/dictionaries/useIndustryDictionary";
+import { IndustryTemplate } from "@/views/Industry/IndustryTemplate";
+import { useListProjects } from "@/views/Industry/api/projects.controller";
 
 export default function Sap() {
   const { titles } = useIndustryDictionary();
+
+  const { projects } = useListProjects("erp-sap");
 
   return (
     <IndustryTemplate
@@ -20,7 +22,7 @@ export default function Sap() {
           alt="sap / erp illustration"
         />
       }
-      projects={sapProjects}
+      projects={projects}
     />
   );
 }

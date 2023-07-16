@@ -1,17 +1,19 @@
 "use client";
 
-import { streamingProjects } from "@/views/Industry/streaming-projects";
-import { IndustryTemplate } from "@/views/Industry/IndustryTemplate";
 import Image from "next/image";
 import { useIndustryDictionary } from "@/views/Industry/dictionaries/useIndustryDictionary";
+import { useListProjects } from "@/views/Industry/api/projects.controller";
+import { IndustryTemplate } from "@/views/Industry/IndustryTemplate";
 
 export default function Streaming() {
   const { titles } = useIndustryDictionary();
 
+  const { projects } = useListProjects("streaming");
+
   return (
     <IndustryTemplate
       title={titles.streaming}
-      projects={streamingProjects}
+      projects={projects}
       illustration={
         <Image
           src="/streaming-large.png"

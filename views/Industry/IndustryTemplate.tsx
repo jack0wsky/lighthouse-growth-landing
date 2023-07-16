@@ -6,28 +6,25 @@ import { Mousewheel, Pagination } from "swiper";
 import { useParams } from "next/navigation";
 import { ProjectTemplate } from "@/views/Industry/ProjectTemplate";
 import { BurgerMenu } from "@/shared/BurgerMenu";
-import { Project } from "@/views/Industry/types";
 import { useIndustryDictionary } from "@/views/Industry/dictionaries/useIndustryDictionary";
 import { Languages } from "@/shared/dictionaries/languages";
 import { SliderNavigation } from "@/shared/SliderNavigation";
+import { ProjectModel } from "@/types/cms-content";
 import "swiper/css";
 
 interface IndustriesTemplateProps {
   title: string;
-  projects: Record<Languages, Project>[];
+  projects: ProjectModel[];
   illustration: ReactNode;
 }
 
 export const IndustryTemplate = ({
   title,
-  projects,
   illustration,
+  projects,
 }: IndustriesTemplateProps) => {
   const [swiperRef, setSwiperRef] = useState<SwiperClass | null>(null);
   const [currentSlide, setCurrentSlide] = useState(0);
-
-  const { lang } = useParams();
-  const locale = lang as Languages;
 
   const { projectsTitle } = useIndustryDictionary();
 
@@ -70,11 +67,10 @@ export const IndustryTemplate = ({
             }}
             pagination={{ clickable: true }}
           >
-            {projects.map((project, index) => {
-              const localizedProject = project[locale];
+            {projects.map((project) => {
               return (
-                <SwiperSlide key={index}>
-                  <ProjectTemplate {...localizedProject} />
+                <SwiperSlide key={project.id}>
+                  <ProjectTemplate project={project.attributes} />
                 </SwiperSlide>
               );
             })}

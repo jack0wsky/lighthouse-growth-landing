@@ -5,6 +5,7 @@ import { BurgerMenu } from "@/shared/BurgerMenu";
 import { useCareersDictionary } from "@/views/Careers/dictionaries/useCareersDictionary";
 import { useNavigation } from "@/views/routes";
 import { motion } from "framer-motion";
+import { useListCareers } from "@/views/Careers/api/careers.controller";
 
 interface PositionProps {
   position: OpenPosition;
@@ -45,6 +46,9 @@ const Position = ({ position }: PositionProps) => {
 
 export const CareersPage = () => {
   const { title } = useCareersDictionary();
+  const { jobs } = useListCareers();
+
+  console.log(jobs);
 
   return (
     <>
