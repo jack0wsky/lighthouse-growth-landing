@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 "use client";
+=======
+import ReactMarkdown from "react-markdown";
+>>>>>>> e771bc6 (connecting with cms)
 import { useHomeDictionary } from "@/views/Home/dictionaries/useHomeDictionary";
+import { useListTestimonials } from "@/views/Home/api/testimonials.controller";
 
 interface TestimonialProps {
   content: any;
@@ -44,7 +49,7 @@ const clientReviews = [
 const Testimonial = ({ content, author, position }: TestimonialProps) => {
   return (
     <li className="w-full md:min-h-[300px] p-5 rounded-xl bg-palette-grey-200 flex flex-col justify-between">
-      {content}
+      <ReactMarkdown>{content}</ReactMarkdown>
 
       <div className="mt-6 md:mt-0">
         <p className="font-medium text-palette-black">{author}</p>
@@ -55,6 +60,8 @@ const Testimonial = ({ content, author, position }: TestimonialProps) => {
 };
 export const Testimonials = () => {
   const { testimonials } = useHomeDictionary();
+
+  const { testimonialsList, loading, error } = useListTestimonials();
 
   return (
     <section className="layout pb-24 mt-14">
@@ -75,6 +82,7 @@ export const Testimonials = () => {
         />
       </div>
 
+<<<<<<< HEAD
       <ul className="mt-12 flex flex-col md:flex-row items-center gap-5">
         {clientReviews.map((review, index) => (
           <Testimonial
@@ -85,6 +93,28 @@ export const Testimonials = () => {
           />
         ))}
       </ul>
+=======
+      {loading && (
+        <ul className="mt-12 flex flex-col md:flex-row items-center gap-5">
+          <div className="w-full bg-palette-grey-200 animate-pulse h-[200px]" />
+          <div className="w-full bg-palette-grey-200 animate-pulse h-[200px]" />
+          <div className="w-full bg-palette-grey-200 animate-pulse h-[200px]" />
+        </ul>
+      )}
+
+      {!loading && !!testimonialsList.length && (
+        <ul className="mt-12 flex flex-col md:flex-row items-center gap-5">
+          {testimonialsList.map((testimonial) => (
+            <Testimonial
+              key={testimonial.id}
+              content={testimonial.attributes.content}
+              position={`${testimonial.attributes.position} at ${testimonial.attributes.company}`}
+              author={testimonial.attributes.author}
+            />
+          ))}
+        </ul>
+      )}
+>>>>>>> e771bc6 (connecting with cms)
     </section>
   );
 };

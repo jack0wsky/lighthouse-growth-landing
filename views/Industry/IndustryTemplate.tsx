@@ -10,7 +10,8 @@ import { Project } from "@/views/Industry/types";
 import "swiper/swiper.css";
 import classNames from "classnames";
 import { useIndustryDictionary } from "@/views/Industry/dictionaries/useIndustryDictionary";
-import { useParams } from "next/navigation";
+import { useListProjects } from "@/views/Industry/api/projects.controller";
+import { ProjectModel } from "@/types/cms-content";
 
 interface SliderNavigationProps {
   swiperRef: SwiperClass;
@@ -59,20 +60,17 @@ const SliderNavigation = ({
 
 interface IndustriesTemplateProps {
   title: string;
-  projects: { en: Project; de: Project }[];
+  projects: ProjectModel[];
   illustration: ReactNode;
 }
 
 export const IndustryTemplate = ({
   title,
-  projects,
   illustration,
+  projects,
 }: IndustriesTemplateProps) => {
   const [swiperRef, setSwiperRef] = useState<SwiperClass | null>(null);
   const [currentSlide, setCurrentSlide] = useState(0);
-
-  const { lang } = useParams();
-  const locale = lang as "en" | "de";
 
   const { projectsTitle } = useIndustryDictionary();
 
@@ -110,11 +108,10 @@ export const IndustryTemplate = ({
               setCurrentSlide(swiper.realIndex);
             }}
           >
-            {projects.map((project, index) => {
-              const localizedProject = project[locale];
+            {projects.map((project) => {
               return (
-                <SwiperSlide key={index}>
-                  <ProjectTemplate {...localizedProject} />
+                <SwiperSlide key={project.id}>
+                  <ProjectTemplate project={project.attributes} />
                 </SwiperSlide>
               );
             })}

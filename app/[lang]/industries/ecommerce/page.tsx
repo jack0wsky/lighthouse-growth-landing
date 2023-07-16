@@ -1,16 +1,19 @@
 "use client";
 
-import { IndustryTemplate } from "@/views/Industry/IndustryTemplate";
-import { ecommerceProjects } from "@/views/Industry/ecomerce-projects";
 import Image from "next/image";
+import { IndustryTemplate } from "@/views/Industry/IndustryTemplate";
 import { useIndustryDictionary } from "@/views/Industry/dictionaries/useIndustryDictionary";
+import { useListProjects } from "@/views/Industry/api/projects.controller";
 
 export default function Ecommerce() {
   const { titles } = useIndustryDictionary();
 
+  const { projects } = useListProjects("ecommerce");
+
   return (
     <IndustryTemplate
       title={titles.ecommerce}
+      projects={projects}
       illustration={
         <Image
           src="/ecommerce-large.png"
@@ -20,7 +23,6 @@ export default function Ecommerce() {
           alt="ecommerce illustration"
         />
       }
-      projects={ecommerceProjects}
     />
   );
 }

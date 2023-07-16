@@ -1,6 +1,6 @@
 import { AdventureIcon, FamilyIcon, HandShakeIcon } from "@/shared/icons";
-import { useValuesDictionary } from "@/views/Values/dictionaries/useValuesDictionary";
 import { ReactNode } from "react";
+import { useValuesPageContent } from "@/views/Values/api/values.controller";
 
 interface ValueProps {
   icon: ReactNode;
@@ -18,13 +18,19 @@ const Value = ({ icon, content, title }: ValueProps) => {
 };
 
 export const ValuesList = () => {
-  const { paragraphs } = useValuesDictionary();
+  const { content } = useValuesPageContent();
+
   return (
     <div className="w-full flex justify-center items-center bg-palette-grey-200">
       <ul className="w-full layout flex flex-wrap md:flex-nowrap mt-12 gap-12 mb-32">
-        <Value icon={<FamilyIcon />} {...paragraphs.family} />
-        <Value icon={<AdventureIcon />} {...paragraphs.adventure} />
-        <Value icon={<HandShakeIcon />} {...paragraphs.longGame} />
+        {content?.values.map((value) => (
+          <Value
+            key={value.id}
+            icon={<FamilyIcon />}
+            title={value.title}
+            content={value.content}
+          />
+        ))}
       </ul>
     </div>
   );
