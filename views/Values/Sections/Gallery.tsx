@@ -21,60 +21,71 @@ const GalleryItem = ({ path, alt, objectPosition }: GalleryItemProps) => {
   );
 };
 
+interface Image {
+  path: string;
+  position: string;
+  alt: string;
+}
+const images: Image[] = [
+  { path: "2.webp", position: "center", alt: "photo with couple pizzas" },
+  { path: "1.webp", position: "center", alt: "photo of our team" },
+  { path: "3.webp", position: "top", alt: "photo of Jakub and Gabi talking" },
+  { path: "4.webp", position: "center", alt: "photo from conference event" },
+  {
+    path: "5.webp",
+    position: "center",
+    alt: "chillout with two beers after work",
+  },
+  {
+    path: "6.webp",
+    position: "center",
+    alt: "badge on a conference",
+  },
+  { path: "7.webp", position: "center", alt: "view from plane" },
+  { path: "8.webp", position: "center", alt: "Jakub Szudejko - COO" },
+  {
+    path: "9.webp",
+    position: "center",
+    alt: "image from Las Vegas Convention Center",
+  },
+  {
+    path: "10.webp",
+    position: "center",
+    alt: "Mike and Jakub in Dubrovnik",
+  },
+  { path: "11.webp", position: "center", alt: "Jakub Szudejko - on a meeting" },
+  { path: "olivia.webp", position: "center", alt: "Olivia Business Center" },
+];
+
 export const Gallery = () => {
   return (
-    <Swiper
-      modules={[Autoplay]}
-      autoplay={{ delay: 1800 }}
-      spaceBetween={36}
-      breakpoints={{
-        400: {
-          slidesPerView: 1.2,
-          spaceBetween: 20,
-        },
-        1200: {
-          slidesPerView: 3.2,
-        },
-      }}
-    >
-      <SwiperSlide>
-        <GalleryItem
-          path="/team-photos/2.webp"
-          objectPosition="center"
-          alt="photo with couple pizzas"
-        />
-      </SwiperSlide>
-      <SwiperSlide>
-        <GalleryItem
-          path="/team-photos/1.webp"
-          alt="photo of our team"
-          objectPosition="center"
-        />
-      </SwiperSlide>
+    <div className="relative">
+      <Swiper
+        modules={[Autoplay]}
+        autoplay={{ delay: 1600 }}
+        spaceBetween={36}
+        breakpoints={{
+          400: {
+            slidesPerView: 1.2,
+            spaceBetween: 20,
+          },
+          1200: {
+            slidesPerView: 3.2,
+          },
+        }}
+      >
+        {images.map((image) => (
+          <SwiperSlide key={image.path}>
+            <GalleryItem
+              path={`/team-photos/${image.path}`}
+              objectPosition={image.position}
+              alt={image.alt}
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
 
-      <SwiperSlide>
-        <GalleryItem
-          objectPosition="top"
-          path="/team-photos/3.webp"
-          alt="photo of Jakub and Gabi talking"
-        />
-      </SwiperSlide>
-
-      <SwiperSlide>
-        <GalleryItem
-          objectPosition="center"
-          path="/team-photos/4.webp"
-          alt="photo from conference event"
-        />
-      </SwiperSlide>
-
-      <SwiperSlide>
-        <GalleryItem
-          objectPosition="center"
-          path="/team-photos/5.webp"
-          alt="chillout with two beers after work"
-        />
-      </SwiperSlide>
-    </Swiper>
+      <div className="w-full absolute h-2/5 bg-palette-grey-200 top-0" />
+    </div>
   );
 };

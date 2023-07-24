@@ -12,7 +12,7 @@ export const ValuesPage = () => {
   return (
     <>
       <main className="flex w-full flex-col items-center mt-40">
-        <section className="w-full">
+        <section className="w-full relative">
           <div className="w-full flex justify-center pb-11">
             <div className="layout">
               <h1 className="text-h1">{title}</h1>
