@@ -69,7 +69,7 @@ export const Gallery = () => {
     <div className="relative">
       <Swiper
         modules={[Autoplay]}
-        autoplay={{ delay: 1600 }}
+        autoplay={{ delay: 2000 }}
         spaceBetween={36}
         breakpoints={{
           400: {
