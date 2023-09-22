@@ -23,10 +23,17 @@ const GalleryItem = ({ path, alt, objectPosition }: GalleryItemProps) => {
 
 interface Image {
   path: string;
-  position: string;
+  position: "center" | "top";
   alt: string;
 }
 const images: Image[] = [
+  { path: "13.webp", position: "center", alt: "Mike and Jakub on IBC2023" },
+  { path: "14.webp", position: "center", alt: "Jakub on IBC2023" },
+  { path: "15.webp", position: "center", alt: "IBC2023 and badges" },
+  { path: "16.webp", position: "center", alt: "" },
+  { path: "17.webp", position: "center", alt: "Mike and Jakub" },
+  { path: "18.webp", position: "center", alt: "" },
+  { path: "19.webp", position: "center", alt: "" },
   { path: "2.webp", position: "center", alt: "photo with couple pizzas" },
   { path: "1.webp", position: "center", alt: "photo of our team" },
   { path: "3.webp", position: "top", alt: "photo of Jakub and Gabi talking" },
