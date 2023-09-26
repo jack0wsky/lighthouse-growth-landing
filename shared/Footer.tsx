@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useHeaderDictionary } from "@/shared/dictionaries/useHeaderDictionary";
 import { Routes, useNavigation } from "@/views/routes";
+import { BuyDRM } from "@/shared/icons";
 
 export const Footer = () => {
   const { mainNavigation, industries } = useHeaderDictionary();
@@ -65,9 +66,9 @@ export const Footer = () => {
           </ul>
         </div>
 
-        <div>
+        <div className="w-full sm:w-auto">
           <ul className="text-sm flex flex-col gap-y-2.5 mt-8 sm:mt-0">
-            <li className="opacity-80 hover:opacity-100">
+            <li className="opacity-80 hover:opacity-100 flex items-center h-8 sm:h-auto">
               <a
                 href="https://www.linkedin.com/company/lighthouse-growth/"
                 rel="noreferrer"
@@ -84,15 +85,31 @@ export const Footer = () => {
               </a>
             </li>
 
-            <li className="opacity-80 hover:opacity-100">
+            <li className="opacity-80 hover:opacity-100 flex items-center h-8 sm:h-auto">
               <a
                 href="https://clutch.co/profile/lighthouse-growth-sp-z-oo#highlights"
                 rel="noreferrer"
                 target="_blank"
                 className="flex items-center gap-x-2"
               >
+                <Image
+                  src="/clutch.png"
+                  width={20}
+                  height={20}
+                  alt="clutch logo"
+                />
                 <p>Clutch</p>
               </a>
+            </li>
+          </ul>
+        </div>
+
+        <div className="mt-12 sm:mt-0">
+          <p>Partners</p>
+
+          <ul className="text-sm mt-4 flex flex-col gap-y-2.5">
+            <li>
+              <BuyDRM />
             </li>
           </ul>
         </div>
