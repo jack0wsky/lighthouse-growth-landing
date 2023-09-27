@@ -109,7 +109,9 @@ export const Footer = () => {
 
           <ul className="text-sm mt-4 flex flex-col gap-y-2.5">
             <li>
-              <BuyDRM />
+              <a href="https://buydrm.com/" rel="noreferrer" target="_blank">
+                <BuyDRM />
+              </a>
             </li>
           </ul>
         </div>
