@@ -27,6 +27,9 @@ interface Image {
   alt: string;
 }
 const images: Image[] = [
+  { path: "22.webp", position: "center", alt: "" },
+  { path: "21.webp", position: "center", alt: "" },
+  { path: "20.webp", position: "center", alt: "" },
   { path: "13.webp", position: "center", alt: "Mike and Jakub on IBC2023" },
   { path: "14.webp", position: "center", alt: "Jakub on IBC2023" },
   { path: "15.webp", position: "center", alt: "IBC2023 and badges" },
