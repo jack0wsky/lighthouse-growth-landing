@@ -3,11 +3,10 @@
 import Image from "next/image";
 import { useHomeDictionary } from "@/views/Home/dictionaries/useHomeDictionary";
 import { Button } from "@/shared";
-import { Routes, useNavigation } from "@/views/routes";
+import { Routes } from "@/views/routes";
 
 const ContactContainer = () => {
   const { contact } = useHomeDictionary();
-  const { navigateTo } = useNavigation();
 
   return (
     <div className="md:max-w-[350px] flex flex-col w-full p-5 rounded-2xl bg-palette-black mt-5 md:mt-0 z-10">
@@ -24,11 +23,7 @@ const ContactContainer = () => {
         </div>
       </div>
 
-      <Button
-        width="full"
-        variant="secondary"
-        href={Routes.Contact}
-      >
+      <Button width="full" variant="secondary" href={Routes.Contact}>
         {contact.cta}
       </Button>
     </div>
