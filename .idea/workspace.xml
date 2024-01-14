@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="823b8eb7-99d3-4e76-a404-54dae17d0665" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/shared/Button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Home/Sections/ContactUs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/views/Home/Sections/ContactUs.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Home/Sections/Industries.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/views/Home/Sections/Industries.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Home/Sections/Testimonials.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/views/Home/Sections/Testimonials.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Services/Electricians/Sections/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/views/Services/Electricians/Sections/Hero.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
