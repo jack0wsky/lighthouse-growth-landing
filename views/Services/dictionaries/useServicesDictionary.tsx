@@ -5,6 +5,7 @@ import german from "./de.json";
 
 interface DictionaryModel {
   heading: string;
+  button: string;
   title: string;
   aboutUs: {
     title: string;
@@ -13,6 +14,14 @@ interface DictionaryModel {
       second: string;
       third: string;
     };
+  };
+  services: { title: string; list: string[] }[];
+  ventilation: {
+    title: string;
+    description: string;
+    list: string[];
+    secondDescription: string;
+    thirdDescription: string;
   };
 }
 
