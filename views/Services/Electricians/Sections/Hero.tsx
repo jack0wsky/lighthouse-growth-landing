@@ -17,6 +17,7 @@ export const Hero = () => {
           src="/services/electrician-hero.jpg"
           alt="electrician"
           fill
+          priority
           className="object-cover rounded-2xl"
         />
       </div>
