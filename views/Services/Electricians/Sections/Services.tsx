@@ -6,7 +6,10 @@ export const Services = () => {
   const { title, services, ventilation } = useServicesDictionary();
 
   return (
-    <section className="w-full flex justify-center pt-11 pb-20 md:pb-[150px]">
+    <section
+      className="w-full flex justify-center pt-11 pb-20 md:pb-[150px]"
+      id="services"
+    >
       <div className="layout">
         <h2 className="text-h2">{title}</h2>
 
