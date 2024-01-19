@@ -5,49 +5,46 @@
   "aboutUs": {
     "title": "Wer wir sind",
     "descriptions": {
-      "first": "Realizowane przez nas zlecenia obejmują prace w zakresie instalacji elektrycznych, sieci i niskoprądowych oraz sieci teleinformatycznej. Do każdego projektu podchodzimy indywidualnie zapewniając skuteczność",
-      "second": "Dostarczamy kompetentny zespół który współpracuje z wykonawcą instalacji elektrotechnicznej.  Naszą przewagą konkurencyjną jest zespół doświadczonych pracowników z wieloletnią praktyką w zawodzie",
-      "third": "Wyróżnia nas nie tylko skuteczność i realizowanie zleceń z dbałością o każdy detal. Wybierając nas masz pewność, że wszystkie prace zostaną wykonane na najwyższym poziomie. Obiekty użyteczności publicznej, budownictwo przemysłowe, mieszkaniowe czy też stocznie – to obszary, gdzie prowadzimy realizacje. Wszystkie prace wykonujemy bezwzględnie przestrzegając procedur bezpieczeństwa"
+      "first": "Von uns ausgeführte Aufträge umfassen Arbeiten wie: Elektroinstallationen, Netzwerkinstallationen, Niederspannungsnetzenverteilung, Installationen von IKT-Netzen und Lüftungssystemen",
+      "second": "Jedes Projekt behandeln wir individuell, sodass erfolgreiches Handeln versichert ist.\nWir führen ein kompetentes Team zu, das mit den Ausführenden des elektrotechnischen Netzes zusammenarbeitet. Unser Wettbewerbsvorteil ist ein Team von erfahrenen Arbeitnehmern mit langjähriger Berufstätigkeit.",
+      "third": "Wir unterscheiden uns von anderen nicht nur durch Effizienz und Sorge um jede Einzelheit. Wenn Sie uns wählen, können Sie sicher sein, dass alle Arbeiten auf  höchstem Qualitätsniveau ausgeführt werden",
+      "forth": "Öffentliche Einrichtungen, Infrastruktur für Handel und Industrie oder Werften - auf solchen Gebieten organisieren wir Auftragsausführung für Kunden. Alle Arbeiten werden unter strenger Einhaltung der Sicherheitsbestimmungen durchgeführt."
     }
   },
   "services": [
     {
-      "title": "Electrical Installations",
+      "title": "Elektroinstallationen",
       "list": [
-        "Construction of new ones, modernization of existing ones and repair of damaged installations",
-        "Electrical connections",
-        "Lightning protection and earthing installations"
+        "Bau neuer, Modernisierung bestehender und Reparatur beschädigter Installationen",
+        "Elektrische Anschlüsse",
+        "Blitzschutzanlagen und Erdungsanlagen"
       ]
     },
     {
-      "title": "Installation and modernization",
+      "title": "Installation und Modernisierung",
       "list": [
-        "Installation of cable routes/cable management systems",
-        "Installation of electrical switchboards",
-        "Modernization of control cabinets"
+        "Installation von Kabeltrassen/Kabelmanagementsystemen",
+        "Installation von elektrischen Schaltanlagen",
+        "Modernisierung von Schaltschränken"
       ]
     },
     {
-      "title": "Power systems and measurements",
+      "title": "Stromversorgungssysteme und Elektrische Messungen",
       "list": [
-        "Electrical measurements using a thermal imaging camera",
-        "Uninterrupted power supply systems"
+        "Elektroanlagen-Inspektionen mit Anwendung von Wärmebildkameras ",
+        "Unterbrechungsfreie Stromversorgungssysteme"
       ]
     },
     {
-      "title": "Lightning",
-      "list": ["Interior and exterior lighting of facilities"]
+      "title": "Beleuchtung",
+      "list": ["Innen- und Außenbeleuchtung von Einrichtungen"]
     }
   ],
   "ventilation": {
-    "title": "Ventilation systems",
-    "description": "In the field of ventilation systems in commercial and private buildings, we provide installation and service:",
-    "list": [
-      "Mechanical ventilation",
-      "Recuperation",
-      "Ventilation of Clean Room rooms"
-    ],
-    "secondDescription": "In addition, we carry out modernization and adaptation works.",
-    "thirdDescription": "We employ a group of high-class engineers and specialists who provide professional support, knowledge and experience at every stage of cooperation."
+    "title": "Lüftungsanlagen",
+    "description": "Im Bereich der Lüftungsanlagen in kommerziellen und privaten Gebäuden bieten wir Installation und Service:",
+    "list": ["Mechanische Lüftung", "Rekuperation", "Reinraumraumlüftung"],
+    "secondDescription": "Darüber hinaus führen wir Modernisierungs- und Anpassungsarbeiten durch.",
+    "thirdDescription": "Wir beschäftigen eine Gruppe von hochqualifizierten Ingenieuren und Spezialisten, die Sie in jeder Phase der Zusammenarbeit mit ihrem Wissen und ihrer Erfahrung professionell unterstützen."
   }
 }

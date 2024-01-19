@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="823b8eb7-99d3-4e76-a404-54dae17d0665" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Services/Electricians/Sections/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/views/Services/Electricians/Sections/Hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Services/Electricians/Sections/Services.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/views/Services/Electricians/Sections/Services.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Services/Electricians/Sections/AboutUs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/views/Services/Electricians/Sections/AboutUs.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Services/dictionaries/de.json" beforeDir="false" afterPath="$PROJECT_DIR$/views/Services/dictionaries/de.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Services/dictionaries/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/views/Services/dictionaries/en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Services/dictionaries/useServicesDictionary.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/views/Services/dictionaries/useServicesDictionary.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +106,8 @@
       <workItem from="1705237320707" duration="685000" />
       <workItem from="1705424794432" duration="3527000" />
       <workItem from="1705595463451" duration="3033000" />
-      <workItem from="1705651587801" duration="217000" />
+      <workItem from="1705651587801" duration="432000" />
+      <workItem from="1705683873920" duration="1272000" />
     </task>
     <servers />
   </component>

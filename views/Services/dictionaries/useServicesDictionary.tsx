@@ -13,6 +13,7 @@ interface DictionaryModel {
       first: string;
       second: string;
       third: string;
+      forth: string;
     };
   };
   services: { title: string; list: string[] }[];

@@ -9,10 +9,11 @@ export const AboutUs = () => {
       <div className="layout">
         <h2 className="text-h2">{aboutUs.title}</h2>
 
-        <div className="mt-12 flex flex-wrap gap-x-32 gap-y-10 w-full">
-          <p className="w-full md:w-1/3 font-base">{aboutUs.descriptions.first}</p>
-          <p className="w-full md:w-1/3 font-base">{aboutUs.descriptions.second}</p>
-          <p className='w-full md:w-3/4 font-base'>{aboutUs.descriptions.third}</p>
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10 w-full">
+          <p className="w-full font-base">{aboutUs.descriptions.first}</p>
+          <p className="w-full font-base">{aboutUs.descriptions.second}</p>
+          <p className='w-full font-base'>{aboutUs.descriptions.third}</p>
+          <p className='w-full font-base'>{aboutUs.descriptions.forth}</p>
         </div>
       </div>
     </section>
