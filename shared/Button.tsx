@@ -1,9 +1,9 @@
-import React from "react";
+import React, { ButtonHTMLAttributes } from "react";
 import Link from "next/link";
 import classNames from "classnames";
 import { useNavigation } from "@/views/routes";
 
-interface ButtonProps {
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   href?: string;
   onClick?: () => void;
   children: string;
@@ -23,6 +23,7 @@ export const Button = ({
   width,
   type,
   externalLink,
+  ...props
 }: ButtonProps) => {
   const { navigateTo } = useNavigation();
 
@@ -31,7 +32,10 @@ export const Button = ({
       <a
         className={classNames(
           "flex justify-center items-center px-5 py-2.5 rounded-lg font-bold focus:outline-palette-yellow focus:outline-1 focus:outline-offset-4",
-          { "bg-palette-black text-white hover:bg-gray-800": variant === "primary" },
+          {
+            "bg-palette-black text-white hover:bg-gray-800":
+              variant === "primary",
+          },
           {
             "bg-palette-yellow text-palette-black hover:bg-palette-yellow-light":
               variant === "secondary",
@@ -52,9 +56,13 @@ export const Button = ({
   if (onClick || type) {
     return (
       <button
+        {...props}
         className={classNames(
-          "flex justify-center items-center px-5 py-2.5 rounded-lg font-bold focus:outline-palette-yellow focus:outline-1 focus:outline-offset-4",
-          { "bg-palette-black text-white hover:bg-gray-700": variant === "primary" },
+          "flex justify-center items-center px-5 py-2.5 rounded-lg font-bold focus:outline-palette-yellow focus:outline-1 focus:outline-offset-4 disabled:opacity-60 disabled:hover:bg-palette-yellow",
+          {
+            "bg-palette-black text-white hover:bg-gray-700":
+              variant === "primary",
+          },
           {
             "bg-palette-yellow text-palette-black hover:bg-palette-yellow-light":
               variant === "secondary",
@@ -75,7 +83,10 @@ export const Button = ({
     <Link
       className={classNames(
         "flex justify-center items-center px-5 py-2.5 rounded-lg font-bold focus:outline-palette-yellow focus:outline-1 focus:outline-offset-4",
-        { "bg-palette-black text-white hover:bg-gray-700 transition-colors": variant === "primary" },
+        {
+          "bg-palette-black text-white hover:bg-gray-700 transition-colors":
+            variant === "primary",
+        },
         {
           "bg-palette-yellow text-palette-black hover:bg-palette-yellow-light":
             variant === "secondary",

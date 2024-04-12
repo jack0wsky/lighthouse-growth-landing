@@ -1,18 +1,20 @@
 import { InputHTMLAttributes } from "react";
 import classNames from "classnames";
+import { UseFormRegister } from "react-hook-form";
 
 interface InputProps
   extends Omit<InputHTMLAttributes<HTMLInputElement>, "className"> {
   label: string;
-  value: string;
   className?: string;
+  name: string;
+  register: UseFormRegister<any>;
 }
 
 export const Input = ({
   className,
-  value,
   label,
-  type,
+  register,
+  name,
   ...props
 }: InputProps) => {
   return (
@@ -23,7 +25,7 @@ export const Input = ({
           "text-base px-4 py-2.5 rounded-lg bg-palette-grey-600 text-white w-full focus:outline-palette-grey-400 focus:outline-1 focus:outline-offset-2",
           className
         )}
-        value={value}
+        {...register(name)}
         {...props}
       />
     </label>
