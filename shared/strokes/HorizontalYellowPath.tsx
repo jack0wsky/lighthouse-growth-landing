@@ -1,17 +1,8 @@
-'use client'
+"use client";
 
-import { animated, useSpring } from "@react-spring/web";
+import { motion } from "framer-motion";
 
 export const HorizontalYellowPath = () => {
-  const props = useSpring({
-    delay: 500,
-    config: {
-      duration: 600,
-    },
-    from: { width: 0 },
-    to: { width: 119 },
-  });
-
   return (
     <svg
       width="119"
@@ -20,7 +11,13 @@ export const HorizontalYellowPath = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <animated.rect style={props} height="17" rx="8.5" fill="#F2C524" />
+      <motion.rect
+        initial={{ width: 0 }}
+        animate={{ width: 120, transition: { delay: 0.5 } }}
+        height="17"
+        rx="8.5"
+        fill="#F2C524"
+      />
     </svg>
   );
 };

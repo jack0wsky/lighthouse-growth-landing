@@ -1,18 +1,8 @@
-'use client'
+"use client";
 
-import { animated, easings, useSpring } from "@react-spring/web";
+import { motion } from "framer-motion";
 
 export const YellowPath = () => {
-  const props = useSpring({
-    delay: 800,
-    config: {
-      duration: 500,
-      easing: easings.easeInOutCirc,
-    },
-    from: { width: 0 },
-    to: { width: 119 },
-  });
-
   return (
     <svg
       width="90"
@@ -21,8 +11,9 @@ export const YellowPath = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <animated.rect
-        style={props}
+      <motion.rect
+        initial={{ width: 0 }}
+        animate={{ width: 120, transition: { delay: 0.8 } }}
         x="-3"
         y="80.9241"
         width="119"

@@ -32,6 +32,8 @@ interface DictionaryModel {
     };
     cta: string;
     consent: string;
+    successTitle: string;
+    successDescription: string;
   };
 }
 

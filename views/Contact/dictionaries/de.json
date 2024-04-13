@@ -26,6 +26,8 @@
       "placeholder": "Was benötigen Sie?"
     },
     "cta": "Nachricht senden",
-    "consent": "Ich stimme zu, Marketingkommunikation von Lighthouse zu erhalten"
+    "consent": "Ich stimme zu, Marketingkommunikation von Lighthouse zu erhalten",
+    "successTitle": "Nachricht gesendet!",
+    "successDescription": "Vielen Dank, dass Sie sich mit uns in Verbindung gesetzt haben. Wir werden uns so schnell wie möglich bei Ihnen melden. In der Regel ist es innerhalb von 24 Stunden"
   }
 }

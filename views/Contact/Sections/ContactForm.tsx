@@ -10,8 +10,11 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { CheckCircle } from "@/shared/icons";
 
 const SERVICE_ID = "service_7fiih7j";
+const DEV_SERVICE_ID = "service_4mq9l6o";
 const PUBLIC_KEY = "weXdkj32Phkox1zOW";
 const TEMPLATE_ID = "template_o5wo9kj";
+
+const isProduction = process.env.NEXT_PUBLIC_ENV === "production";
 
 const schema = z.object({
   clientName: z.string(),
@@ -41,7 +44,7 @@ export const ContactForm = () => {
     setIsSending(true);
     try {
       await emailjs.send(
-        SERVICE_ID,
+        isProduction ? SERVICE_ID : DEV_SERVICE_ID,
         TEMPLATE_ID,
         {
           client_name: data.clientName,
@@ -62,13 +65,8 @@ export const ContactForm = () => {
     return (
       <div className="bg-palette-black max-w-[400px] h-[400px] w-full p-6 rounded-2xl text-white flex flex-col items-center justify-center">
         <CheckCircle className="text-6xl text-green-400" />
-        <p className="text-xl mt-4">Message sent!</p>
-        <p className="text-center opacity-70 mt-3">
-          Thanks for contacting us. We will come back to you as soon as
-          possible.
-          <br />
-          Usually it is within 24 hours
-        </p>
+        <p className="text-xl mt-4">{form.successTitle}</p>
+        <p className="text-center opacity-70 mt-3">{form.successDescription}</p>
       </div>
     );
   }
