@@ -1,9 +1,9 @@
 "use client";
 
-import { AnimatedTitle } from "@/animations/AnimatedTitle";
 import { ContactForm } from "@/views/Contact/Sections/ContactForm";
 import { HorizontalYellowPath, YellowPath } from "@/shared/strokes";
 import { useContactDictionary } from "@/views/Contact/dictionaries/useContactDictionary";
+import { motion } from "framer-motion";
 
 export const ContactHero = () => {
   const { title } = useContactDictionary();
@@ -13,9 +13,30 @@ export const ContactHero = () => {
       <div className="flex flex-col lg:flex-row justify-between items-center w-full max-w-[1100px] z-[2]">
         <div className="flex items-center w-1/2 relative h-[300px] mt-24 lg:mt-0">
           <div className="flex flex-col">
-            <AnimatedTitle>
-              <h1 className="text-h1">{title}</h1>
-            </AnimatedTitle>
+            <div className="h-14 overflow-hidden">
+              <motion.h1
+                className="text-h1"
+                initial="hidden"
+                animate="visible"
+                variants={{
+                  hidden: {},
+                  visible: { transition: { staggerChildren: 0.03, bounce: 0 } },
+                }}
+              >
+                {title.split("").map((letter, index) => (
+                  <motion.span
+                    variants={{
+                      hidden: { y: 100 },
+                      visible: { y: 0, transition: { bounce: 0 } },
+                    }}
+                    key={`${letter}-${index}`}
+                    className={letter === " " ? "" : "inline-block"}
+                  >
+                    {letter}
+                  </motion.span>
+                ))}
+              </motion.h1>
+            </div>
             <div className="mt-7.5">
               <HorizontalYellowPath />
             </div>

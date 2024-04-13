@@ -4,7 +4,7 @@ import german from "./de.json";
 import { useParams } from "next/navigation";
 
 interface DictionaryModel {
-  hero: { title: string[]; subtitle: string; cta: string };
+  hero: { title: string; subtitle: string; cta: string };
   aboutUs: { title: string; descriptions: string[]; cta: string };
   technologies: {
     title: string;

@@ -1,4 +1,5 @@
-'use client'
+"use client";
+
 import { ReactNode } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -18,7 +19,7 @@ const Industry = ({ name, href, illustration }: IndustryProps) => {
   const { industries } = useHomeDictionary();
 
   return (
-    <li className="h-[370px] list-none w-full bg-palette-grey-200 rounded-xl pt-4">
+    <li className="h-[370px] list-none w-full bg-palette-grey-200 rounded-xl pt-4 hover:-translate-y-2 transition-transform">
       <Link href={href} className="w-full h-full flex flex-col justify-between">
         <div className="h-max flex justify-center items-center">
           {illustration}

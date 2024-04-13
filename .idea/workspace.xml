@@ -5,7 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="823b8eb7-99d3-4e76-a404-54dae17d0665" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/animations/AnimatedTitle.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/strokes/HorizontalYellowPath.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/shared/strokes/HorizontalYellowPath.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/strokes/YellowPath.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/shared/strokes/YellowPath.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Careers/CareersPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/views/Careers/CareersPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Contact/Sections/ContactHero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/views/Contact/Sections/ContactHero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Home/Sections/AboutUs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/views/Home/Sections/AboutUs.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Home/Sections/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/views/Home/Sections/Hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Home/Sections/Industries.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/views/Home/Sections/Industries.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Home/dictionaries/de.json" beforeDir="false" afterPath="$PROJECT_DIR$/views/Home/dictionaries/de.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Home/dictionaries/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/views/Home/dictionaries/en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Home/dictionaries/useHomeDictionary.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/views/Home/dictionaries/useHomeDictionary.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +118,7 @@
       <workItem from="1705651587801" duration="432000" />
       <workItem from="1705683873920" duration="1736000" />
       <workItem from="1712679096314" duration="1260000" />
-      <workItem from="1712939780087" duration="8301000" />
+      <workItem from="1712939780087" duration="13406000" />
     </task>
     <servers />
   </component>
