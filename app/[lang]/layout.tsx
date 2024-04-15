@@ -24,6 +24,24 @@ export default function RootLayout({
 }: PropsWithChildren<{ params: { lang: Languages } }>) {
   return (
     <html lang={params.lang}>
+      <head>
+        <Script
+          strategy="afterInteractive"
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-JKTRGML2VR"
+        />
+
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: ` window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-JKTRGML2VR');`,
+          }}
+        />
+      </head>
       <body className={classNames(Satoshi.className, "bg-white")}>
         <main className="min-h-screen flex flex-col items-center relative">
           <PreferredLanguageWrapper>
@@ -31,7 +49,7 @@ export default function RootLayout({
             {children}
             <Script
               src="https://widget.clutch.co/static/js/widget.js"
-              strategy='afterInteractive'
+              strategy="afterInteractive"
               type="text/javascript"
             />
             <Footer />
