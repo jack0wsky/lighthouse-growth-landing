@@ -44,7 +44,7 @@ export const ContactForm = () => {
     setIsSending(true);
     try {
       await emailjs.send(
-        isProduction ? SERVICE_ID : DEV_SERVICE_ID,
+        SERVICE_ID,
         TEMPLATE_ID,
         {
           client_name: data.clientName,
