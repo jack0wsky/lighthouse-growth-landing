@@ -8,7 +8,9 @@ import { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.css";
 import { useHomeDictionary } from "@/views/Home/dictionaries/useHomeDictionary";
-import { useHeaderDictionary } from "@/shared/dictionaries/useHeaderDictionary";
+import { useListIndustries } from "@/views/Home/api/industries.controller";
+import { useParams } from "next/navigation";
+import { CMS_BASE_URL } from "@/config";
 
 interface IndustryProps {
   name: string;
@@ -35,8 +37,10 @@ const Industry = ({ name, href, illustration }: IndustryProps) => {
 
 export const Industries = () => {
   const { industries } = useHomeDictionary();
-  const { industries: industriesList } = useHeaderDictionary();
   const { navigateTo } = useNavigation();
+  const { lang } = useParams();
+
+  const { industriesList } = useListIndustries(lang);
 
   return (
     <section className="layout pt-24 pb-14">
@@ -49,120 +53,51 @@ export const Industries = () => {
           modules={[Autoplay]}
           autoplay={{ delay: 1500 }}
         >
-          <SwiperSlide>
-            <Industry
-              name={industriesList.streaming}
-              href={navigateTo(Routes.Streaming)}
-              illustration={
-                <Image
-                  src="/streaming.png"
-                  height={200}
-                  width={189}
-                  alt="streaming & telecoms illustration"
-                />
-              }
-            />
-          </SwiperSlide>
+          {industriesList.map((industry) => {
+            const imagePath =
+              CMS_BASE_URL + industry.attributes.illustration.data.attributes.url;
 
-          <SwiperSlide>
-            <Industry
-              name={industriesList.ecommerce}
-              href={navigateTo(Routes.Ecommerce)}
-              illustration={
-                <Image
-                  src="/ecommerce.png"
-                  width={255}
-                  height={183}
-                  alt="e-commerce illustration"
+            return (
+              <SwiperSlide key={industry.id}>
+                <Industry
+                  name={industry.attributes.title}
+                  href={navigateTo(Routes.Streaming)}
+                  illustration={
+                    <Image
+                      src={imagePath}
+                      height={200}
+                      width={189}
+                      alt={industry.attributes.title}
+                    />
+                  }
                 />
-              }
-            />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <Industry
-              name={industriesList.logistics}
-              href={navigateTo(Routes.Logistics)}
-              illustration={
-                <Image
-                  src="/logistics.png"
-                  width={254}
-                  height={142}
-                  alt="e-commerce illustration"
-                />
-              }
-            />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <Industry
-              name={industriesList.erpSap}
-              href={navigateTo(Routes.Sap)}
-              illustration={
-                <Image
-                  src="/sap.png"
-                  width={235}
-                  height={134}
-                  alt="e-commerce illustration"
-                />
-              }
-            />
-          </SwiperSlide>
+              </SwiperSlide>
+            );
+          })}
         </Swiper>
       </div>
 
       <ul className="w-full hidden md:flex items-center gap-x-8 mt-12">
-        <Industry
-          name={industriesList.streaming}
-          href={navigateTo(Routes.Streaming)}
-          illustration={
-            <Image
-              src="/streaming.png"
-              height={200}
-              width={189}
-              alt="streaming & telecoms illustration"
-            />
-          }
-        />
+        {industriesList.map((industry) => {
+          const imagePath =
+            CMS_BASE_URL + industry.attributes.illustration.data.attributes.url;
 
-        <Industry
-          name={industriesList.ecommerce}
-          href={navigateTo(Routes.Ecommerce)}
-          illustration={
-            <Image
-              src="/ecommerce.png"
-              width={255}
-              height={183}
-              alt="e-commerce illustration"
+          return (
+            <Industry
+              key={industry.id}
+              name={industry.attributes.title}
+              href={navigateTo(Routes.Streaming)}
+              illustration={
+                <Image
+                  src={imagePath}
+                  height={200}
+                  width={189}
+                  alt={industry.attributes.title}
+                />
+              }
             />
-          }
-        />
-
-        <Industry
-          name={industriesList.logistics}
-          href={navigateTo(Routes.Logistics)}
-          illustration={
-            <Image
-              src="/logistics.png"
-              width={254}
-              height={142}
-              alt="e-commerce illustration"
-            />
-          }
-        />
-
-        <Industry
-          name={industriesList.erpSap}
-          href={navigateTo(Routes.Sap)}
-          illustration={
-            <Image
-              src="/sap.png"
-              width={235}
-              height={134}
-              alt="e-commerce illustration"
-            />
-          }
-        />
+          );
+        })}
       </ul>
     </section>
   );

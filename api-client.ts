@@ -1,15 +1,23 @@
 import axios from "axios";
-import { QueryClient } from "react-query";
+import { QueryClient } from "@tanstack/react-query";
 import {
+  HomePage,
   Industry,
   JobOffer,
+  Media,
   Project,
+  SEO,
   Testimonial,
   ValuesPage,
 } from "@/types/cms-content";
 import { Languages } from "@/shared/dictionaries/languages";
 
 export const queryClient = new QueryClient();
+
+interface IndustryEntry {
+  title: string;
+  illustration: { data: Media };
+}
 
 interface Metadata {
   pagination: {
@@ -36,9 +44,13 @@ export interface CollectionTypeResponse<TData> {
 }
 
 export const apiClient = axios.create({
-  baseURL: `${process.env.NEXT_PUBLIC_LOCAL_API_URL}/api`,
+  baseURL: `${
+    process.env.LOCAL_API_URL || process.env.NEXT_PUBLIC_LOCAL_API_URL
+  }/api`,
   headers: {
-    Authorization: `Bearer ${process.env.NEXT_PUBLIC_STRAPI_TOKEN}`,
+    Authorization: `Bearer ${
+      process.env.STRAPI_API_TOKEN || process.env.NEXT_PUBLIC_STRAPI_TOKEN
+    }`,
   },
 });
 
@@ -76,15 +88,50 @@ export class CmsApiClient {
 
     return response.data.data;
   }
-  async getValuesContent(): Promise<ValuesPage> {
-    const response = await apiClient.get<SingleType<ValuesPage>>(
-      "/values-page",
+
+  async listIndustries(lang: Languages) {
+    const response = await apiClient.get<CollectionTypeResponse<IndustryEntry>>(
+      "/industries",
       {
         params: {
-          "populate[values][populate][0]": "*",
+          locale: lang,
+          populate: "illustration",
         },
       }
     );
+
+    return response.data.data;
+  }
+
+  async getHomePageContent(locale: Languages) {
+    try {
+      const { data } = await apiClient.get<SingleType<HomePage>>("/home-page", {
+        params: { locale },
+      });
+
+      return data.data.attributes;
+    } catch (error) {}
+  }
+  async getValuesContent(locale: Languages): Promise<ValuesPage> {
+    const response = await apiClient.get<SingleType<ValuesPage>>(
+      `/values-page`,
+      {
+        params: {
+          locale,
+          "populate[values]": "*",
+          "populate[images]": "*",
+        },
+      }
+    );
+
+    return response.data.data.attributes;
+  }
+
+  async getMetadata(locale: Languages) {
+    const response = await apiClient.get<SingleType<SEO>>("/seo", {
+      params: { locale },
+    });
+
     return response.data.data.attributes;
   }
 }

@@ -1,8 +1,11 @@
+"use client";
+
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
-import { images } from "@/views/Values/Sections/images";
 import "swiper/swiper.css";
+import { Media } from "@/types/cms-content";
+import { CMS_BASE_URL } from "@/config";
 
 interface GalleryItemProps {
   path: string;
@@ -29,7 +32,11 @@ const GalleryItem = ({
   );
 };
 
-export const Gallery = () => {
+interface GalleryProps {
+  images: Media[];
+}
+
+export const Gallery = ({ images }: GalleryProps) => {
   return (
     <div className="relative">
       <Swiper
@@ -47,12 +54,12 @@ export const Gallery = () => {
         }}
       >
         {images.map((image) => (
-          <SwiperSlide key={image.path}>
+          <SwiperSlide key={image.id}>
             <GalleryItem
-              path={`/team-photos/${image.path}`}
-              objectPosition={image.position}
-              alt={image.alt}
-              priority={image.hasPriority}
+              path={CMS_BASE_URL + image.attributes.url}
+              objectPosition="center"
+              alt=""
+              priority={false}
             />
           </SwiperSlide>
         ))}

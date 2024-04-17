@@ -8,9 +8,10 @@ import { Header } from "@/shared";
 import classNames from "classnames";
 import { Languages } from "@/shared/dictionaries/languages";
 import { PreferredLanguageWrapper } from "@/shared/utils/PreferedLanguage.context";
-import { QueryClientProvider } from "react-query";
+import { QueryClientProvider } from "@tanstack/react-query";
 import { Footer } from "@/shared/Footer";
-import { queryClient } from "@/api-client";
+import { CmsApiClient, queryClient } from "@/api-client";
+import { Metadata } from "next";
 
 const Satoshi = localFont({
   src: "./fonts/Satoshi.ttf",

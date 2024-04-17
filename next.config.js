@@ -6,6 +6,12 @@ const nextConfig = {
         protocol: "https",
         hostname: "api.mapbox.com",
         pathname: "/**",
+        port: "",
+      },
+      {
+        protocol: "http",
+        hostname: "localhost",
+        port: "1337",
       },
     ],
   },

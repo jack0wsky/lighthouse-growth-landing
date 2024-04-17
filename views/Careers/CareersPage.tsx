@@ -1,3 +1,5 @@
+'use client'
+
 import React from "react";
 import { openPositions, OpenPosition } from "@/views/Careers/open-positions";
 import Link from "next/link";
@@ -47,8 +49,6 @@ const Position = ({ position }: PositionProps) => {
 export const CareersPage = () => {
   const { title } = useCareersDictionary();
   const { jobs } = useListCareers();
-
-  console.log(jobs);
 
   return (
     <>

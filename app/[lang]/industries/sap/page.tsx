@@ -1,18 +1,16 @@
-"use client";
-
 import Image from "next/image";
-import { useIndustryDictionary } from "@/views/Industry/dictionaries/useIndustryDictionary";
 import { IndustryTemplate } from "@/views/Industry/IndustryTemplate";
-import { useListProjects } from "@/views/Industry/api/projects.controller";
+import { Metadata } from "next";
+import { generateSEOMetadata } from "@/shared/seo";
+
+export async function generateMetadata(): Promise<Metadata> {
+  return generateSEOMetadata();
+}
 
 export default function Sap() {
-  const { titles } = useIndustryDictionary();
-
-  const { projects } = useListProjects("erp-sap");
-
   return (
     <IndustryTemplate
-      title={titles.erpSap}
+      industry="erp-sap"
       illustration={
         <Image
           src="/sap-large.png"
@@ -22,7 +20,6 @@ export default function Sap() {
           alt="sap / erp illustration"
         />
       }
-      projects={projects}
     />
   );
 }

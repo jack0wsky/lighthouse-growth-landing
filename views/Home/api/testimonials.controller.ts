@@ -1,16 +1,13 @@
-import { CmsApiClient, DataWrapper } from "@/api-client";
-import { useQuery } from "react-query";
-import { Testimonial } from "@/types/cms-content";
+import { CmsApiClient } from "@/api-client";
+import { useQuery } from "@tanstack/react-query";
 
 export const useListTestimonials = () => {
   const api = new CmsApiClient();
 
-  const { data, isLoading, error } = useQuery<DataWrapper<Testimonial>[]>(
-    "testimonials",
-    async () => {
-      return await api.listTestimonials();
-    }
-  );
+  const { data, isLoading, error } = useQuery({
+    queryKey: ["testimonials"],
+    queryFn: async () => await api.listTestimonials(),
+  });
 
   return {
     testimonialsList: data || [],

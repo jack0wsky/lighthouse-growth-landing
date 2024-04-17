@@ -1,11 +1,5 @@
-import {
-  apiClient,
-  CmsApiClient,
-  CollectionTypeResponse,
-  DataWrapper,
-} from "@/api-client";
-import { useQuery } from "react-query";
-import { Project } from "@/types/cms-content";
+import { CmsApiClient } from "@/api-client";
+import { useQuery } from "@tanstack/react-query";
 import { useParams } from "next/navigation";
 
 export const useListProjects = (
@@ -13,8 +7,9 @@ export const useListProjects = (
 ) => {
   const { lang } = useParams();
   const api = new CmsApiClient();
-  const { data } = useQuery<DataWrapper<Project>[]>("projects", async () => {
-    return await api.listProjects(industry, lang);
+  const { data } = useQuery({
+    queryKey: ["projects", industry],
+    queryFn: async () => await api.listProjects(industry, lang),
   });
 
   return {
