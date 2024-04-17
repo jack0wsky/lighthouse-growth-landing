@@ -1,19 +1,16 @@
-"use client";
-
 import Image from "next/image";
 import { IndustryTemplate } from "@/views/Industry/IndustryTemplate";
-import { useIndustryDictionary } from "@/views/Industry/dictionaries/useIndustryDictionary";
-import { useListProjects } from "@/views/Industry/api/projects.controller";
+import { Metadata } from "next";
+import { generateSEOMetadata } from "@/shared/seo";
+
+export async function generateMetadata(): Promise<Metadata> {
+  return generateSEOMetadata();
+}
 
 export default function Ecommerce() {
-  const { titles } = useIndustryDictionary();
-
-  const { projects } = useListProjects("ecommerce");
-
   return (
     <IndustryTemplate
-      title={titles.ecommerce}
-      projects={projects}
+      industry="ecommerce"
       illustration={
         <Image
           src="/ecommerce-large.png"

@@ -1,19 +1,16 @@
-"use client";
-
 import Image from "next/image";
-import { useIndustryDictionary } from "@/views/Industry/dictionaries/useIndustryDictionary";
-import { useListProjects } from "@/views/Industry/api/projects.controller";
 import { IndustryTemplate } from "@/views/Industry/IndustryTemplate";
+import { Metadata } from "next";
+import { generateSEOMetadata } from "@/shared/seo";
+
+export async function generateMetadata(): Promise<Metadata> {
+  return generateSEOMetadata();
+}
 
 export default function Streaming() {
-  const { titles } = useIndustryDictionary();
-
-  const { projects } = useListProjects("streaming");
-
   return (
     <IndustryTemplate
-      title={titles.streaming}
-      projects={projects}
+      industry="streaming"
       illustration={
         <Image
           src="/streaming-large.png"

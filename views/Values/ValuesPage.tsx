@@ -1,14 +1,19 @@
-"use client";
-
 import { BurgerMenu } from "@/shared/BurgerMenu";
 import { ContactUs } from "@/views/Home/Sections";
-import { useValuesDictionary } from "@/views/Values/dictionaries/useValuesDictionary";
 import { ValuesList } from "@/views/Values/Sections/ValuesList";
 import { Gallery } from "@/views/Values/Sections/Gallery";
+import { CompanyValue, Media } from "@/types/cms-content";
 
-export const ValuesPage = () => {
-  const { title, description } = useValuesDictionary();
-
+interface ValuesPageProps {
+  title: string;
+  introduction: string;
+  images: Media[];
+}
+export const ValuesPage = ({
+  title,
+  introduction,
+  images,
+}: ValuesPageProps) => {
   return (
     <>
       <main className="flex w-full flex-col items-center mt-40">
@@ -16,13 +21,13 @@ export const ValuesPage = () => {
           <div className="w-full flex justify-center pb-11">
             <div className="layout">
               <h1 className="text-h1">{title}</h1>
-              <p className="w-full sm:w-3/4 mt-8">{description}</p>
+              <p className="w-full sm:w-3/4 mt-8">{introduction}</p>
             </div>
           </div>
 
           <ValuesList />
 
-          <Gallery />
+          <Gallery images={images} />
         </section>
 
         <ContactUs />

@@ -37,6 +37,11 @@ export interface ProjectModel {
 
 export type Industry = "streaming" | "ecommerce" | "logistics" | "erp-sap";
 
+export interface Media {
+  id: number;
+  attributes: { url: string };
+}
+
 export interface Project {
   title: string;
   aboutClient: string;
@@ -54,12 +59,27 @@ export interface Project {
   };
 }
 
+export interface CompanyValue {
+  id: number;
+  title: string;
+  content: string;
+}
+
 export interface ValuesPage {
   title: string;
   introduction: string;
-  values: {
-    id: number;
-    title: string;
-    content: string;
-  }[];
+  values: CompanyValue[];
+  images: {
+    data: Media[];
+  };
+}
+
+export interface SEO {
+  title: string;
+  description: string;
+}
+
+export interface HomePage {
+  heading: string;
+  description: string;
 }

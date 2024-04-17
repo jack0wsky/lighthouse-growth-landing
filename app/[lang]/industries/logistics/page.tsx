@@ -1,18 +1,15 @@
-"use client";
-
 import Image from "next/image";
-import { useIndustryDictionary } from "@/views/Industry/dictionaries/useIndustryDictionary";
-import { useListProjects } from "@/views/Industry/api/projects.controller";
 import { IndustryTemplate } from "@/views/Industry/IndustryTemplate";
+import { Metadata } from "next";
+import { generateSEOMetadata } from "@/shared/seo";
+
+export async function generateMetadata(): Promise<Metadata> {
+  return generateSEOMetadata();
+}
 
 export default function Logistics() {
-  const { titles } = useIndustryDictionary();
-
-  const { projects } = useListProjects("logistics");
-
   return (
     <IndustryTemplate
-      title={titles.logistics}
       illustration={
         <Image
           src="/logistics-large.png"
@@ -22,7 +19,7 @@ export default function Logistics() {
           alt="logistics illustration"
         />
       }
-      projects={projects}
+      industry="logistics"
     />
   );
 }
