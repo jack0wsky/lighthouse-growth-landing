@@ -9,6 +9,7 @@ interface DictionaryModel {
     industries: string;
     values: string;
     careers: string;
+    blog: string;
     contact: string;
   };
   industries: {

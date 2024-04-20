@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { openPositions, OpenPosition } from "@/views/Careers/open-positions";
 import Link from "next/link";
@@ -5,6 +7,7 @@ import { BurgerMenu } from "@/shared/BurgerMenu";
 import { useCareersDictionary } from "@/views/Careers/dictionaries/useCareersDictionary";
 import { useNavigation } from "@/views/routes";
 import { motion } from "framer-motion";
+import { useListCareers } from "@/views/Careers/api/careers.controller";
 
 interface PositionProps {
   position: OpenPosition;

@@ -1,5 +1,8 @@
 "use client";
+
+import ReactMarkdown from "react-markdown";
 import { useHomeDictionary } from "@/views/Home/dictionaries/useHomeDictionary";
+import { useListTestimonials } from "@/views/Home/api/testimonials.controller";
 
 interface TestimonialProps {
   content: any;
@@ -7,44 +10,10 @@ interface TestimonialProps {
   author: string;
 }
 
-const clientReviews = [
-  {
-    content: (
-      <p className="italic text-xl">
-        “Lighthouse growth’s talent is{" "}
-        <span className="font-medium">comparable to US developers</span> and
-        more budget-friendly.”
-      </p>
-    ),
-    position: "CEO at Invision Source",
-    author: "Carla Virola",
-  },
-  {
-    content: (
-      <p className="italic text-xl">
-        “The Lighthouse growth team was able to deliver incredible candidates in
-        a timely manner. The team was competent and showed great expertise and
-        professionalism throughout the collaboration.”
-      </p>
-    ),
-    position: "Team Leader at Pearl Group",
-    author: "Pavels Koliskins",
-  },
-  {
-    content: (
-      <p className="italic text-xl">
-        I was most impressed by Lighthouse growth’s ability to find qualified
-        candidates quickly.
-      </p>
-    ),
-    position: "Manager at Swedish streaming platform",
-    author: "Julien T.",
-  },
-];
 const Testimonial = ({ content, author, position }: TestimonialProps) => {
   return (
     <li className="w-full md:min-h-[300px] p-5 rounded-xl bg-palette-grey-200 flex flex-col justify-between">
-      {content}
+      <ReactMarkdown>{content}</ReactMarkdown>
 
       <div className="mt-6 md:mt-0">
         <p className="font-medium text-palette-black">{author}</p>
@@ -55,6 +24,8 @@ const Testimonial = ({ content, author, position }: TestimonialProps) => {
 };
 export const Testimonials = () => {
   const { testimonials } = useHomeDictionary();
+
+  const { testimonialsList, loading, error } = useListTestimonials();
 
   return (
     <section className="layout pb-24 mt-14">
@@ -75,16 +46,26 @@ export const Testimonials = () => {
         />
       </div>
 
-      <ul className="mt-12 flex flex-col md:flex-row items-center gap-5">
-        {clientReviews.map((review, index) => (
-          <Testimonial
-            key={index}
-            content={review.content}
-            position={review.position}
-            author={review.author}
-          />
-        ))}
-      </ul>
+      {loading && (
+        <ul className="mt-12 flex flex-col md:flex-row items-center gap-5">
+          <div className="w-full bg-palette-grey-200 animate-pulse h-[200px]" />
+          <div className="w-full bg-palette-grey-200 animate-pulse h-[200px]" />
+          <div className="w-full bg-palette-grey-200 animate-pulse h-[200px]" />
+        </ul>
+      )}
+
+      {!loading && !!testimonialsList.length && (
+        <ul className="mt-12 flex flex-col md:flex-row items-center gap-5">
+          {testimonialsList.map((testimonial) => (
+            <Testimonial
+              key={testimonial.id}
+              content={testimonial.attributes.content}
+              position={`${testimonial.attributes.position} at ${testimonial.attributes.company}`}
+              author={testimonial.attributes.author}
+            />
+          ))}
+        </ul>
+      )}
     </section>
   );
 };

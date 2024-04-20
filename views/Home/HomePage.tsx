@@ -7,10 +7,14 @@ import {
 } from "@/views/Home/Sections";
 import { BurgerMenu } from "@/shared/BurgerMenu";
 
-export const HomePage = () => {
+interface HomePageProps {
+  title: string;
+  description: string;
+}
+export const HomePage = async ({ title, description }: HomePageProps) => {
   return (
     <>
-      <Hero />
+      <Hero title={title} description={description} />
       <AboutUs />
       <Industries />
       <Testimonials />
