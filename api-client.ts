@@ -9,6 +9,7 @@ import {
   SEO,
   Testimonial,
   ValuesPage,
+  BlogPost,
 } from "@/types/cms-content";
 import { Languages } from "@/shared/dictionaries/languages";
 
@@ -30,7 +31,12 @@ interface Metadata {
 
 export interface DataWrapper<TData> {
   id: number;
-  attributes: TData;
+  attributes: {
+    createdAt: string;
+    publishedAt: string;
+    updatedAt: string;
+    locale: Languages;
+  } & TData;
 }
 
 export interface SingleType<TData> {
@@ -133,5 +139,31 @@ export class CmsApiClient {
     });
 
     return response.data.data.attributes;
+  }
+
+  async getBlogPosts(locale: Languages) {
+    const response = await apiClient.get<CollectionTypeResponse<BlogPost>>(
+      "/blog-posts",
+      {
+        params: {
+          locale,
+          "sort[0]": "publishedAt:desc",
+          "pagination[pageSize]": 9,
+        },
+      }
+    );
+
+    return response.data.data;
+  }
+
+  async getBlogPostBySlug(slug: string, locale: Languages) {
+    const response = await apiClient.get<CollectionTypeResponse<BlogPost>>(
+      `/blog-posts`,
+      {
+        params: { locale, "filters[slug][$eq]": slug },
+      }
+    );
+
+    return response.data.data[0];
   }
 }

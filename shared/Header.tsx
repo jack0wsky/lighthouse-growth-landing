@@ -90,6 +90,13 @@ export const Header = () => {
 
   const { language, updateLanguage } = usePreferredLanguageContext();
 
+  const routes = [
+    { name: mainNavigation.industries, href: Routes.Industries, submenu: true },
+    { name: mainNavigation.values, href: Routes.Values, submenu: false },
+    { name: mainNavigation.careers, href: Routes.Careers, submenu: false },
+    { name: mainNavigation.blog, href: Routes.Blog, submenu: false },
+  ];
+
   useEffect(() => {
     updateLanguage(lang);
   }, [lang]);
@@ -108,51 +115,28 @@ export const Header = () => {
 
         <div className="flex items-center gap-x-24 h-full">
           <nav className="hidden sm:flex items-center gap-x-20 h-full">
-            <div className="group h-full">
-              <div className="h-full">
-                <Link
-                  className="px-4 h-full flex items-center gap-x-2"
-                  href={navigateTo(Routes.Industries)}
-                >
-                  {mainNavigation.industries}
-                  <ArrowDown className="group-hover:rotate-180 transition-transform" />
-                </Link>
-                {pathname.includes("/industries") && (
-                  <span className="block h-0.5 w-full bg-palette-yellow" />
-                )}
+            {routes.map((route) => (
+              <div className="group h-full" key={route.name}>
+                <div className="h-full">
+                  <Link
+                    className="px-4 h-full flex items-center gap-x-2"
+                    href={navigateTo(route.href)}
+                  >
+                    {route.name}
+                    {route.submenu && (
+                      <ArrowDown className="group-hover:rotate-180 transition-transform" />
+                    )}
+                  </Link>
+                  {pathname.includes(route.href) && (
+                    <span className="block h-0.5 w-full bg-palette-yellow" />
+                  )}
+                </div>
+                {route.submenu && <Submenu />}
               </div>
-              <Submenu />
-            </div>
-            <div className="h-full">
-              <Link
-                className="px-4 h-full flex items-center"
-                href={navigateTo(Routes.Values)}
-              >
-                {mainNavigation.values}
-              </Link>
-              {pathname === "/values" && (
-                <span className="block h-0.5 w-full bg-palette-yellow" />
-              )}
-            </div>
-
-            <div className="h-full">
-              <Link
-                className="px-4 h-full flex items-center"
-                href={navigateTo(Routes.Careers)}
-              >
-                {mainNavigation.careers}
-              </Link>
-              {pathname === "/careers" && (
-                <span className="block h-0.5 w-full bg-palette-yellow" />
-              )}
-            </div>
+            ))}
           </nav>
           <div className="flex items-center gap-x-4">
-            <Button
-              variant="primary"
-              width="max"
-              href={Routes.Contact}
-            >
+            <Button variant="primary" width="max" href={Routes.Contact}>
               {mainNavigation.contact}
             </Button>
 

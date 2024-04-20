@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React from "react";
 import { openPositions, OpenPosition } from "@/views/Careers/open-positions";
@@ -48,7 +48,6 @@ const Position = ({ position }: PositionProps) => {
 
 export const CareersPage = () => {
   const { title } = useCareersDictionary();
-  const { jobs } = useListCareers();
 
   return (
     <>

@@ -9,6 +9,7 @@ export enum Routes {
   Sap = "/industries/sap",
   Values = "/values",
   Careers = "/careers",
+  Blog = '/blog',
   Contact = "/contact",
 }
 
