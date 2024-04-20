@@ -11,10 +11,16 @@ import { PreferredLanguageWrapper } from "@/shared/utils/PreferedLanguage.contex
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Footer } from "@/shared/Footer";
 import { queryClient } from "@/api-client";
+import { Inter } from "next/font/google";
 
 const Satoshi = localFont({
   src: "./fonts/Satoshi.ttf",
   display: "swap",
+});
+
+const fontSans = Inter({
+  subsets: ["latin"],
+  variable: "--font-sans",
 });
 
 export const metadata: Metadata = {
@@ -33,6 +39,7 @@ const supportedLanguages = [
   { code: "no", url: "https://www.lighthouse-growth.com/no/" },
   { code: "is", url: "https://www.lighthouse-growth.com/is/" },
 ];
+
 
 export default function RootLayout({
   children,
