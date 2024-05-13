@@ -6,11 +6,14 @@ interface IImage {
 }
 
 export const images: IImage[] = [
+  { path: "27.webp", position: "center", alt: "", hasPriority: true },
+  { path: "26.webp", position: "center", alt: "", hasPriority: true },
+  { path: "25.webp", position: "center", alt: "", hasPriority: true },
   { path: "24.webp", position: "center", alt: "", hasPriority: true },
   { path: "23.webp", position: "center", alt: "", hasPriority: true },
-  { path: "22.webp", position: "center", alt: "", hasPriority: true },
-  { path: "21.webp", position: "center", alt: "", hasPriority: true },
-  { path: "20.webp", position: "center", alt: "", hasPriority: true },
+  { path: "22.webp", position: "center", alt: "", hasPriority: false },
+  { path: "21.webp", position: "center", alt: "", hasPriority: false },
+  { path: "20.webp", position: "center", alt: "", hasPriority: false },
   {
     path: "13.webp",
     position: "center",
