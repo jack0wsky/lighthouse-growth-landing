@@ -1,0 +1,54 @@
+{
+  "heading": "Our IT offer is complemented by a comprehensive service related to the installation of an IT network, electrotechnical installations and ventilation systems",
+  "button": "Our services",
+  "title": "Services",
+  "aboutUs": {
+    "title": "Who are we",
+    "descriptions": {
+      "first": "Services we carry out include works in the field of electrical installations, low-voltage networks, IT networks and ventilation systems",
+      "second": "We provide a competent team that cooperates with the electrical installation contractor. Our competitive advantage is a team of experienced employees with many years of professional practice",
+      "third": "We are distinguished not only by efficiency and execution of orders with attention to every detail. By choosing us, you can be sure that all work will be performed to the highest standard",
+      "forth": "The services we offer include the construction, modernization and repair of electrical installations. We perform all work strictly observing safety procedures"
+    }
+  },
+  "services": [
+    {
+      "title": "Electrical Installations",
+      "list": [
+        "Construction of new ones, modernization of existing ones and repair of damaged installations",
+        "Electrical connections",
+        "Lightning protection and earthing installations"
+      ]
+    },
+    {
+      "title": "Installation and modernization",
+      "list": [
+        "Installation of cable routes/cable management systems",
+        "Installation of electrical switchboards",
+        "Modernization of control cabinets"
+      ]
+    },
+    {
+      "title": "Power systems and measurements",
+      "list": [
+        "Electrical measurements using a thermal imaging camera",
+        "Uninterrupted power supply systems"
+      ]
+    },
+    {
+      "title": "Lightning",
+      "list": ["Interior and exterior lighting of facilities"]
+    }
+  ],
+  "ventilation": {
+    "title": "Ventilation systems",
+    "description": "In the field of ventilation systems in commercial and private buildings, we provide installation and service:",
+    "list": [
+      "Mechanical ventilation",
+      "Recuperation",
+      "Ventilation of Clean Room rooms"
+    ],
+    "secondDescription": "In addition, we carry out modernization and adaptation works.",
+    "thirdDescription": "We employ a group of high-class engineers and specialists who provide professional support, knowledge and experience at every stage of cooperation."
+  }
+}
