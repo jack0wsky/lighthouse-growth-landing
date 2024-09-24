@@ -1,0 +1,16 @@
+{
+  "mainNavigation": {
+    "industries": "Pramonės šakos",
+    "values": "Vertybės",
+    "careers": "Karjera",
+    "contact": "Kontaktai"
+  },
+  "industries": {
+    "streaming": "Transliacijos ir telekomunikacijos",
+    "ecommerce": "eCommerce",
+    "logistics": "Aviacija ir logistika",
+    "erpSap": "ERP / SAP"
+  },
+  "openMenu": "Atidaryti meniu",
+  "closeMenu": "Uždaryti meniu"
+}

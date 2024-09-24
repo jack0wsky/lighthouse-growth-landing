@@ -19,7 +19,7 @@ const PreferredLanguageContext = createContext<PreferredLanguageContextProps>({
 });
 
 export const PreferredLanguageWrapper = ({ children }: PropsWithChildren) => {
-  const [lang, setLang] = useState<"en" | "de">("en");
+  const [lang, setLang] = useState<Languages>("en");
 
   return (
     <PreferredLanguageContext.Provider

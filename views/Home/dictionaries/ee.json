@@ -1,0 +1,31 @@
+{
+  "hero": {
+    "title": "Kus kliendi arusaam kohtub tehnilise tipptasemega",
+    "subtitle": "Lighthouse Growth on Poolas asuv toote arenduse agentuur, millel on oma inseneride meeskond ja tugev tööstusvõrgustik.",
+    "cta": "Räägime"
+  },
+  "aboutUs": {
+    "title": "Who we are",
+    "descriptions": [
+      "We offer both product development and staff augmentation as a flexible option to use our consultants to extend your core team and speed up your projects.",
+      "We provide an access to the large pool of IT Engineers based in Poland, where industry giants like Intel, Box, Microsoft, Google and NVIDIA locate their R&D centers",
+      "Option to set up a complete team or engineering branch of your company, including permanent recruitment support with 3 month guarantee."
+    ],
+    "cta": "Tell us your needs"
+  },
+  "technologies": {
+    "title": "Technologies we use"
+  },
+  "industries": {
+    "title": "Industries",
+    "cta": "See projects"
+  },
+  "testimonials": {
+    "title": "Our clients'<br />thoughts"
+  },
+  "contact": {
+    "title": "Let's build<br />something cool",
+    "cta": "Let's talk",
+    "position": "COO in Lighthouse Growth"
+  }
+}

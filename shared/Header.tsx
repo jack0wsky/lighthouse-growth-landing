@@ -10,6 +10,19 @@ import { useParams, usePathname, useRouter } from "next/navigation";
 import classNames from "classnames";
 import { useHeaderDictionary } from "@/shared/dictionaries/useHeaderDictionary";
 import { usePreferredLanguageContext } from "@/shared/utils/PreferedLanguage.context";
+import { Languages } from "./dictionaries/languages";
+
+const languages: Languages[] = [
+  "en",
+  "de",
+  "lt",
+  "lv",
+  "ee",
+  "fi",
+  "se",
+  "no",
+  "is",
+];
 
 const Submenu = () => {
   const pathname = usePathname();
@@ -92,7 +105,19 @@ export const Header = () => {
 
   useEffect(() => {
     updateLanguage(lang);
-  }, [lang]);
+  }, [lang, updateLanguage]);
+
+  const renderLanguageButton = (code: Languages) => (
+    <button
+      className={classNames({ "font-bold": language === code })}
+      onClick={() => {
+        updateLanguage(code);
+        router.push(pathname.replace(/\b(de|en|lt|lv|ee|fi|se|no|is)\b/, code));
+      }}
+    >
+      {code.toUpperCase()}
+    </button>
+  );
 
   return (
     <header className="w-full flex items-center justify-center h-16 px-5 fixed z-50 bg-white/90 backdrop-blur-md">
@@ -148,33 +173,12 @@ export const Header = () => {
             </div>
           </nav>
           <div className="flex items-center gap-x-4">
-            <Button
-              variant="primary"
-              width="max"
-              href={Routes.Contact}
-            >
+            <Button variant="primary" width="max" href={Routes.Contact}>
               {mainNavigation.contact}
             </Button>
 
             <div className="flex items-center gap-x-3">
-              <button
-                className={classNames({ "font-bold": language === "en" })}
-                onClick={() => {
-                  updateLanguage("en");
-                  router.push(pathname.replace("de", "en"));
-                }}
-              >
-                EN
-              </button>
-              <button
-                className={classNames({ "font-bold": language === "de" })}
-                onClick={() => {
-                  updateLanguage("de");
-                  router.push(pathname.replace("en", "de"));
-                }}
-              >
-                DE
-              </button>
+              {languages.map((code) => renderLanguageButton(code))}
             </div>
           </div>
         </div>

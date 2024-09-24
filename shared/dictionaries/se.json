@@ -1,0 +1,16 @@
+{
+  "mainNavigation": {
+    "industries": "Branscher",
+    "values": "Värderingar",
+    "careers": "Karriärer",
+    "contact": "Kontakt"
+  },
+  "industries": {
+    "streaming": "Streaming & Telekom",
+    "ecommerce": "E-handel",
+    "logistics": "Flyg & Logistik",
+    "erpSap": "ERP / SAP"
+  },
+  "openMenu": "Meny",
+  "closeMenu": "Stäng"
+}
