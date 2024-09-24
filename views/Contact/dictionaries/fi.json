@@ -1,0 +1,33 @@
+{
+  "title": "Contact us",
+  "officesSection": {
+    "title": "Our offices",
+    "cities": {
+      "gdansk": "Main office in Gdańsk",
+      "warsaw": "Office in Warsaw"
+    }
+  },
+  "form": {
+    "name": {
+      "label": "Your name",
+      "placeholder": "How should we call you?"
+    },
+    "email": {
+      "label": "Your email",
+      "placeholder": "We'd like to contact you"
+    },
+    "nda": {
+      "label": "Do you need NDA?",
+      "yes": "Yes",
+      "no": "No"
+    },
+    "message": {
+      "label": "Your question",
+      "placeholder": "What do you need?"
+    },
+    "cta": "Send message",
+    "consent": "I agree to receive marketing communication from Lighthouse",
+    "successTitle": "Message sent!",
+    "successDescription": "Thanks for contacting us. We will come back to you as soon as possible. Usually it is within 24 hours"
+  }
+}

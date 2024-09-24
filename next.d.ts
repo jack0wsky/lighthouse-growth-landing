@@ -10,7 +10,9 @@ declare module "next/navigation" {
 
   function useRouter(): ReturnType<useRouter>;
   function useParams(): ParamsReturn {
-    return { lang: "en" | "de" };
+    return {
+      lang: Languages,
+    };
   }
   function usePathname(): ReturnType<usePathname> {}
 }

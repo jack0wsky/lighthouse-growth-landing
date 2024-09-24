@@ -11,6 +11,7 @@ import "swiper/swiper.css";
 import classNames from "classnames";
 import { useIndustryDictionary } from "@/views/Industry/dictionaries/useIndustryDictionary";
 import { useParams } from "next/navigation";
+import { Languages } from "@/shared/dictionaries/languages";
 
 interface SliderNavigationProps {
   swiperRef: SwiperClass;
@@ -59,7 +60,7 @@ const SliderNavigation = ({
 
 interface IndustriesTemplateProps {
   title: string;
-  projects: { en: Project; de: Project }[];
+  projects: Record<Languages, Project>[];
   illustration: ReactNode;
 }
 
@@ -72,7 +73,7 @@ export const IndustryTemplate = ({
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const { lang } = useParams();
-  const locale = lang as "en" | "de";
+  const locale = lang as Languages;
 
   const { projectsTitle } = useIndustryDictionary();
 

@@ -1,0 +1,16 @@
+{
+  "mainNavigation": {
+    "industries": "Industries",
+    "values": "Values",
+    "careers": "Careers",
+    "contact": "Contact"
+  },
+  "industries": {
+    "streaming": "Streaming & Telecoms",
+    "ecommerce": "eCommerce",
+    "logistics": "Aviation & Logistics",
+    "erpSap": "ERP / SAP"
+  },
+  "openMenu": "Menu",
+  "closeMenu": "Close"
+}

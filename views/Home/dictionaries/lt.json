@@ -1,0 +1,31 @@
+{
+  "hero": {
+    "title": "Kur klientų supratimas susitinka su techniniu tobulumu",
+    "subtitle": "Lighthouse Growth – tai Lenkijoje įsikūrusi produktų kūrimo agentūra, turinti savo inžinierių komandą ir stiprų pramonės tinklą",
+    "cta": "Pakalbėkime"
+  },
+  "aboutUs": {
+    "title": "Kas mes esame",
+    "descriptions": [
+      "Siūlome tiek produktų kūrimą, tiek darbuotojų skaičiaus didinimą kaip lanksčią galimybę naudotis mūsų konsultantais, kad galėtumėte plėsti pagrindinę komandą ir spartinti savo projektus.",
+      "Suteikiame prieigą prie didelės IT inžinierių bazės, įsikūrusios Lenkijoje, kur savo mokslinių tyrimų ir plėtros centrus kuria tokie pramonės milžinai kaip Intel, Box, Microsoft, Google ir NVIDIA.",
+      "Galimybė sukurti visą komandą ar inžinerinį padalinį jūsų įmonėje, įskaitant nuolatinio personalo įdarbinimo palaikymą su 3 mėnesių garantija."
+    ],
+    "cta": "Pasakykite mums savo poreikius"
+  },
+  "technologies": {
+    "title": "Technologijos, kurias naudojame"
+  },
+  "industries": {
+    "title": "Pramonės šakos",
+    "cta": "Peržiūrėti projektus"
+  },
+  "testimonials": {
+    "title": "Mūsų klientų<br />mintys"
+  },
+  "contact": {
+    "title": "Sukurkime<br />kažką šaunaus",
+    "cta": "Pakalbėkime",
+    "position": "COO in Lighthouse Growth"
+  }
+}

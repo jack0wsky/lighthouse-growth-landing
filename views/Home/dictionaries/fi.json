@@ -1,0 +1,31 @@
+{
+  "hero": {
+    "title": "Missä asiakasymmärrys kohtaa teknisen huippuosaamisen",
+    "subtitle": "Lighthouse Growth on Puolassa sijaitseva tuotekehitysyritys, jolla on oma insinööritiimi ja vahva verkosto alalla.",
+    "cta": "Keskustellaan"
+  },
+  "aboutUs": {
+    "title": "Keitä olemme",
+    "descriptions": [
+      "Tarjoamme sekä tuotekehitystä että henkilöstön lisäystä joustavana vaihtoehtona, jolla voit käyttää konsulttejamme vahvistamaan ydintiimiäsi ja nopeuttamaan projektejasi.",
+      "Tarjoamme pääsyn suureen IT-insinöörien joukkoon Puolassa, jossa alan jättiläiset kuten Intel, Box, Microsoft, Google ja NVIDIA sijaitsevat T&K-keskuksineen.",
+      "Vaihtoehtona perustaa kokonainen tiimi tai yrityksesi insinöörityksikkö, mukaan lukien pysyvän rekrytoinnin tuki kolmen kuukauden takuulla."
+    ],
+    "cta": "Kerro meille tarpeesi"
+  },
+  "technologies": {
+    "title": "Teknologiat joita käytämme"
+  },
+  "industries": {
+    "title": "Toimialat",
+    "cta": "Katso projekteja"
+  },
+  "testimonials": {
+    "title": "Asiakkaidemme<br />ajatuksia"
+  },
+  "contact": {
+    "title": "Rakennetaan<br />jotain siistiä",
+    "cta": "Keskustellaan",
+    "position": "COO in Lighthouse Growth"
+  }
+}

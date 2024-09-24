@@ -2,6 +2,13 @@ import { useParams } from "next/navigation";
 import { Languages } from "@/shared/dictionaries/languages";
 import english from "./en.json";
 import german from "./de.json";
+import lithuanian from "./lt.json";
+import latvian from "./lv.json";
+import estonian from "./ee.json";
+import finnish from "./fi.json";
+import swedish from "./se.json";
+import norwegian from "./no.json";
+import icelandic from "./is.json";
 
 interface DictionaryModel {
   heading: string;
@@ -29,6 +36,13 @@ interface DictionaryModel {
 const dictionaries: Record<Languages, DictionaryModel> = {
   en: english,
   de: german,
+  lt: lithuanian,
+  lv: latvian,
+  ee: estonian,
+  fi: finnish,
+  se: swedish,
+  no: norwegian,
+  is: icelandic,
 };
 
 export const useServicesDictionary = () => {

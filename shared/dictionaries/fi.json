@@ -1,0 +1,16 @@
+{
+  "mainNavigation": {
+    "industries": "Toimialat",
+    "values": "Arvot",
+    "careers": "Urat",
+    "contact": "Yhteystiedot"
+  },
+  "industries": {
+    "streaming": "Suoratoisto & Telekommunikaatio",
+    "ecommerce": "Verkkokauppa",
+    "logistics": "Ilmailu & Logistiikka",
+    "erpSap": "ERP / SAP"
+  },
+  "openMenu": "Valikko",
+  "closeMenu": "Sulje"
+}

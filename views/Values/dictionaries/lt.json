@@ -1,0 +1,18 @@
+{
+  "title": "What drives us?",
+  "description": "With over 20 years of industry experience, we have a deep understanding of the challenges that technology professionals face. Our journey has taken us through various roles and organizations, providing us with valuable insights into the inner workings of the corporate world. This extensive experience has driven us to forge a different path, one that prioritizes independence, creativity, and client satisfaction.",
+  "paragraphs": {
+    "family": {
+      "title": "Family Touch",
+      "content": "As a family company with a tight-knit team of 20 talented professionals, we pride ourselves on delivering exceptional software solutions. We are passionate about crafting innovative and reliable IT solutions that meet the unique needs of our clients."
+    },
+    "adventure": {
+      "title": "Adventure seekers",
+      "content": "At our core, we embrace the spirit of adventure and exploration, drawing inspiration from our love for sailing and hiking. This passion fuels our drive to continuously push boundaries and find creative solutions to complex challenges."
+    },
+    "longGame": {
+      "title": "We play a long game",
+      "content": "Our company values are rooted in integrity, collaboration, and customer satisfaction. We believe in building long-term relationships with our clients by understanding their goals and providing them with tailored solutions that exceed their expectations."
+    }
+  }
+}
