@@ -12,16 +12,16 @@ import { useHeaderDictionary } from "@/shared/dictionaries/useHeaderDictionary";
 import { usePreferredLanguageContext } from "@/shared/utils/PreferedLanguage.context";
 import { Languages } from "./dictionaries/languages";
 
-const languages: Languages[] = [
-  "en",
-  "de",
-  "lt",
-  "lv",
-  "ee",
-  "fi",
-  "se",
-  "no",
-  "is",
+const languages: { code: Languages; name: string }[] = [
+  { code: "en", name: "English" },
+  { code: "de", name: "German" },
+  { code: "lt", name: "Lithuanian" },
+  { code: "lv", name: "Latvian" },
+  { code: "ee", name: "Estonian" },
+  { code: "fi", name: "Finnish" },
+  { code: "se", name: "Swedish" },
+  { code: "no", name: "Norwegian" },
+  { code: "is", name: "Icelandic" },
 ];
 
 const Submenu = () => {
@@ -107,17 +107,15 @@ export const Header = () => {
     updateLanguage(lang);
   }, [lang, updateLanguage]);
 
-  const renderLanguageButton = (code: Languages) => (
-    <button
-      className={classNames({ "font-bold": language === code })}
-      onClick={() => {
-        updateLanguage(code);
-        router.push(pathname.replace(/\b(de|en|lt|lv|ee|fi|se|no|is)\b/, code));
-      }}
-    >
-      {code.toUpperCase()}
-    </button>
-  );
+  const handleLanguageChange = (
+    event: React.ChangeEvent<HTMLSelectElement>
+  ) => {
+    const selectedLanguage = event.target.value as Languages;
+    updateLanguage(selectedLanguage);
+    router.push(
+      pathname.replace(/\b(de|en|lt|lv|ee|fi|se|no|is)\b/, selectedLanguage)
+    );
+  };
 
   return (
     <header className="w-full flex items-center justify-center h-16 px-5 fixed z-50 bg-white/90 backdrop-blur-md">
@@ -178,7 +176,17 @@ export const Header = () => {
             </Button>
 
             <div className="flex items-center gap-x-3">
-              {languages.map((code) => renderLanguageButton(code))}
+              <select
+                className="border border-gray-300 rounded p-2"
+                value={language}
+                onChange={handleLanguageChange}
+              >
+                {languages.map(({ code, name }) => (
+                  <option key={code} value={code}>
+                    {name}
+                  </option>
+                ))}
+              </select>
             </div>
           </div>
         </div>
