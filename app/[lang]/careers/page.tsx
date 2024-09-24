@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { CareersPage } from "@/views/Careers/CareersPage";
 

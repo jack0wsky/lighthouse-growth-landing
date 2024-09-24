@@ -1,8 +1,8 @@
+import type { Metadata } from "next";
 import { PropsWithChildren } from "react";
 import Script from "next/script";
 import "../globals.css";
 import localFont from "next/font/local";
-import Head from "next/head";
 import { Header } from "@/shared";
 import classNames from "classnames";
 import { Languages } from "@/shared/dictionaries/languages";
@@ -14,7 +14,7 @@ const Satoshi = localFont({
   display: "swap",
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Lighthouse Growth",
   description: "We are a software house",
 };
@@ -25,7 +25,7 @@ export default function RootLayout({
 }: PropsWithChildren<{ params: { lang: Languages } }>) {
   return (
     <html lang={params.lang}>
-      <Head>
+      <head>
         <link
           rel="alternate"
           hrefLang="en"
@@ -76,24 +76,23 @@ export default function RootLayout({
           hrefLang="x-default"
           href="https://www.lighthouse-growth.com/"
         />
-      </Head>
-      <Script
-        strategy="afterInteractive"
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-JKTRGML2VR"
-      />
-
-      <Script
-        id="google-analytics"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: ` window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-JKTRGML2VR');`,
-        }}
-      />
+      </head>
       <body className={classNames(Satoshi.className, "bg-white")}>
+        <Script
+          strategy="afterInteractive"
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-JKTRGML2VR"
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: ` window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-JKTRGML2VR');`,
+          }}
+        />
         <main className="min-h-screen flex flex-col items-center relative">
           <PreferredLanguageWrapper>
             <Header />

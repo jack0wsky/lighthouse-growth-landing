@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { ValuesPage } from "@/views/Values/ValuesPage";
 
