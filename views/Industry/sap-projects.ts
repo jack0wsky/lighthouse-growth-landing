@@ -23,5 +23,75 @@ export const sapProjects: LocalizedProject[] = [
         "Das Redesign und die Entwicklung der neuen integrierten Plattform erfolgen unter Verwendung neuester Technologien, einschließlich des neuen SAP Commerce Frameworks - Spartacus 6.0.",
       technologies: [Sap, SpartacusIcon],
     },
+    lt: {
+      title: "Finnish heavy equipment manufacturer",
+      aboutClient:
+        "Finnish manufacturer of cranes and lifting equipment, for industrial use. Client owns multiple brands and operates in many countries with some significant regionalization",
+      scope:
+        "Lighthouse works together with local Finnish partner on this complex project, leading on the front end architecture redesign. Existing solution was inefficient and not internally consistent with company identification.  Challenge was the broad scope of the project, including different brands and countries. Security and compliance working with listed company is ensured.",
+      result:
+        "Redesign and development of new intergrated platform is done in using latest technology - including new SAP Commerce Framework - Spartacus 6.0.",
+      technologies: [Sap, SpartacusIcon],
+    },
+    lv: {
+      title: "Finnish heavy equipment manufacturer",
+      aboutClient:
+        "Finnish manufacturer of cranes and lifting equipment, for industrial use. Client owns multiple brands and operates in many countries with some significant regionalization",
+      scope:
+        "Lighthouse works together with local Finnish partner on this complex project, leading on the front end architecture redesign. Existing solution was inefficient and not internally consistent with company identification.  Challenge was the broad scope of the project, including different brands and countries. Security and compliance working with listed company is ensured.",
+      result:
+        "Redesign and development of new intergrated platform is done in using latest technology - including new SAP Commerce Framework - Spartacus 6.0.",
+      technologies: [Sap, SpartacusIcon],
+    },
+    ee: {
+      title: "Finnish heavy equipment manufacturer",
+      aboutClient:
+        "Finnish manufacturer of cranes and lifting equipment, for industrial use. Client owns multiple brands and operates in many countries with some significant regionalization",
+      scope:
+        "Lighthouse works together with local Finnish partner on this complex project, leading on the front end architecture redesign. Existing solution was inefficient and not internally consistent with company identification.  Challenge was the broad scope of the project, including different brands and countries. Security and compliance working with listed company is ensured.",
+      result:
+        "Redesign and development of new intergrated platform is done in using latest technology - including new SAP Commerce Framework - Spartacus 6.0.",
+      technologies: [Sap, SpartacusIcon],
+    },
+    fi: {
+      title: "Finnish heavy equipment manufacturer",
+      aboutClient:
+        "Finnish manufacturer of cranes and lifting equipment, for industrial use. Client owns multiple brands and operates in many countries with some significant regionalization",
+      scope:
+        "Lighthouse works together with local Finnish partner on this complex project, leading on the front end architecture redesign. Existing solution was inefficient and not internally consistent with company identification.  Challenge was the broad scope of the project, including different brands and countries. Security and compliance working with listed company is ensured.",
+      result:
+        "Redesign and development of new intergrated platform is done in using latest technology - including new SAP Commerce Framework - Spartacus 6.0.",
+      technologies: [Sap, SpartacusIcon],
+    },
+    se: {
+      title: "Finnish heavy equipment manufacturer",
+      aboutClient:
+        "Finnish manufacturer of cranes and lifting equipment, for industrial use. Client owns multiple brands and operates in many countries with some significant regionalization",
+      scope:
+        "Lighthouse works together with local Finnish partner on this complex project, leading on the front end architecture redesign. Existing solution was inefficient and not internally consistent with company identification.  Challenge was the broad scope of the project, including different brands and countries. Security and compliance working with listed company is ensured.",
+      result:
+        "Redesign and development of new intergrated platform is done in using latest technology - including new SAP Commerce Framework - Spartacus 6.0.",
+      technologies: [Sap, SpartacusIcon],
+    },
+    no: {
+      title: "Finnish heavy equipment manufacturer",
+      aboutClient:
+        "Finnish manufacturer of cranes and lifting equipment, for industrial use. Client owns multiple brands and operates in many countries with some significant regionalization",
+      scope:
+        "Lighthouse works together with local Finnish partner on this complex project, leading on the front end architecture redesign. Existing solution was inefficient and not internally consistent with company identification.  Challenge was the broad scope of the project, including different brands and countries. Security and compliance working with listed company is ensured.",
+      result:
+        "Redesign and development of new intergrated platform is done in using latest technology - including new SAP Commerce Framework - Spartacus 6.0.",
+      technologies: [Sap, SpartacusIcon],
+    },
+    is: {
+      title: "Finnish heavy equipment manufacturer",
+      aboutClient:
+        "Finnish manufacturer of cranes and lifting equipment, for industrial use. Client owns multiple brands and operates in many countries with some significant regionalization",
+      scope:
+        "Lighthouse works together with local Finnish partner on this complex project, leading on the front end architecture redesign. Existing solution was inefficient and not internally consistent with company identification.  Challenge was the broad scope of the project, including different brands and countries. Security and compliance working with listed company is ensured.",
+      result:
+        "Redesign and development of new intergrated platform is done in using latest technology - including new SAP Commerce Framework - Spartacus 6.0.",
+      technologies: [Sap, SpartacusIcon],
+    },
   },
 ];

@@ -24,6 +24,76 @@ export const streamingProjects: LocalizedProject[] = [
         "Eine wesentliche Rolle bei der Entwicklung der Front-End-Architektur des Produkts des Kunden spielen und das Benutzererlebnis weiter vorantreiben.",
       technologies: [ReactIcon, Roku, IOSIcon],
     },
+    lt: {
+      title: "Support Swedish streaming platform in their product development",
+      aboutClient:
+        "Swedish streaming platform powers leading  broadcasters and enables them to provide world-class video services to their customers. Client works with global industry leaders - such as Deutsche Telekom, NBC Universal, ITV, Globo, Hallmark, Bloomberg.",
+      scope:
+        "Leading front end architecture development R&D project, done  predominantly in React and Javascript. Support testing initiatives, including display on multiple devices. Technologies used: React, Javascript, Roku, iOS.",
+      result:
+        "Playing a key role in development of client product's front-end architecture and further drive user experience. ",
+      technologies: [ReactIcon, Roku, IOSIcon],
+    },
+    lv: {
+      title: "Support Swedish streaming platform in their product development",
+      aboutClient:
+        "Swedish streaming platform powers leading  broadcasters and enables them to provide world-class video services to their customers. Client works with global industry leaders - such as Deutsche Telekom, NBC Universal, ITV, Globo, Hallmark, Bloomberg.",
+      scope:
+        "Leading front end architecture development R&D project, done  predominantly in React and Javascript. Support testing initiatives, including display on multiple devices. Technologies used: React, Javascript, Roku, iOS.",
+      result:
+        "Playing a key role in development of client product's front-end architecture and further drive user experience. ",
+      technologies: [ReactIcon, Roku, IOSIcon],
+    },
+    ee: {
+      title: "Support Swedish streaming platform in their product development",
+      aboutClient:
+        "Swedish streaming platform powers leading  broadcasters and enables them to provide world-class video services to their customers. Client works with global industry leaders - such as Deutsche Telekom, NBC Universal, ITV, Globo, Hallmark, Bloomberg.",
+      scope:
+        "Leading front end architecture development R&D project, done  predominantly in React and Javascript. Support testing initiatives, including display on multiple devices. Technologies used: React, Javascript, Roku, iOS.",
+      result:
+        "Playing a key role in development of client product's front-end architecture and further drive user experience. ",
+      technologies: [ReactIcon, Roku, IOSIcon],
+    },
+    fi: {
+      title: "Support Swedish streaming platform in their product development",
+      aboutClient:
+        "Swedish streaming platform powers leading  broadcasters and enables them to provide world-class video services to their customers. Client works with global industry leaders - such as Deutsche Telekom, NBC Universal, ITV, Globo, Hallmark, Bloomberg.",
+      scope:
+        "Leading front end architecture development R&D project, done  predominantly in React and Javascript. Support testing initiatives, including display on multiple devices. Technologies used: React, Javascript, Roku, iOS.",
+      result:
+        "Playing a key role in development of client product's front-end architecture and further drive user experience. ",
+      technologies: [ReactIcon, Roku, IOSIcon],
+    },
+    se: {
+      title: "Support Swedish streaming platform in their product development",
+      aboutClient:
+        "Swedish streaming platform powers leading  broadcasters and enables them to provide world-class video services to their customers. Client works with global industry leaders - such as Deutsche Telekom, NBC Universal, ITV, Globo, Hallmark, Bloomberg.",
+      scope:
+        "Leading front end architecture development R&D project, done  predominantly in React and Javascript. Support testing initiatives, including display on multiple devices. Technologies used: React, Javascript, Roku, iOS.",
+      result:
+        "Playing a key role in development of client product's front-end architecture and further drive user experience. ",
+      technologies: [ReactIcon, Roku, IOSIcon],
+    },
+    no: {
+      title: "Support Swedish streaming platform in their product development",
+      aboutClient:
+        "Swedish streaming platform powers leading  broadcasters and enables them to provide world-class video services to their customers. Client works with global industry leaders - such as Deutsche Telekom, NBC Universal, ITV, Globo, Hallmark, Bloomberg.",
+      scope:
+        "Leading front end architecture development R&D project, done  predominantly in React and Javascript. Support testing initiatives, including display on multiple devices. Technologies used: React, Javascript, Roku, iOS.",
+      result:
+        "Playing a key role in development of client product's front-end architecture and further drive user experience. ",
+      technologies: [ReactIcon, Roku, IOSIcon],
+    },
+    is: {
+      title: "Support Swedish streaming platform in their product development",
+      aboutClient:
+        "Swedish streaming platform powers leading  broadcasters and enables them to provide world-class video services to their customers. Client works with global industry leaders - such as Deutsche Telekom, NBC Universal, ITV, Globo, Hallmark, Bloomberg.",
+      scope:
+        "Leading front end architecture development R&D project, done  predominantly in React and Javascript. Support testing initiatives, including display on multiple devices. Technologies used: React, Javascript, Roku, iOS.",
+      result:
+        "Playing a key role in development of client product's front-end architecture and further drive user experience. ",
+      technologies: [ReactIcon, Roku, IOSIcon],
+    },
   },
   {
     en: {
@@ -58,29 +128,124 @@ Beide Unterteams arbeiten nach der agilen Methodik, verwenden Git zur Versionsko
 Lighthouse hat erfolgreich die digitale Transformation geleitet und zum nachhaltigen Erfolg des gesamten Systems des Kunden beigetragen.`,
       technologies: [Sap],
     },
-  },
-  {
-    en: {
+    lt: {
       title:
-        "Supported implementation of partner's streaming platform for leading German broadcaster.",
+        "Swedish telecom – lead development of e-commerce solution based on SAP Commerce platform",
       aboutClient:
-        "German broadcaster to start European video on demand streaming service. Service available in multiple countries with some major modifications across regions.",
+        "Swedish telecom provides a range of telecommunications services, including mobile and fixed-line services, broadband internet, and television. The company operates in several countries, including Sweden, Norway, Finland, Denmark, Estonia, Latvia and Lithuania. The company has invested in new technologies, such as 5G, and has partnered with other companies to develop digital services and solutions to stay ahead of competitors",
       scope:
-        "Our team ensured the quality of the platform implementation and working according to the specification by rigorous testing processes on different connected devices, CTVs.",
-      technologies: [],
-      result:
-        "Supported Swedish streaming platform in implementation and customization of their product to match required UX and CI. Ensured quality by rigorous app testing on different devices, CTVs. ",
+        "The scope of the project is to implement an online store along with the integrations to SAP CRM and SAP ERP. The online store is based on SAP Commerce (enterprise-level e-commerce platform) and customized user interface developed using React framework. \n",
+      result: `The e-commerce team is divided into two sub-teams: frontend and backend. 
+              The backend team is responsible for designing and developing new features, integrating SAP Commerce with other systems 
+              and providing APIs for the frontend. Experience with Java, Spring and SAP Commerce is required in the backend team. 
+              The frontend team is responsible for developing the user interface and collaborating with the backend team to ensure 
+              seamless integration. Front is based on React framework, JavaScript and CSS is required in the frontend team. 
+              Both sub-teams are working in the agile methodology, using Git for version control and Jenkins for continuous integration.
+              
+              Lighthouse successfully lead the digital transformation and contribute to overall client's system sustainability.`,
+      technologies: [Sap],
     },
-    de: {
+    lv: {
       title:
-        "Unterstützung bei der Implementierung der Streaming-Plattform eines Partners für einen führenden deutschen Rundfunkanstalt.",
+        "Swedish telecom – lead development of e-commerce solution based on SAP Commerce platform",
       aboutClient:
-        "Deutscher Rundfunkanstalt plant europäischen Video-on-Demand-Streaming-Dienst zu starten. Der Service wird in mehreren Ländern verfügbar sein, wobei einige bedeutende Anpassungen je nach Region vorgenommen werden.",
+        "Swedish telecom provides a range of telecommunications services, including mobile and fixed-line services, broadband internet, and television. The company operates in several countries, including Sweden, Norway, Finland, Denmark, Estonia, Latvia and Lithuania. The company has invested in new technologies, such as 5G, and has partnered with other companies to develop digital services and solutions to stay ahead of competitors",
       scope:
-        "Unser Team hat die Qualität der Plattformimplementierung sichergestellt und gemäß den Spezifikationen durch rigorose Testprozesse auf verschiedenen verbundenen Geräten und CTVs überprüft.",
-      technologies: [],
-      result:
-        "Unterstützung der schwedischen Streaming-Plattform bei der Implementierung und Anpassung ihres Produkts, um die erforderliche Benutzererfahrung (UX) und das Corporate Identity (CI) zu erfüllen. Qualitätssicherung durch rigoroses Testen der App auf verschiedenen Geräten und CTVs.",
+        "The scope of the project is to implement an online store along with the integrations to SAP CRM and SAP ERP. The online store is based on SAP Commerce (enterprise-level e-commerce platform) and customized user interface developed using React framework. \n",
+      result: `The e-commerce team is divided into two sub-teams: frontend and backend. 
+              The backend team is responsible for designing and developing new features, integrating SAP Commerce with other systems 
+              and providing APIs for the frontend. Experience with Java, Spring and SAP Commerce is required in the backend team. 
+              The frontend team is responsible for developing the user interface and collaborating with the backend team to ensure 
+              seamless integration. Front is based on React framework, JavaScript and CSS is required in the frontend team. 
+              Both sub-teams are working in the agile methodology, using Git for version control and Jenkins for continuous integration.
+              
+              Lighthouse successfully lead the digital transformation and contribute to overall client's system sustainability.`,
+      technologies: [Sap],
+    },
+    ee: {
+      title:
+        "Swedish telecom – lead development of e-commerce solution based on SAP Commerce platform",
+      aboutClient:
+        "Swedish telecom provides a range of telecommunications services, including mobile and fixed-line services, broadband internet, and television. The company operates in several countries, including Sweden, Norway, Finland, Denmark, Estonia, Latvia and Lithuania. The company has invested in new technologies, such as 5G, and has partnered with other companies to develop digital services and solutions to stay ahead of competitors",
+      scope:
+        "The scope of the project is to implement an online store along with the integrations to SAP CRM and SAP ERP. The online store is based on SAP Commerce (enterprise-level e-commerce platform) and customized user interface developed using React framework. \n",
+      result: `The e-commerce team is divided into two sub-teams: frontend and backend. 
+              The backend team is responsible for designing and developing new features, integrating SAP Commerce with other systems 
+              and providing APIs for the frontend. Experience with Java, Spring and SAP Commerce is required in the backend team. 
+              The frontend team is responsible for developing the user interface and collaborating with the backend team to ensure 
+              seamless integration. Front is based on React framework, JavaScript and CSS is required in the frontend team. 
+              Both sub-teams are working in the agile methodology, using Git for version control and Jenkins for continuous integration.
+              
+              Lighthouse successfully lead the digital transformation and contribute to overall client's system sustainability.`,
+      technologies: [Sap],
+    },
+    fi: {
+      title:
+        "Swedish telecom – lead development of e-commerce solution based on SAP Commerce platform",
+      aboutClient:
+        "Swedish telecom provides a range of telecommunications services, including mobile and fixed-line services, broadband internet, and television. The company operates in several countries, including Sweden, Norway, Finland, Denmark, Estonia, Latvia and Lithuania. The company has invested in new technologies, such as 5G, and has partnered with other companies to develop digital services and solutions to stay ahead of competitors",
+      scope:
+        "The scope of the project is to implement an online store along with the integrations to SAP CRM and SAP ERP. The online store is based on SAP Commerce (enterprise-level e-commerce platform) and customized user interface developed using React framework. \n",
+      result: `The e-commerce team is divided into two sub-teams: frontend and backend. 
+              The backend team is responsible for designing and developing new features, integrating SAP Commerce with other systems 
+              and providing APIs for the frontend. Experience with Java, Spring and SAP Commerce is required in the backend team. 
+              The frontend team is responsible for developing the user interface and collaborating with the backend team to ensure 
+              seamless integration. Front is based on React framework, JavaScript and CSS is required in the frontend team. 
+              Both sub-teams are working in the agile methodology, using Git for version control and Jenkins for continuous integration.
+              
+              Lighthouse successfully lead the digital transformation and contribute to overall client's system sustainability.`,
+      technologies: [Sap],
+    },
+    se: {
+      title:
+        "Swedish telecom – lead development of e-commerce solution based on SAP Commerce platform",
+      aboutClient:
+        "Swedish telecom provides a range of telecommunications services, including mobile and fixed-line services, broadband internet, and television. The company operates in several countries, including Sweden, Norway, Finland, Denmark, Estonia, Latvia and Lithuania. The company has invested in new technologies, such as 5G, and has partnered with other companies to develop digital services and solutions to stay ahead of competitors",
+      scope:
+        "The scope of the project is to implement an online store along with the integrations to SAP CRM and SAP ERP. The online store is based on SAP Commerce (enterprise-level e-commerce platform) and customized user interface developed using React framework. \n",
+      result: `The e-commerce team is divided into two sub-teams: frontend and backend. 
+              The backend team is responsible for designing and developing new features, integrating SAP Commerce with other systems 
+              and providing APIs for the frontend. Experience with Java, Spring and SAP Commerce is required in the backend team. 
+              The frontend team is responsible for developing the user interface and collaborating with the backend team to ensure 
+              seamless integration. Front is based on React framework, JavaScript and CSS is required in the frontend team. 
+              Both sub-teams are working in the agile methodology, using Git for version control and Jenkins for continuous integration.
+              
+              Lighthouse successfully lead the digital transformation and contribute to overall client's system sustainability.`,
+      technologies: [Sap],
+    },
+    no: {
+      title:
+        "Swedish telecom – lead development of e-commerce solution based on SAP Commerce platform",
+      aboutClient:
+        "Swedish telecom provides a range of telecommunications services, including mobile and fixed-line services, broadband internet, and television. The company operates in several countries, including Sweden, Norway, Finland, Denmark, Estonia, Latvia and Lithuania. The company has invested in new technologies, such as 5G, and has partnered with other companies to develop digital services and solutions to stay ahead of competitors",
+      scope:
+        "The scope of the project is to implement an online store along with the integrations to SAP CRM and SAP ERP. The online store is based on SAP Commerce (enterprise-level e-commerce platform) and customized user interface developed using React framework. \n",
+      result: `The e-commerce team is divided into two sub-teams: frontend and backend. 
+              The backend team is responsible for designing and developing new features, integrating SAP Commerce with other systems 
+              and providing APIs for the frontend. Experience with Java, Spring and SAP Commerce is required in the backend team. 
+              The frontend team is responsible for developing the user interface and collaborating with the backend team to ensure 
+              seamless integration. Front is based on React framework, JavaScript and CSS is required in the frontend team. 
+              Both sub-teams are working in the agile methodology, using Git for version control and Jenkins for continuous integration.
+              
+              Lighthouse successfully lead the digital transformation and contribute to overall client's system sustainability.`,
+      technologies: [Sap],
+    },
+    is: {
+      title:
+        "Swedish telecom – lead development of e-commerce solution based on SAP Commerce platform",
+      aboutClient:
+        "Swedish telecom provides a range of telecommunications services, including mobile and fixed-line services, broadband internet, and television. The company operates in several countries, including Sweden, Norway, Finland, Denmark, Estonia, Latvia and Lithuania. The company has invested in new technologies, such as 5G, and has partnered with other companies to develop digital services and solutions to stay ahead of competitors",
+      scope:
+        "The scope of the project is to implement an online store along with the integrations to SAP CRM and SAP ERP. The online store is based on SAP Commerce (enterprise-level e-commerce platform) and customized user interface developed using React framework. \n",
+      result: `The e-commerce team is divided into two sub-teams: frontend and backend. 
+            The backend team is responsible for designing and developing new features, integrating SAP Commerce with other systems 
+            and providing APIs for the frontend. Experience with Java, Spring and SAP Commerce is required in the backend team. 
+            The frontend team is responsible for developing the user interface and collaborating with the backend team to ensure 
+            seamless integration. Front is based on React framework, JavaScript and CSS is required in the frontend team. 
+            Both sub-teams are working in the agile methodology, using Git for version control and Jenkins for continuous integration.
+            
+            Lighthouse successfully lead the digital transformation and contribute to overall client's system sustainability.`,
+      technologies: [Sap],
     },
   },
 ];
