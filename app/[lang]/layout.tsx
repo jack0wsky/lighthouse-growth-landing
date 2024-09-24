@@ -71,6 +71,11 @@ export default function RootLayout({
           hrefLang="is"
           href="https://www.lighthouse-growth.com/is/"
         />
+        <link
+          rel="alternate"
+          hrefLang="x-default"
+          href="https://www.lighthouse-growth.com/"
+        />
       </Head>
       <Script
         strategy="afterInteractive"
