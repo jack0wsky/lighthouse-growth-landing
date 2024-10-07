@@ -1,16 +1,21 @@
 {
   "mainNavigation": {
-    "industries": "Industries",
-    "values": "Values",
-    "careers": "Careers",
-    "contact": "Contact"
+    "industries": "Industrier",
+    "solutions": "Løsninger",
+    "values": "Verdier",
+    "careers": "Karrierer",
+    "contact": "Kontakt"
   },
   "industries": {
-    "streaming": "Streaming & Telecoms",
-    "ecommerce": "eCommerce",
-    "logistics": "Aviation & Logistics",
-    "erpSap": "ERP / SAP"
+    "streaming": "Strømming",
+    "ecommerce": "E-handel",
+    "logistics": "Logistikk",
+    "erpSap": "ERP/SAP"
   },
-  "openMenu": "Menu",
-  "closeMenu": "Close"
+  "solutions": {
+    "digitalTransformation": "Digital transformasjon",
+    "sapCommerce": "SAP Commerce"
+  },
+  "openMenu": "Åpne menyen",
+  "closeMenu": "Lukk menyen"
 }

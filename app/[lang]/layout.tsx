@@ -19,6 +19,18 @@ export const metadata: Metadata = {
   description: "We are a software house",
 };
 
+const supportedLanguages = [
+  { code: "en", url: "https://www.lighthouse-growth.com/en/" },
+  { code: "de", url: "https://www.lighthouse-growth.com/de/" },
+  { code: "lt", url: "https://www.lighthouse-growth.com/lt/" },
+  { code: "lv", url: "https://www.lighthouse-growth.com/lv/" },
+  { code: "ee", url: "https://www.lighthouse-growth.com/ee/" },
+  { code: "fi", url: "https://www.lighthouse-growth.com/fi/" },
+  { code: "sv", url: "https://www.lighthouse-growth.com/sv/" },
+  { code: "no", url: "https://www.lighthouse-growth.com/no/" },
+  { code: "is", url: "https://www.lighthouse-growth.com/is/" },
+];
+
 export default function RootLayout({
   children,
   params,
@@ -26,51 +38,9 @@ export default function RootLayout({
   return (
     <html lang={params.lang}>
       <head>
-        <link
-          rel="alternate"
-          hrefLang="en"
-          href="https://www.lighthouse-growth.com/en/"
-        />
-        <link
-          rel="alternate"
-          hrefLang="de"
-          href="https://www.lighthouse-growth.com/de/"
-        />
-        <link
-          rel="alternate"
-          hrefLang="lt"
-          href="https://www.lighthouse-growth.com/lt/"
-        />
-        <link
-          rel="alternate"
-          hrefLang="lv"
-          href="https://www.lighthouse-growth.com/lv/"
-        />
-        <link
-          rel="alternate"
-          hrefLang="ee"
-          href="https://www.lighthouse-growth.com/ee/"
-        />
-        <link
-          rel="alternate"
-          hrefLang="fi"
-          href="https://www.lighthouse-growth.com/fi/"
-        />
-        <link
-          rel="alternate"
-          hrefLang="sv"
-          href="https://www.lighthouse-growth.com/sv/"
-        />
-        <link
-          rel="alternate"
-          hrefLang="no"
-          href="https://www.lighthouse-growth.com/no/"
-        />
-        <link
-          rel="alternate"
-          hrefLang="is"
-          href="https://www.lighthouse-growth.com/is/"
-        />
+        {supportedLanguages.map(({ code, url }) => (
+          <link key={code} rel="alternate" hrefLang={code} href={url} />
+        ))}
         <link
           rel="alternate"
           hrefLang="x-default"

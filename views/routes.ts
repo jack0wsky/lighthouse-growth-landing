@@ -10,6 +10,9 @@ export enum Routes {
   Values = "/values",
   Careers = "/careers",
   Contact = "/contact",
+  Solutions = "/solutions",
+  DigitalTransformation = "/solutions/digital-transformation",
+  SapCommerce = "/solutions/sap-commerce",
 }
 
 export const useNavigation = () => {

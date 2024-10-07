@@ -14,6 +14,7 @@ import { useParams } from "next/navigation";
 interface DictionaryModel {
   mainNavigation: {
     industries: string;
+    solutions: string;
     values: string;
     careers: string;
     contact: string;
@@ -23,6 +24,10 @@ interface DictionaryModel {
     ecommerce: string;
     logistics: string;
     erpSap: string;
+  };
+  solutions: {
+    digitalTransformation: string;
+    sapCommerce: string;
   };
   openMenu: string;
   closeMenu: string;

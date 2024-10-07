@@ -1,16 +1,21 @@
 {
   "mainNavigation": {
     "industries": "Branscher",
-    "values": "Värderingar",
-    "careers": "Karriärer",
-    "contact": "Kontakt"
+    "solutions": "Lösningar",
+    "values": "Värden",
+    "careers": "Karriär",
+    "contact": "Kontakta"
   },
   "industries": {
-    "streaming": "Streaming & Telekom",
+    "streaming": "Strömning",
     "ecommerce": "E-handel",
-    "logistics": "Flyg & Logistik",
-    "erpSap": "ERP / SAP"
+    "logistics": "Logistik",
+    "erpSap": "ERP/SAP"
   },
-  "openMenu": "Meny",
-  "closeMenu": "Stäng"
+  "solutions": {
+    "digitalTransformation": "Digital omvandling",
+    "sapCommerce": "SAP-handel"
+  },
+  "openMenu": "Öppna meny",
+  "closeMenu": "Stäng meny"
 }

@@ -1,16 +1,21 @@
 {
   "mainNavigation": {
-    "industries": "Industries",
-    "values": "Values",
-    "careers": "Careers",
-    "contact": "Contact"
+    "industries": "Nozares",
+    "solutions": "Risinājumi",
+    "values": "Vērtības",
+    "careers": "Karjera",
+    "contact": "Kontakti"
   },
   "industries": {
-    "streaming": "Streaming & Telecoms",
-    "ecommerce": "eCommerce",
-    "logistics": "Aviation & Logistics",
-    "erpSap": "ERP / SAP"
+    "streaming": "Straumēšana",
+    "ecommerce": "E-komercija",
+    "logistics": "Loģistika",
+    "erpSap": "ERP/SAP"
   },
-  "openMenu": "Menu",
-  "closeMenu": "Close"
+  "solutions": {
+    "digitalTransformation": "Digitālā transformācija",
+    "sapCommerce": "SAP Commerce"
+  },
+  "openMenu": "Atvērt izvēlni",
+  "closeMenu": "Aizvērt izvēlni"
 }

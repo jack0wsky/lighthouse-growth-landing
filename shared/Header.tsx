@@ -93,6 +93,47 @@ const Submenu = () => {
   );
 };
 
+const SolutionsSubmenu = () => {
+  const pathname = usePathname();
+  const { solutions } = useHeaderDictionary();
+  const { navigateTo } = useNavigation();
+
+  return (
+    <nav className="invisible group-hover:visible absolute w-full bg-palette-black left-0 top-16">
+      <div className="py-4 flex gap-x-6 justify-center">
+        <div className="h-full">
+          <Link
+            className={classNames(
+              "text-white flex items-center opacity-60 hover:opacity-100 transition-opacity",
+              { "opacity-100": pathname.includes(Routes.DigitalTransformation) }
+            )}
+            href={navigateTo(Routes.DigitalTransformation)}
+          >
+            {solutions.digitalTransformation}
+          </Link>
+          {pathname.includes(Routes.DigitalTransformation) && (
+            <span className="block h-0.5 w-full bg-palette-yellow" />
+          )}
+        </div>
+        {/* <div className="h-full">
+          <Link
+            className={classNames(
+              "text-white opacity-60 hover:opacity-100 transition-opacity",
+              { "opacity-100": pathname.includes(Routes.SapCommerce) }
+            )}
+            href={navigateTo(Routes.SapCommerce)}
+          >
+            {solutions.sapCommerce}
+          </Link>
+          {pathname.includes(Routes.SapCommerce) && (
+            <span className="block h-0.5 w-full bg-palette-yellow" />
+          )}
+        </div> */}
+      </div>
+    </nav>
+  );
+};
+
 export const Header = () => {
   const pathname = usePathname();
   const router = useRouter();
@@ -123,7 +164,7 @@ export const Header = () => {
         <Link href={navigateTo(Routes.Home)}>
           <Image
             src="/lighthouse-logo.png"
-            width="41"
+            width="42"
             height="56"
             alt="lighthouse logo"
           />
@@ -145,6 +186,21 @@ export const Header = () => {
                 )}
               </div>
               <Submenu />
+            </div>
+            <div className="group h-full">
+              <div className="h-full">
+                <Link
+                  className="px-4 h-full flex items-center gap-x-2"
+                  href={navigateTo(Routes.Solutions)}
+                >
+                  {mainNavigation.solutions}
+                  <ArrowDown className="group-hover:rotate-180 transition-transform" />
+                </Link>
+                {pathname.includes("/solutions") && (
+                  <span className="block h-0.5 w-full bg-palette-yellow" />
+                )}
+              </div>
+              <SolutionsSubmenu />
             </div>
             <div className="h-full">
               <Link

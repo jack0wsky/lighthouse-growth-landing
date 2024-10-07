@@ -1,16 +1,21 @@
 {
   "mainNavigation": {
     "industries": "Toimialat",
+    "solutions": "Ratkaisut",
     "values": "Arvot",
     "careers": "Urat",
     "contact": "Yhteystiedot"
   },
   "industries": {
-    "streaming": "Suoratoisto & Telekommunikaatio",
+    "streaming": "Suoratoisto",
     "ecommerce": "Verkkokauppa",
-    "logistics": "Ilmailu & Logistiikka",
-    "erpSap": "ERP / SAP"
+    "logistics": "Logistiikka",
+    "erpSap": "ERP/SAP"
   },
-  "openMenu": "Valikko",
-  "closeMenu": "Sulje"
+  "solutions": {
+    "digitalTransformation": "Digitaalinen transformaatio",
+    "sapCommerce": "SAP Commerce"
+  },
+  "openMenu": "Avaa valikko",
+  "closeMenu": "Sulje valikko"
 }
