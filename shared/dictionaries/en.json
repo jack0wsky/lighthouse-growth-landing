@@ -1,16 +1,21 @@
 {
   "mainNavigation": {
     "industries": "Industries",
+    "solutions": "Solutions",
     "values": "Values",
     "careers": "Careers",
     "contact": "Contact"
   },
   "industries": {
-    "streaming": "Streaming & Telecoms",
-    "ecommerce": "eCommerce",
-    "logistics": "Aviation & Logistics",
-    "erpSap": "ERP / SAP"
+    "streaming": "Streaming",
+    "ecommerce": "E-commerce",
+    "logistics": "Logistics",
+    "erpSap": "ERP/SAP"
   },
-  "openMenu": "Menu",
-  "closeMenu": "Close"
+  "solutions": {
+    "digitalTransformation": "Digital Transformation",
+    "sapCommerce": "SAP Commerce"
+  },
+  "openMenu": "Open Menu",
+  "closeMenu": "Close Menu"
 }

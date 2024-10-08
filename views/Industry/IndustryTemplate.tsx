@@ -1,62 +1,16 @@
 "use client";
 
-import { ArrowLeft, ArrowRight } from "@/shared/icons";
+import { useState, ReactNode } from "react";
 import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
-import { Controller, Navigation } from "swiper";
+import { Mousewheel, Pagination } from "swiper";
+import { useParams } from "next/navigation";
 import { ProjectTemplate } from "@/views/Industry/ProjectTemplate";
 import { BurgerMenu } from "@/shared/BurgerMenu";
-import React, { useState, ReactNode } from "react";
 import { Project } from "@/views/Industry/types";
-import "swiper/swiper.css";
-import classNames from "classnames";
 import { useIndustryDictionary } from "@/views/Industry/dictionaries/useIndustryDictionary";
-import { useParams } from "next/navigation";
 import { Languages } from "@/shared/dictionaries/languages";
-
-interface SliderNavigationProps {
-  swiperRef: SwiperClass;
-  currentSlide: number;
-  items: any[];
-}
-
-const SliderNavigation = ({
-  swiperRef,
-  currentSlide,
-  items,
-}: SliderNavigationProps) => {
-  return (
-    <div className="flex items-center gap-x-4">
-      <button
-        className="w-12 h-12 rounded-full bg-palette-yellow flex justify-center items-center disabled:bg-gray-300 group"
-        disabled={currentSlide === 0}
-        onClick={() => swiperRef.slidePrev()}
-      >
-        <ArrowLeft className="text-palette-black text-2xl group-disabled:text-white" />
-      </button>
-      <div className="flex items-center gap-x-1.5">
-        {items.map((_, index) => (
-          <div
-            key={index}
-            className={classNames(
-              "h-2.5 w-2.5 bg-palette-yellow rounded-full",
-              {
-                "opacity-100": index === currentSlide,
-                "opacity-20": index !== currentSlide,
-              }
-            )}
-          />
-        ))}
-      </div>
-      <button
-        className="w-12 h-12 rounded-full bg-palette-yellow flex justify-center items-center disabled:bg-gray-300 group"
-        disabled={currentSlide === items.length - 1}
-        onClick={() => swiperRef?.slideNext()}
-      >
-        <ArrowRight className="text-palette-black text-2xl group-disabled:text-white" />
-      </button>
-    </div>
-  );
-};
+import { SliderNavigation } from "@/shared/SliderNavigation";
+import "swiper/css";
 
 interface IndustriesTemplateProps {
   title: string;
@@ -81,7 +35,7 @@ export const IndustryTemplate = ({
     <>
       <main className="layout">
         <div className="mt-32 mb-32">
-          <div className="md:h-[50vh] md:bg-palette-grey-200 flex items-center justify-between overflow-hidden rounded-xl md:pl-20">
+          <div className="md:h-[50vh] md:bg-palette-grey-200 flex items-center justify-between overflow-hidden rounded-xl md:px-20">
             <h1
               className="text-h1"
               dangerouslySetInnerHTML={{ __html: title }}
@@ -104,12 +58,17 @@ export const IndustryTemplate = ({
           <Swiper
             spaceBetween={20}
             slidesPerView={projects.length > 1 ? 1.1 : 1}
-            modules={[Controller, Navigation]}
-            controller={{ control: "test" }}
+            modules={[Pagination, Mousewheel]}
             onInit={setSwiperRef}
             onSlideChange={(swiper) => {
               setCurrentSlide(swiper.realIndex);
             }}
+            mousewheel={{
+              forceToAxis: true,
+              sensitivity: 0.1,
+              releaseOnEdges: true,
+            }}
+            pagination={{ clickable: true }}
           >
             {projects.map((project, index) => {
               const localizedProject = project[locale];

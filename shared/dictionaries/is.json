@@ -1,16 +1,21 @@
 {
   "mainNavigation": {
-    "industries": "Industries",
-    "values": "Values",
-    "careers": "Careers",
-    "contact": "Contact"
+    "industries": "Iðnaður",
+    "solutions": "Lausnir",
+    "values": "Gildi",
+    "careers": "Ferill",
+    "contact": "Hafa samband"
   },
   "industries": {
-    "streaming": "Streaming & Telecoms",
-    "ecommerce": "eCommerce",
-    "logistics": "Aviation & Logistics",
-    "erpSap": "ERP / SAP"
+    "streaming": "Streymi",
+    "ecommerce": "Netverslun",
+    "logistics": "Flutningar",
+    "erpSap": "ERP/SAP"
   },
-  "openMenu": "Menu",
-  "closeMenu": "Close"
+  "solutions": {
+    "digitalTransformation": "Stafræn umbreyting",
+    "sapCommerce": "SAP Commerce"
+  },
+  "openMenu": "Opna valmynd",
+  "closeMenu": "Loka valmynd"
 }

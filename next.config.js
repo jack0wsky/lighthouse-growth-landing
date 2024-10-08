@@ -61,6 +61,51 @@ const nextConfig = {
         destination: "/is/industries/streaming",
         permanent: false,
       },
+      {
+        source: "/en/solutions",
+        destination: "/en/solutions/digital-transformation",
+        permanent: false,
+      },
+      {
+        source: "/de/solutions",
+        destination: "/de/solutions/digital-transformation",
+        permanent: false,
+      },
+      {
+        source: "/lt/solutions",
+        destination: "/lt/solutions/digital-transformation",
+        permanent: false,
+      },
+      {
+        source: "/lv/solutions",
+        destination: "/lv/solutions/digital-transformation",
+        permanent: false,
+      },
+      {
+        source: "/ee/solutions",
+        destination: "/ee/solutions/digital-transformation",
+        permanent: false,
+      },
+      {
+        source: "/fi/solutions",
+        destination: "/fi/solutions/digital-transformation",
+        permanent: false,
+      },
+      {
+        source: "/se/solutions",
+        destination: "/se/solutions/digital-transformation",
+        permanent: false,
+      },
+      {
+        source: "/no/solutions",
+        destination: "/no/solutions/digital-transformation",
+        permanent: false,
+      },
+      {
+        source: "/is/solutions",
+        destination: "/is/solutions/digital-transformation",
+        permanent: false,
+      },
     ];
   },
 };

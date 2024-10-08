@@ -59,15 +59,48 @@ const IndustriesSubmenu = () => {
   );
 };
 
+const SolutionsSubmenu = () => {
+  const pathname = usePathname();
+  const { solutions } = useHeaderDictionary();
+  const { navigateTo } = useNavigation();
+
+  return (
+    <ul className="ml-4 mb-3">
+      <li>
+        <Link
+          className={classNames("text-2xl text-white", {
+            underline: pathname === navigateTo(Routes.DigitalTransformation),
+          })}
+          href={navigateTo(Routes.DigitalTransformation)}
+        >
+          {solutions.digitalTransformation}
+        </Link>
+      </li>
+      <li>
+        <Link
+          className={classNames("text-2xl text-white", {
+            underline: pathname === navigateTo(Routes.SapCommerce),
+          })}
+          href={navigateTo(Routes.SapCommerce)}
+        >
+          {solutions.sapCommerce}
+        </Link>
+      </li>
+    </ul>
+  );
+};
+
 export const BurgerMenu = () => {
   const pathname = usePathname();
   const { navigateTo } = useNavigation();
   const { mainNavigation, openMenu, closeMenu } = useHeaderDictionary();
   const [open, setOpen] = useState(false);
   const [expandIndustries, setExpandIndustries] = useState(false);
+  const [expandSolutions, setExpandSolutions] = useState(false);
 
   useEffect(() => {
     if (pathname.includes("/industries")) setExpandIndustries(true);
+    if (pathname.includes("/solutions")) setExpandSolutions(true);
   }, [pathname]);
 
   return (
@@ -93,6 +126,25 @@ export const BurgerMenu = () => {
             </button>
           </li>
           {expandIndustries && <IndustriesSubmenu />}
+          <li className="w-full flex justify-between gap-x-4">
+            <Link
+              className="text-3xl text-white leading-10"
+              href={navigateTo(Routes.Solutions)}
+            >
+              {mainNavigation.solutions}
+            </Link>
+            <button
+              className="w-full"
+              onClick={() => setExpandSolutions((prevState) => !prevState)}
+            >
+              <ArrowDown
+                className={classNames("text-white h-7 w-7", {
+                  "rotate-180": expandSolutions,
+                })}
+              />
+            </button>
+          </li>
+          {expandSolutions && <SolutionsSubmenu />}
           <Link
             className="text-3xl text-white leading-10"
             href={navigateTo(Routes.Values)}

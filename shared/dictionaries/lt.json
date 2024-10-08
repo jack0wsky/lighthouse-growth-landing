@@ -1,15 +1,20 @@
 {
   "mainNavigation": {
-    "industries": "Pramonės šakos",
+    "industries": "Pramonės",
+    "solutions": "Sprendimai",
     "values": "Vertybės",
     "careers": "Karjera",
     "contact": "Kontaktai"
   },
   "industries": {
-    "streaming": "Transliacijos ir telekomunikacijos",
-    "ecommerce": "eCommerce",
-    "logistics": "Aviacija ir logistika",
-    "erpSap": "ERP / SAP"
+    "streaming": "Transliacija",
+    "ecommerce": "Elektroninė prekyba",
+    "logistics": "Logistika",
+    "erpSap": "ERP/SAP"
+  },
+  "solutions": {
+    "digitalTransformation": "Skaitmeninė transformacija",
+    "sapCommerce": "SAP Commerce"
   },
   "openMenu": "Atidaryti meniu",
   "closeMenu": "Uždaryti meniu"
