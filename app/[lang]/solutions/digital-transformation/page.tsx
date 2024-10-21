@@ -8,7 +8,7 @@ const DigitalTransformationPage = () => (
     <Head>
       <link
         rel="canonical"
-        href="https://www.yoursite.com/solutions/digital-transformation"
+        href="https://www.lighthouse-growth.com/en/solutions/digital-transformation"
       />
     </Head>
     <DigitalTransformation />

@@ -8,7 +8,7 @@ const SapCommercePage = () => (
     <Head>
       <link
         rel="canonical"
-        href="https://www.yoursite.com/solutions/sap-commerce"
+        href="https://www.lighthouse-growth.com/en/solutions/sap-commerce"
       />
     </Head>
     <SapCommerce />
