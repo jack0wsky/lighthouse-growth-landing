@@ -115,7 +115,7 @@ const SolutionsSubmenu = () => {
             <span className="block h-0.5 w-full bg-palette-yellow" />
           )}
         </div>
-        {/* <div className="h-full">
+        <div className="h-full">
           <Link
             className={classNames(
               "text-white opacity-60 hover:opacity-100 transition-opacity",
@@ -128,7 +128,7 @@ const SolutionsSubmenu = () => {
           {pathname.includes(Routes.SapCommerce) && (
             <span className="block h-0.5 w-full bg-palette-yellow" />
           )}
-        </div> */}
+        </div>
       </div>
     </nav>
   );
