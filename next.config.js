@@ -106,6 +106,51 @@ const nextConfig = {
         destination: "/is/solutions/digital-transformation",
         permanent: false,
       },
+      {
+        source: "/en/solutions",
+        destination: "/en/solutions/sap-commerce",
+        permanent: false,
+      },
+      {
+        source: "/de/solutions",
+        destination: "/de/solutions/sap-commerce",
+        permanent: false,
+      },
+      {
+        source: "/lt/solutions",
+        destination: "/lt/solutions/sap-commerce",
+        permanent: false,
+      },
+      {
+        source: "/lv/solutions",
+        destination: "/lv/solutions/sap-commerce",
+        permanent: false,
+      },
+      {
+        source: "/ee/solutions",
+        destination: "/ee/solutions/sap-commerce",
+        permanent: false,
+      },
+      {
+        source: "/fi/solutions",
+        destination: "/fi/solutions/sap-commerce",
+        permanent: false,
+      },
+      {
+        source: "/se/solutions",
+        destination: "/se/solutions/sap-commerce",
+        permanent: false,
+      },
+      {
+        source: "/no/solutions",
+        destination: "/no/solutions/sap-commerce",
+        permanent: false,
+      },
+      {
+        source: "/is/solutions",
+        destination: "/is/solutions/sap-commerce",
+        permanent: false,
+      },
     ];
   },
 };
