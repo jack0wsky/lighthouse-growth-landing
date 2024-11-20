@@ -1,3 +1,5 @@
+"use client";
+
 import type { Metadata } from "next";
 
 import { PropsWithChildren } from "react";
@@ -8,11 +10,10 @@ import { Header } from "@/shared";
 import classNames from "classnames";
 import { Languages } from "@/shared/dictionaries/languages";
 import { PreferredLanguageWrapper } from "@/shared/utils/PreferedLanguage.context";
-import { QueryClientProvider } from "@tanstack/react-query";
 import { Footer } from "@/shared/Footer";
 import { queryClient } from "@/api-client";
 import { Inter } from "next/font/google";
-
+import { QueryClientProvider } from "@tanstack/react-query";
 const Satoshi = localFont({
   src: "./fonts/Satoshi.ttf",
   display: "swap",
@@ -23,10 +24,10 @@ const fontSans = Inter({
   variable: "--font-sans",
 });
 
-export const metadata: Metadata = {
-  title: "Lighthouse Growth",
-  description: "We are a software house",
-};
+// export const metadata: Metadata = {
+//   title: "Lighthouse Growth",
+//   description: "We are a software house",
+// };
 
 const supportedLanguages = [
   { code: "en", url: "https://www.lighthouse-growth.com/en/" },
@@ -39,7 +40,6 @@ const supportedLanguages = [
   { code: "no", url: "https://www.lighthouse-growth.com/no/" },
   { code: "is", url: "https://www.lighthouse-growth.com/is/" },
 ];
-
 
 export default function RootLayout({
   children,
@@ -74,8 +74,8 @@ export default function RootLayout({
           }}
         />
         <main className="min-h-screen flex flex-col items-center relative">
-          <PreferredLanguageWrapper>
-            <QueryClientProvider client={queryClient}>
+          <QueryClientProvider client={queryClient}>
+            <PreferredLanguageWrapper>
               <Header />
               {children}
               <Script
@@ -84,8 +84,8 @@ export default function RootLayout({
                 type="text/javascript"
               />
               <Footer />
-            </QueryClientProvider>
-          </PreferredLanguageWrapper>
+            </PreferredLanguageWrapper>
+          </QueryClientProvider>
         </main>
       </body>
     </html>

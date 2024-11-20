@@ -55,7 +55,8 @@ export const Industries = () => {
         >
           {industriesList.map((industry) => {
             const imagePath =
-              CMS_BASE_URL + industry.attributes.illustration.data.attributes.url;
+              CMS_BASE_URL +
+              industry.attributes.illustration.data.attributes.url;
 
             return (
               <SwiperSlide key={industry.id}>

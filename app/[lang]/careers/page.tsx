@@ -1,11 +1,10 @@
-"use client";
-import { Metadata } from "next";
+// import { Metadata } from "next";
 
 import { CareersPage } from "@/views/Careers/CareersPage";
-import { generateSEOMetadata } from "@/shared/seo";
+// import { generateSEOMetadata } from "@/shared/seo";
 
-export async function generateMetadata(): Promise<Metadata> {
-  return generateSEOMetadata();
-}
+// export async function generateMetadata(): Promise<Metadata> {
+//   return generateSEOMetadata();
+// }
 
 export default CareersPage;

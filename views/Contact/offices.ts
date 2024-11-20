@@ -20,7 +20,7 @@ export const offices: Office[] = [
     label: "warsaw",
     city: "Warsaw",
     country: "Poland",
-    image: '/warsaw-office.png',
+    image: "/warsaw-office.png",
     postalCode: "00-025",
     street: "ul. Krucza 50",
   },
