@@ -10,7 +10,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function Sap() {
   return (
     <IndustryTemplate
-      industry="erp-sap"
+      title="SAP / ERP"
       illustration={
         <Image
           src="/sap-large.png"
@@ -20,6 +20,7 @@ export default function Sap() {
           alt="sap / erp illustration"
         />
       }
+      projects={[]}
     />
   );
 }

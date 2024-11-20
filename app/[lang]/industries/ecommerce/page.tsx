@@ -10,7 +10,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function Ecommerce() {
   return (
     <IndustryTemplate
-      industry="ecommerce"
+      title="Ecommerce"
       illustration={
         <Image
           src="/ecommerce-large.png"
@@ -20,6 +20,7 @@ export default function Ecommerce() {
           alt="ecommerce illustration"
         />
       }
+      projects={[]}
     />
   );
 }

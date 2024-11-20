@@ -1,4 +1,3 @@
-"use client";
 import { Languages } from "@/shared/dictionaries/languages";
 import en from "./en.json";
 import de from "./de.json";

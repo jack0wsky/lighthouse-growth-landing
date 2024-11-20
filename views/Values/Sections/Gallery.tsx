@@ -56,7 +56,7 @@ export const Gallery = ({ images }: GalleryProps) => {
         {images.map((image) => (
           <SwiperSlide key={image.id}>
             <GalleryItem
-              path={CMS_BASE_URL + image.attributes.url}
+              path={image.attributes.url}
               objectPosition="center"
               alt=""
               priority={false}

@@ -10,7 +10,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function Streaming() {
   return (
     <IndustryTemplate
-      industry="streaming"
+      title="Streaming"
       illustration={
         <Image
           src="/streaming-large.png"
@@ -20,6 +20,7 @@ export default function Streaming() {
           alt="illustration for streaming projects"
         />
       }
+      projects={[]}
     />
   );
 }

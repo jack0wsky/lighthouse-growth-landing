@@ -13,8 +13,15 @@ const nextConfig = {
         hostname: "localhost",
         port: "1337",
       },
+      {
+        protocol: "https",
+        hostname: "cms.lighthouse-growth.com",
+        port: "",
+      },
     ],
+    domains: ['cms.lighthouse-growth.com', 'cms-media-bucket.fra1.digitaloceanspaces.com']
   },
+  
   async redirects() {
     return [
       {

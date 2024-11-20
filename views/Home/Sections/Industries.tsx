@@ -80,8 +80,7 @@ export const Industries = () => {
 
       <ul className="w-full hidden md:flex items-center gap-x-8 mt-12">
         {industriesList.map((industry) => {
-          const imagePath =
-            CMS_BASE_URL + industry.attributes.illustration.data.attributes.url;
+          const imagePath = industry.attributes.illustration.data.attributes.url;
 
           return (
             <Industry

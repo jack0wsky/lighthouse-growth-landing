@@ -10,6 +10,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function Logistics() {
   return (
     <IndustryTemplate
+      title="Logistics"
       illustration={
         <Image
           src="/logistics-large.png"
@@ -19,7 +20,7 @@ export default function Logistics() {
           alt="logistics illustration"
         />
       }
-      industry="logistics"
+      projects={[]}
     />
   );
 }

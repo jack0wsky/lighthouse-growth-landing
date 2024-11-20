@@ -145,7 +145,8 @@ export const Header = () => {
   const { language, updateLanguage } = usePreferredLanguageContext();
 
   const routes = [
-    { name: mainNavigation.industries, href: Routes.Industries, submenu: true },
+    { name: mainNavigation.industries, href: Routes.Industries, submenu: true, component: <Submenu /> },
+    { name: mainNavigation.solutions, href: Routes.Solutions, submenu: true, component: <SolutionsSubmenu /> },
     { name: mainNavigation.values, href: Routes.Values, submenu: false },
     { name: mainNavigation.careers, href: Routes.Careers, submenu: false },
     { name: mainNavigation.blog, href: Routes.Blog, submenu: false },
@@ -195,7 +196,7 @@ export const Header = () => {
                     <span className="block h-0.5 w-full bg-palette-yellow" />
                   )}
                 </div>
-                {route.submenu && <Submenu />}
+                {route.submenu && route.component}
               </div>
             ))}
           </nav>
