@@ -12,8 +12,8 @@ export const AboutUs = () => {
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10 w-full">
           <p className="w-full font-base">{aboutUs.descriptions.first}</p>
           <p className="w-full font-base">{aboutUs.descriptions.second}</p>
-          <p className='w-full font-base'>{aboutUs.descriptions.third}</p>
-          <p className='w-full font-base'>{aboutUs.descriptions.forth}</p>
+          <p className="w-full font-base">{aboutUs.descriptions.third}</p>
+          <p className="w-full font-base">{aboutUs.descriptions.forth}</p>
         </div>
       </div>
     </section>

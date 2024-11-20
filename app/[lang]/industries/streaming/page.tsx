@@ -1,17 +1,16 @@
-"use client";
-
-import { streamingProjects } from "@/views/Industry/streaming-projects";
-import { IndustryTemplate } from "@/views/Industry/IndustryTemplate";
 import Image from "next/image";
-import { useIndustryDictionary } from "@/views/Industry/dictionaries/useIndustryDictionary";
+import { IndustryTemplate } from "@/views/Industry/IndustryTemplate";
+import { Metadata } from "next";
+import { generateSEOMetadata } from "@/shared/seo";
+
+export async function generateMetadata(): Promise<Metadata> {
+  return generateSEOMetadata();
+}
 
 export default function Streaming() {
-  const { titles } = useIndustryDictionary();
-
   return (
     <IndustryTemplate
-      title={titles.streaming}
-      projects={streamingProjects}
+      title="Streaming"
       illustration={
         <Image
           src="/streaming-large.png"
@@ -21,6 +20,7 @@ export default function Streaming() {
           alt="illustration for streaming projects"
         />
       }
+      projects={[]}
     />
   );
 }

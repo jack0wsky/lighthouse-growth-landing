@@ -1,16 +1,16 @@
-"use client";
-
-import { IndustryTemplate } from "@/views/Industry/IndustryTemplate";
-import { logisticsProjects } from "@/views/Industry/logistics-projects";
 import Image from "next/image";
-import { useIndustryDictionary } from "@/views/Industry/dictionaries/useIndustryDictionary";
+import { IndustryTemplate } from "@/views/Industry/IndustryTemplate";
+import { Metadata } from "next";
+import { generateSEOMetadata } from "@/shared/seo";
+
+export async function generateMetadata(): Promise<Metadata> {
+  return generateSEOMetadata();
+}
 
 export default function Logistics() {
-  const { titles } = useIndustryDictionary();
-
   return (
     <IndustryTemplate
-      title={titles.logistics}
+      title="Logistics"
       illustration={
         <Image
           src="/logistics-large.png"
@@ -20,7 +20,7 @@ export default function Logistics() {
           alt="logistics illustration"
         />
       }
-      projects={logisticsProjects}
+      projects={[]}
     />
   );
 }

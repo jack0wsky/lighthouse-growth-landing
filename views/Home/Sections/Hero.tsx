@@ -6,7 +6,11 @@ import { Routes } from "@/views/routes";
 import { useHomeDictionary } from "@/views/Home/dictionaries/useHomeDictionary";
 import { motion } from "framer-motion";
 
-export const Hero = () => {
+interface HeroProps {
+  title: string;
+  description: string;
+}
+export const Hero = ({ title, description }: HeroProps) => {
   const { hero } = useHomeDictionary();
 
   return (
@@ -29,7 +33,7 @@ export const Hero = () => {
           className="text-h1 inline-block"
           aria-hidden
         >
-          {hero.title.split("").map((character, index) => (
+          {title.split("").map((character, index) => (
             <motion.span
               variants={{
                 hide: { opacity: 0, y: 10 },
@@ -52,7 +56,7 @@ export const Hero = () => {
           }}
           className="max-w-[450px] w-full mt-4 mb-9 text-xl"
         >
-          {hero.subtitle}
+          {description}
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 10 }}
