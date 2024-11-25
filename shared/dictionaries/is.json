@@ -1,21 +1,22 @@
 {
-  "mainNavigation": {
-    "industries": "Iðnaður",
-    "solutions": "Lausnir",
-    "values": "Gildi",
-    "careers": "Ferill",
-    "contact": "Hafa samband"
-  },
-  "industries": {
-    "streaming": "Streymi",
-    "ecommerce": "Netverslun",
-    "logistics": "Flutningar",
-    "erpSap": "ERP/SAP"
-  },
-  "solutions": {
-    "digitalTransformation": "Stafræn umbreyting",
-    "sapCommerce": "SAP Commerce"
-  },
-  "openMenu": "Opna valmynd",
-  "closeMenu": "Loka valmynd"
+    "mainNavigation": {
+        "industries": "Iðnaður",
+        "solutions": "Lausnir",
+        "values": "Gildi",
+        "careers": "Ferill",
+        "blog": "Blogg",
+        "contact": "Hafa samband"
+    },
+    "industries": {
+        "streaming": "Streymi",
+        "ecommerce": "Netverslun",
+        "logistics": "Flutningar",
+        "erpSap": "ERP/SAP"
+    },
+    "solutions": {
+        "digitalTransformation": "Stafræn umbreyting",
+        "sapCommerce": "SAP Commerce"
+    },
+    "openMenu": "Opna valmynd",
+    "closeMenu": "Loka valmynd"
 }

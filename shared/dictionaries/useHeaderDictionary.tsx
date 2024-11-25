@@ -1,4 +1,3 @@
-"use client";
 import { Languages } from "@/shared/dictionaries/languages";
 import en from "./en.json";
 import de from "./de.json";
@@ -17,6 +16,7 @@ interface DictionaryModel {
     solutions: string;
     values: string;
     careers: string;
+    blog: string;
     contact: string;
   };
   industries: {

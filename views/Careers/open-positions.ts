@@ -73,7 +73,7 @@ export const openPositions: OpenPosition[] = [
   },
   {
     name: "SAP Hybris Developer",
-    slug: 'sap-hybris-developer',
+    slug: "sap-hybris-developer",
     description:
       "We are looking for an experienced SAP Commerce (Hybris) Developer",
     responsibilities: [],

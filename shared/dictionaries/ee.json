@@ -1,21 +1,22 @@
 {
-  "mainNavigation": {
-    "industries": "Tööstused",
-    "solutions": "Lahendused",
-    "values": "Väärtused",
-    "careers": "Karjäär",
-    "contact": "Kontakt"
-  },
-  "industries": {
-    "streaming": "Voogesitus",
-    "ecommerce": "E-kaubandus",
-    "logistics": "Logistika",
-    "erpSap": "ERP/SAP"
-  },
-  "solutions": {
-    "digitalTransformation": "Digitaalne transformatsioon",
-    "sapCommerce": "SAP Commerce"
-  },
-  "openMenu": "Ava menüü",
-  "closeMenu": "Sulge menüü"
+    "mainNavigation": {
+        "industries": "Tööstused",
+        "solutions": "Lahendused",
+        "values": "Väärtused",
+        "careers": "Karjäär",
+        "blog": "Blogi",
+        "contact": "Kontakt"
+    },
+    "industries": {
+        "streaming": "Voogesitus",
+        "ecommerce": "E-kaubandus",
+        "logistics": "Logistika",
+        "erpSap": "ERP/SAP"
+    },
+    "solutions": {
+        "digitalTransformation": "Digitaalne transformatsioon",
+        "sapCommerce": "SAP Commerce"
+    },
+    "openMenu": "Ava menüü",
+    "closeMenu": "Sulge menüü"
 }
