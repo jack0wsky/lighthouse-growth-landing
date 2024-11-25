@@ -1,21 +1,22 @@
 {
-  "mainNavigation": {
-    "industries": "Branscher",
-    "solutions": "Lösningar",
-    "values": "Värden",
-    "careers": "Karriär",
-    "contact": "Kontakta"
-  },
-  "industries": {
-    "streaming": "Strömning",
-    "ecommerce": "E-handel",
-    "logistics": "Logistik",
-    "erpSap": "ERP/SAP"
-  },
-  "solutions": {
-    "digitalTransformation": "Digital omvandling",
-    "sapCommerce": "SAP-handel"
-  },
-  "openMenu": "Öppna meny",
-  "closeMenu": "Stäng meny"
+    "mainNavigation": {
+        "industries": "Branscher",
+        "solutions": "Lösningar",
+        "values": "Värden",
+        "careers": "Karriär",
+        "blog": "Blogg",
+        "contact": "Kontakta"
+    },
+    "industries": {
+        "streaming": "Strömning",
+        "ecommerce": "E-handel",
+        "logistics": "Logistik",
+        "erpSap": "ERP/SAP"
+    },
+    "solutions": {
+        "digitalTransformation": "Digital omvandling",
+        "sapCommerce": "SAP-handel"
+    },
+    "openMenu": "Öppna meny",
+    "closeMenu": "Stäng meny"
 }

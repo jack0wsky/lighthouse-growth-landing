@@ -1,21 +1,22 @@
 {
-  "mainNavigation": {
-    "industries": "Toimialat",
-    "solutions": "Ratkaisut",
-    "values": "Arvot",
-    "careers": "Urat",
-    "contact": "Yhteystiedot"
-  },
-  "industries": {
-    "streaming": "Suoratoisto",
-    "ecommerce": "Verkkokauppa",
-    "logistics": "Logistiikka",
-    "erpSap": "ERP/SAP"
-  },
-  "solutions": {
-    "digitalTransformation": "Digitaalinen transformaatio",
-    "sapCommerce": "SAP Commerce"
-  },
-  "openMenu": "Avaa valikko",
-  "closeMenu": "Sulje valikko"
+    "mainNavigation": {
+        "industries": "Toimialat",
+        "solutions": "Ratkaisut",
+        "values": "Arvot",
+        "careers": "Urat",
+        "blog": "Blogi",
+        "contact": "Yhteystiedot"
+    },
+    "industries": {
+        "streaming": "Suoratoisto",
+        "ecommerce": "Verkkokauppa",
+        "logistics": "Logistiikka",
+        "erpSap": "ERP/SAP"
+    },
+    "solutions": {
+        "digitalTransformation": "Digitaalinen transformaatio",
+        "sapCommerce": "SAP Commerce"
+    },
+    "openMenu": "Avaa valikko",
+    "closeMenu": "Sulje valikko"
 }

@@ -1,21 +1,22 @@
 {
-  "mainNavigation": {
-    "industries": "Industrier",
-    "solutions": "Løsninger",
-    "values": "Verdier",
-    "careers": "Karrierer",
-    "contact": "Kontakt"
-  },
-  "industries": {
-    "streaming": "Strømming",
-    "ecommerce": "E-handel",
-    "logistics": "Logistikk",
-    "erpSap": "ERP/SAP"
-  },
-  "solutions": {
-    "digitalTransformation": "Digital transformasjon",
-    "sapCommerce": "SAP Commerce"
-  },
-  "openMenu": "Åpne menyen",
-  "closeMenu": "Lukk menyen"
+    "mainNavigation": {
+        "industries": "Industrier",
+        "solutions": "Løsninger",
+        "values": "Verdier",
+        "careers": "Karrierer",
+        "blog": "Blogg",
+        "contact": "Kontakt"
+    },
+    "industries": {
+        "streaming": "Strømming",
+        "ecommerce": "E-handel",
+        "logistics": "Logistikk",
+        "erpSap": "ERP/SAP"
+    },
+    "solutions": {
+        "digitalTransformation": "Digital transformasjon",
+        "sapCommerce": "SAP Commerce"
+    },
+    "openMenu": "Åpne menyen",
+    "closeMenu": "Lukk menyen"
 }

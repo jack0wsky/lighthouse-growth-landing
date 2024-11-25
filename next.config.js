@@ -6,9 +6,26 @@ const nextConfig = {
         protocol: "https",
         hostname: "api.mapbox.com",
         pathname: "/**",
+        port: "",
       },
+      {
+        protocol: "http",
+        hostname: "localhost",
+        port: "1337",
+      },
+      {
+        protocol: "https",
+        hostname: "cms.lighthouse-growth.com",
+        port: "",
+      },
+      {
+        protocol: "https",
+        hostname: "cms-media-bucket.fra1.digitaloceanspaces.com",
+        port: "",
+      }
     ],
   },
+  
   async redirects() {
     return [
       {
